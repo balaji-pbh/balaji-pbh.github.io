@@ -6,11 +6,11 @@
    ========================================================= */
 
 const SHOP = {
-  name: "YOUR SHOP",
-  ownerWhatsApp: "91XXXXXXXXXX",
+  name: "BALAJI GARMENTS",
+  ownerWhatsApp: "919532328020",
   bannerImage: "banner.jpg",
   headerLogo: "logo.jpg",
-  websiteUrl: "https://YOUR-USERNAME.github.io/YOUR-REPO/"
+  websiteUrl: "https://balaji-pbh.github.io/"
 };
 
 const CATEGORIES = [
