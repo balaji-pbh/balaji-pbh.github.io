@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2563EB"><title>Shop Admin | Manager</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--navy:#0F172A;--blue:#2563EB;--blue2:#1D4ED8;--teal:#14B8A6;--bg:#F8FAFC;--card:#fff;--line:#E2E8F0;--muted:#64748B;--danger:#DC2626;--green:#059669;--shadow:0 12px 30px rgba(15,23,42,.07)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--navy);font-family:Inter,system-ui,sans-serif}.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.head{max-width:1100px;margin:auto;min-height:62px;padding:8px 14px;display:flex;align-items:center;gap:10px}.mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;color:#fff;font-weight:800}.title{font-weight:800;font-size:15px}.sub{font-size:9px;color:var(--muted)}.spacer{flex:1}.back{font-size:11px;color:var(--blue);text-decoration:none}.wrap{max-width:1100px;margin:auto;padding:16px 14px 40px}.grid2{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:850px){.grid2{grid-template-columns:1fr 1fr}}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}.panel h2{font-size:14px;margin:0 0 3px}.hint{font-size:10px;color:var(--muted);margin:0 0 12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{margin:8px 0}.field label{display:block;font-size:10px;font-weight:700;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:11px;outline:0;background:#fff}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#93C5FD;box-shadow:0 0 0 3px #EFF6FF}.btn{border:0;border-radius:10px;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#EFF6FF;color:var(--blue)}.danger{background:#FEF2F2;color:var(--danger)}.mutedBtn{background:#F1F5F9;color:#334155}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.status{background:#0B1220;color:#DCE7FF;border-radius:14px;padding:11px;font:10px/1.6 ui-monospace,monospace;min-height:145px;max-height:310px;overflow:auto}.ok{color:#6EE7B7}.warn{color:#FCD34D}.err{color:#FCA5A5}.info{color:#93C5FD}.details{display:grid;gap:7px}.detailRow{display:grid;grid-template-columns:1fr 1fr 30px;gap:6px}.detailRow input{min-width:0}.remove{border:0;border-radius:9px;background:#FEF2F2;color:#DC2626}.fileBox{border:1px dashed #CBD5E1;border-radius:12px;padding:10px;background:#F8FAFC}.preview{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.preview img{width:100%;height:72px;object-fit:cover;border-radius:9px}.catList,.prodList{display:grid;gap:7px;margin-top:10px}.item{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:8px}.item img{width:40px;height:40px;border-radius:8px;object-fit:cover}.itemMain{min-width:0;flex:1}.itemMain b{font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.itemMain span{font-size:9px;color:var(--muted)}.notice{font-size:10px;padding:9px 10px;background:#F0FDFA;border:1px solid #CCFBF1;border-radius:10px;color:#0F766E;margin-top:9px}.token{font-family:ui-monospace,monospace}.hidden{display:none!important}.tabs{display:flex;gap:5px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px;font-size:10px;font-weight:800}.tab.active{background:#EFF6FF;border-color:#BFDBFE;color:var(--blue)}.badge{font-size:8px;padding:3px 6px;border-radius:20px;background:#ECFDF5;color:#047857}.publishBox{margin-top:12px}.check{display:flex;gap:7px;align-items:flex-start;font-size:10px;color:var(--muted);margin:9px 0}.check input{margin-top:2px}
+</style></head><body>
+<header class="top"><div class="head"><div class="mark">S</div><div><div class="title">Shop Admin</div><div class="sub">GitHub-powered product & SEO manager</div></div><div class="spacer"></div><a class="back" href="index.html">View Store →</a></div></header>
+<main class="wrap">
+<div class="panel" style="margin-bottom:14px"><h2>1. GitHub Connection</h2><p class="hint">One-time settings are saved locally on this device. Product/category data is published to data.js on GitHub.</p>
+<div class="row"><div class="field"><label>GitHub Username</label><input id="ghUser" placeholder="your-username"></div><div class="field"><label>Repository</label><input id="ghRepo" placeholder="your-repo"></div></div>
+<div class="row"><div class="field"><label>GitHub Token</label><input id="ghToken" type="password" placeholder="github_pat_..."></div><div class="field"><label>Website URL</label><input id="siteUrl" placeholder="https://username.github.io/repo/"></div></div>
+<div class="actions"><button class="btn secondary" id="saveSettings">Save Settings</button><button class="btn mutedBtn" id="loadRemote">Load Current data.js</button></div>
+<div class="notice">Security note: a browser-held GitHub token can be exposed. Use a fine-grained token with access only to this repository. Never share this admin page/token.</div>
+</div>
+
+<div class="grid2">
+<section class="panel"><div class="tabs"><button class="tab active" data-tab="product">Product</button><button class="tab" data-tab="category">Category SEO</button></div>
+<div id="productTab">
+<h2>2. Product Manager</h2><p class="hint">Add or edit a product. Images are compressed and embedded into data.js.</p>
+<input id="editingId" type="hidden">
+<div class="field"><label>Product Name</label><input id="pName" placeholder="Premium Shirt"></div>
+<div class="row"><div class="field"><label>Price</label><input id="pPrice" type="number" placeholder="499"></div><div class="field"><label>Old Price</label><input id="pOld" type="number" placeholder="999"></div></div>
+<div class="row"><div class="field"><label>Discount %</label><input id="pOff" type="number" placeholder="50"></div><div class="field"><label>Category</label><select id="pCategory"></select></div></div>
+<div class="field"><label>Description</label><textarea id="pDesc" placeholder="Write product details..."></textarea></div>
+<div class="field"><label>Product Images (multiple)</label><div class="fileBox"><input id="pImages" type="file" accept="image/*" multiple><div id="preview" class="preview"></div></div></div>
+<div class="field"><label>Details</label><div id="detailRows" class="details"></div><button class="btn secondary" id="addDetail" type="button" style="margin-top:7px">+ Add Details</button></div>
+<div class="field"><label>SEO Title</label><input id="pSeoTitle" placeholder="Product Name | Your Shop"></div>
+<div class="field"><label>SEO Description</label><textarea id="pSeoDesc" placeholder="Short search description"></textarea></div>
+<div class="field"><label>SEO Keywords</label><input id="pSeoKeywords" placeholder="shirt, cotton shirt, your shop"></div>
+<div class="field"><label>SEO Slug</label><input id="pSlug" placeholder="premium-shirt"></div>
+<label class="check"><input id="replaceImages" type="checkbox"> When editing, replace old images with newly selected images.</label>
+<div class="actions"><button class="btn primary" id="publishProduct">Publish / Update Product</button><button class="btn mutedBtn" id="clearProduct">Clear</button></div>
+</div>
+
+<div id="categoryTab" class="hidden">
+<h2>2B. Category Manager + SEO</h2><p class="hint">Categories live in data.js. Publish generates an SEO-friendly static category page and updates sitemap.xml.</p>
+<input id="editingCatId" type="hidden">
+<div class="field"><label>Category Name</label><input id="cName" placeholder="Men's Shirts"></div>
+<div class="row"><div class="field"><label>Category ID</label><input id="cId" placeholder="mens-shirts"></div><div class="field"><label>SEO Slug</label><input id="cSlug" placeholder="mens-shirts"></div></div>
+<div class="field"><label>Category Image URL</label><input id="cImage" placeholder="https://..."></div>
+<div class="field"><label>SEO Title</label><input id="cSeoTitle" placeholder="Men's Shirts | Your Shop"></div>
+<div class="field"><label>SEO Description</label><textarea id="cSeoDesc"></textarea></div>
+<div class="field"><label>SEO Keywords</label><input id="cSeoKeywords" placeholder="men shirts, cotton shirts"></div>
+<div class="actions"><button class="btn primary" id="publishCategory">Publish / Update Category</button><button class="btn mutedBtn" id="clearCategory">Clear</button></div>
+</div>
+</section>
+
+<section class="panel"><h2>3. Live Manager</h2><p class="hint">Select an existing item to edit or delete it. Changes are published to GitHub.</p>
+<h3 style="font-size:11px;margin:14px 0 5px">Categories</h3><div id="catList" class="catList"></div>
+<h3 style="font-size:11px;margin:16px 0 5px">Products</h3><div id="prodList" class="prodList"></div>
+</section>
+</div>
+
+<section class="panel publishBox"><h2>4. Publish Information Box</h2><p class="hint">Every step is logged here: validation → image compression → data.js → SEO HTML → sitemap → GitHub API response.</p><div id="status" class="status"><div class="info">Ready. Fill settings and choose Product or Category.</div></div></section>
+</main>
+
+<script src="data.js"></script>
+<script>
+(() => {
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const KEY="freeShopAdminV3";
+let cats=JSON.parse(JSON.stringify(window.CATEGORIES||[])), prods=JSON.parse(JSON.stringify(window.PRODUCTS||[]));
+let selectedImages=[];
+
+const log=(m,t="info")=>{const d=document.createElement("div");d.className=t;d.textContent=`[${new Date().toLocaleTimeString()}] ${m}`;$("#status").appendChild(d);$("#status").scrollTop=$("#status").scrollHeight;};
+const settings=()=>({user:$("#ghUser").value.trim(),repo:$("#ghRepo").value.trim(),token:$("#ghToken").value.trim(),site:$("#siteUrl").value.trim().replace(/\/?$/,"/")});
+function loadSettings(){const s=JSON.parse(localStorage.getItem(KEY)||"{}");$("#ghUser").value=s.user||"";$("#ghRepo").value=s.repo||"";$("#ghToken").value=s.token||"";$("#siteUrl").value=s.site||SHOP.websiteUrl||""}
+function save(){localStorage.setItem(KEY,JSON.stringify(settings()));log("Admin settings saved locally.");}
+loadSettings();
+
+function populateCats(){ $("#pCategory").innerHTML=cats.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("")||`<option value="">No categories</option>`; renderLists();}
+function renderLists(){
+ $("#catList").innerHTML=cats.map(c=>`<div class="item"><img src="${c.image||""}"><div class="itemMain"><b>${esc(c.name)}</b><span>${c.id} • SEO: ${esc(c.seo?.slug||c.id)}</span></div><button class="btn secondary" data-edit-cat="${c.id}">Edit</button><button class="btn danger" data-del-cat="${c.id}">Delete</button></div>`).join("")||"<div class='hint'>No categories.</div>";
+ $("#prodList").innerHTML=prods.map(p=>`<div class="item"><img src="${p.images?.[0]||""}"><div class="itemMain"><b>${esc(p.name)}</b><span>${p.id} • ${money(p.price)} • ${p.category}</span></div><button class="btn secondary" data-edit-prod="${p.id}">Edit</button><button class="btn danger" data-del-prod="${p.id}">Delete</button></div>`).join("")||"<div class='hint'>No products.</div>";
+ $$("[data-edit-cat]").forEach(b=>b.onclick=()=>editCat(b.dataset.editCat));
+ $$("[data-del-cat]").forEach(b=>b.onclick=()=>deleteCat(b.dataset.delCat));
+ $$("[data-edit-prod]").forEach(b=>b.onclick=()=>editProd(b.dataset.editProd));
+ $$("[data-del-prod]").forEach(b=>b.onclick=()=>deleteProd(b.dataset.delProd));
+}
+function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","\x27":"&#039;"}[m]||m))}
+function money(n){return "₹"+Number(n||0).toLocaleString("en-IN")}
+populateCats();
+
+$$(".tab").forEach(b=>b.onclick=()=>{$$(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");$("#productTab").classList.toggle("hidden",b.dataset.tab!=="product");$("#categoryTab").classList.toggle("hidden",b.dataset.tab!=="category")});
+
+$("#saveSettings").onclick=save;
+$("#loadRemote").onclick=async()=>{try{save();const raw=await getFile("data.js");if(!raw)throw Error("data.js not found");const text=raw.content;const parsed=parseData(text);cats=parsed.categories;prods=parsed.products;populateCats();log("Remote data.js loaded successfully.","ok")}catch(e){log(e.message,"err")}};
+
+$("#addDetail").onclick=()=>addDetailRow();
+function addDetailRow(k="",v=""){const r=document.createElement("div");r.className="detailRow";r.innerHTML=`<input class="dk" placeholder="Detail name" value="${esc(k)}"><input class="dv" placeholder="Enter detail" value="${esc(v)}"><button class="remove" type="button">×</button>`;r.querySelector(".remove").onclick=()=>r.remove();$("#detailRows").appendChild(r)}
+function resetProduct(){["editingId","pName","pPrice","pOld","pOff","pDesc","pSeoTitle","pSeoDesc","pSeoKeywords","pSlug"].forEach(id=>$("#"+id).value="");$("#detailRows").innerHTML="";$("#pImages").value="";$("#preview").innerHTML="";selectedImages=[];$("#replaceImages").checked=false}
+$("#clearProduct").onclick=resetProduct;
+$("#pImages").onchange=async e=>{selectedImages=[];$("#preview").innerHTML="";for(const file of [...e.target.files]){const data=await compress(file);selectedImages.push(data);const img=document.createElement("img");img.src=data;$("#preview").appendChild(img)}log(`${selectedImages.length} image(s) compressed and ready.`,"ok")};
+
+function compress(file){return new Promise((resolve,reject)=>{const im=new Image(),c=document.createElement("canvas"),ctx=c.getContext("2d");const r=new FileReader();r.onload=()=>{im.onload=()=>{const max=1000,scale=Math.min(1,max/Math.max(im.width,im.height));c.width=Math.round(im.width*scale);c.height=Math.round(im.height*scale);ctx.drawImage(im,0,0,c.width,c.height);resolve(c.toDataURL("image/jpeg",.78))};im.onerror=reject;im.src=r.result};r.onerror=reject;r.readAsDataURL(file)})}
+
+function readProduct(){
+ const id=$("#editingId").value || "PRD-"+Math.random().toString(36).slice(2,8).toUpperCase();
+ const name=$("#pName").value.trim(); if(!name) throw Error("Product name is required.");
+ const cat=$("#pCategory").value; if(!cat) throw Error("Choose a category.");
+ let old=prods.find(p=>p.id===id); let images=(selectedImages.length && ($("#replaceImages").checked||!old))?selectedImages:(old?.images||selectedImages);
+ if(!images.length) throw Error("At least one product image is required.");
+ const details={}; $$(".detailRow").forEach(r=>{const k=r.querySelector(".dk").value.trim(),v=r.querySelector(".dv").value.trim();if(k)details[k]=v});
+ const slug=($("#pSlug").value.trim()||slugify(name+"-"+id)).toLowerCase();
+ return {id,name,category:cat,price:+$("#pPrice").value||0,oldPrice:+$("#pOld").value||0,discount:+$("#pOff").value||0,rating:old?.rating||4.5,ratingCount:old?.ratingCount||0,images,description:$("#pDesc").value.trim(),details,seo:{title:$("#pSeoTitle").value.trim()||`${name} | ${SHOP.name}`,description:$("#pSeoDesc").value.trim()||$("#pDesc").value.trim().slice(0,160),keywords:$("#pSeoKeywords").value.trim(),slug}};
+}
+$("#publishProduct").onclick=async()=>{try{save();const p=readProduct();log(`Validating product ${p.id}...`);const i=prods.findIndex(x=>x.id===p.id);if(i>=0)prods[i]=p;else prods.unshift(p);log("Product object created. Preparing data.js...");await publishAll(`Product ${p.id} published`);resetProduct();}catch(e){log(e.message,"err")}};
+
+function editProd(id){const p=prods.find(x=>x.id===id);if(!p)return;$("#editingId").value=p.id;$("#pName").value=p.name;$("#pPrice").value=p.price;$("#pOld").value=p.oldPrice||"";$("#pOff").value=p.discount||"";$("#pCategory").value=p.category;$("#pDesc").value=p.description||"";$("#pSeoTitle").value=p.seo?.title||"";$("#pSeoDesc").value=p.seo?.description||"";$("#pSeoKeywords").value=p.seo?.keywords||"";$("#pSlug").value=p.seo?.slug||"";$("#detailRows").innerHTML="";Object.entries(p.details||{}).forEach(([k,v])=>addDetailRow(k,v));$("#productTab").classList.remove("hidden");$("#categoryTab").classList.add("hidden");$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="product"));scrollTo(0,0);log(`Editing ${id}. Existing images will remain unless Replace images is checked.`,"info")}
+async function deleteProd(id){if(!confirm("Delete this product and update GitHub?"))return;prods=prods.filter(p=>p.id!==id);try{await publishAll(`Product ${id} deleted`)}catch(e){log(e.message,"err")}}
+
+function resetCat(){["editingCatId","cName","cId","cSlug","cImage","cSeoTitle","cSeoDesc","cSeoKeywords"].forEach(id=>$("#"+id).value="")}
+$("#clearCategory").onclick=resetCat;
+function readCat(){const name=$("#cName").value.trim();if(!name)throw Error("Category name is required.");const id=($("#cId").value.trim()||slugify(name)).toLowerCase();const old=cats.find(c=>c.id===($("#editingCatId").value||id));return {id,name,image:$("#cImage").value.trim(),seo:{title:$("#cSeoTitle").value.trim()||`${name} | ${SHOP.name}`,description:$("#cSeoDesc").value.trim(),keywords:$("#cSeoKeywords").value.trim(),slug:($("#cSlug").value.trim()||slugify(name)).toLowerCase()}}}
+$("#publishCategory").onclick=async()=>{try{save();const c=readCat();const oldId=$("#editingCatId").value;if(oldId&&oldId!==c.id)cats=cats.filter(x=>x.id!==oldId);const i=cats.findIndex(x=>x.id===c.id);if(i>=0)cats[i]=c;else cats.push(c);log(`Category ${c.id} validated.`);await publishAll(`Category ${c.id} published`);resetCat();populateCats()}catch(e){log(e.message,"err")}};
+function editCat(id){const c=cats.find(x=>x.id===id);if(!c)return;$("#editingCatId").value=c.id;$("#cName").value=c.name;$("#cId").value=c.id;$("#cSlug").value=c.seo?.slug||c.id;$("#cImage").value=c.image||"";$("#cSeoTitle").value=c.seo?.title||"";$("#cSeoDesc").value=c.seo?.description||"";$("#cSeoKeywords").value=c.seo?.keywords||"";$("#productTab").classList.add("hidden");$("#categoryTab").classList.remove("hidden");$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="category"));scrollTo(0,0);log(`Editing category ${id}.`,"info")}
+async function deleteCat(id){const has=prods.some(p=>p.category===id);if(has)return alert("This category contains products. Move/delete those products first.");if(!confirm("Delete category and update GitHub?"))return;cats=cats.filter(c=>c.id!==id);try{await publishAll(`Category ${id} deleted`);populateCats()}catch(e){log(e.message,"err")}}
+
+function slugify(s){return String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
+
+function parseData(text){
+ const fn=new Function(text+";return {categories:CATEGORIES,products:PRODUCTS};");
+ const x=fn();return {categories:JSON.parse(JSON.stringify(x.categories||[])),products:JSON.parse(JSON.stringify(x.products||[]))};
+}
+function dataText(){return `/* AUTO-GENERATED BY SHOP ADMIN V3 */\nconst SHOP = ${JSON.stringify({...SHOP,websiteUrl:settings().site||SHOP.websiteUrl},null,2)};\n\n// ================= CATEGORIES =================\nconst CATEGORIES = ${JSON.stringify(cats,null,2)};\n\n// ================= PRODUCTS =================\nconst PRODUCTS = ${JSON.stringify(prods,null,2)};\n`}
+
+async function api(path,opts={}){const s=settings();if(!s.user||!s.repo||!s.token)throw Error("GitHub username, repository and token are required.");const r=await fetch(`https://api.github.com${path}`,{...opts,headers:{Accept:"application/vnd.github+json",Authorization:`Bearer ${s.token}`,"X-GitHub-Api-Version":"2022-11-28","Content-Type":"application/json"}});const j=await r.json();if(!r.ok)throw Error(j.message||`GitHub API ${r.status}`);return j}
+async function getFile(path){return api(`/repos/${encodeURIComponent(settings().user)}/${encodeURIComponent(settings().repo)}/contents/${path}?ref=main`)}
+async function putFile(path,content,message,sha=null){const body={message,content:btoa(unescape(encodeURIComponent(content))),branch:"main"};if(sha)body.sha=sha;return api(`/repos/${encodeURIComponent(settings().user)}/${encodeURIComponent(settings().repo)}/contents/${path}`,{method:"PUT",body:JSON.stringify(body)})}
+async function removeFile(path,message){try{const f=await getFile(path);return api(`/repos/${settings().user}/${settings().repo}/contents/${path}`,{method:"DELETE",body:JSON.stringify({message,sha:f.sha,branch:"main"})})}catch(e){if(/Not Found/i.test(e.message))return null;throw e}}
+
+async function publishText(path,text,message){let sha=null;try{sha=(await getFile(path)).sha}catch(e){if(!/Not Found/i.test(e.message))throw e}await putFile(path,text,message,sha)}
+function escapeAttr(s){return String(s??"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;")}
+function productStatic(p){
+ const url=settings().site+"products/"+p.seo.slug+".html", title=escapeAttr(p.seo.title||p.name), desc=escapeAttr((p.seo.description||p.description||"").slice(0,160)), img=escapeAttr(p.images?.[0]||"");
+ const imgs=(p.images&&p.images.length?p.images:[""]).map((im,i)=>`<img class="thumb ${i===0?'active':''}" src="${escapeAttr(im)}" data-i="${i}" alt="${escapeAttr(p.name)} ${i+1}">`).join("");
+ const details=Object.entries(p.details||{}).map(([k,v])=>`<div class="detail"><span>${escapeAttr(k)}</span><b>${escapeAttr(v)}</b></div>`).join("");
+ const imageJson=JSON.stringify(p.images||[]).replace(/</g,"\\u003c");
+ const jsonld=JSON.stringify({"@context":"https://schema.org","@type":"Product","name":p.name,"image":p.images,"description":p.seo.description||p.description,"sku":p.id,"offers":{"@type":"Offer","priceCurrency":"INR","price":p.price,"availability":"https://schema.org/InStock","url":url},"aggregateRating":{"@type":"AggregateRating","ratingValue":p.rating||4.5,"reviewCount":p.ratingCount||1}});
+ const wa=`https://wa.me/${String(SHOP.ownerWhatsApp).replace(/\D/g,"")}?text=${encodeURIComponent("Hello, I am interested in this product.\\n\\nProduct: "+p.name+"\\nProduct ID: "+p.id+"\\nPrice: ₹"+Number(p.price||0).toLocaleString("en-IN")+"\\nLink: "+url+"\\nImage: "+url+"#product-image")}`;
+ return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><meta name="description" content="${desc}"><meta name="keywords" content="${escapeAttr(p.seo.keywords||"")}"><link rel="canonical" href="${escapeAttr(url)}"><meta property="og:title" content="${title}"><meta property="og:description" content="${desc}"><meta property="og:image" content="${img}"><meta property="og:url" content="${escapeAttr(url)}"><script type="application/ld+json">${jsonld.replace(/</g,"\\u003c")}<\/script><style>
+:root{--navy:#0F172A;--blue:#2563EB;--teal:#14B8A6;--bg:#F8FAFC;--line:#E2E8F0;--muted:#64748B}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--navy);font-family:Inter,Arial,sans-serif;padding-bottom:70px}.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.head{height:58px;max-width:1050px;margin:auto;padding:0 14px;display:flex;align-items:center;gap:9px}.head a{color:var(--navy);text-decoration:none;font-size:12px}.brand{font-weight:800;font-size:15px}.wrap{max-width:1050px;margin:auto;padding:12px 14px 25px}.layout{display:grid;gap:18px}@media(min-width:800px){.layout{grid-template-columns:1.1fr .9fr;align-items:start}}.gallery{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.mainImg{width:100%;height:min(68vh,520px);object-fit:contain;background:#F1F5F9;display:block;cursor:zoom-in}.thumbs{display:flex;gap:7px;padding:8px;overflow:auto}.thumb{width:55px;height:55px;object-fit:cover;border-radius:9px;border:2px solid transparent}.thumb.active{border-color:var(--blue)}.info{padding:4px 0}.name{font-size:20px;line-height:1.2}.id{font-size:9px;color:var(--muted);margin-top:5px}.priceLine{display:flex;align-items:center;gap:7px;margin-top:10px}.price{font-size:19px;font-weight:800}.old{text-decoration:line-through;color:#94A3B8;font-size:11px}.off{color:#059669;font-size:10px;font-weight:700}.descTitle{font-size:13px;margin:18px 0 6px}.desc{font-size:12px;line-height:1.65;color:#475569;white-space:pre-wrap}.details{margin-top:12px;border-top:1px solid var(--line)}.detail{display:flex;justify-content:space-between;gap:15px;padding:9px 0;border-bottom:1px solid var(--line);font-size:11px}.detail span{color:var(--muted)}.ratingBox{margin-top:17px;padding:13px;background:#fff;border:1px solid var(--line);border-radius:14px}.stars{display:flex;gap:3px;margin-top:7px}.star{border:0;background:none;font-size:25px;color:#CBD5E1;padding:0}.star.on{color:#F59E0B}.thanks{font-size:10px;color:#059669;min-height:14px}.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:8px}.barIn{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1.4fr;gap:8px}.btn{height:44px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:12px;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;text-decoration:none}.primary{background:var(--blue);border-color:var(--blue);color:#fff}.lightbox{position:fixed;inset:0;z-index:100;background:rgba(2,6,23,.96);display:none;align-items:center;justify-content:center}.lightbox.show{display:flex}.lightImg{max-width:96vw;max-height:88vh;object-fit:contain}.close{position:absolute;right:16px;top:12px;color:#fff;font-size:30px;background:none;border:0}.prev,.next{position:absolute;top:50%;transform:translateY(-50%);color:#fff;background:rgba(255,255,255,.12);border:0;border-radius:50%;width:42px;height:42px;font-size:24px}.prev{left:10px}.next{right:10px}</style></head><body><header class="top"><div class="head"><a href="../index.html">←</a><span class="brand">${escapeAttr(SHOP.name)}</span></div></header><main class="wrap"><div class="layout"><section><div class="gallery"><img id="mainImg" class="mainImg" src="${img}" alt="${escapeAttr(p.name)}"><div id="thumbs" class="thumbs">${imgs}</div></div></section><section class="info"><h1 class="name">${escapeAttr(p.name)}</h1><div class="id">Product ID: ${escapeAttr(p.id)}</div><div class="priceLine"><span class="price">₹${Number(p.price||0).toLocaleString("en-IN")}</span><span class="old">${p.oldPrice?"₹"+Number(p.oldPrice).toLocaleString("en-IN"):""}</span><span class="off">${p.discount?p.discount+"% OFF":""}</span></div><h2 class="descTitle">Description</h2><div class="desc">${escapeAttr(p.description||"No description added.")}</div><div class="details">${details}</div><div class="ratingBox"><div>Rate this product</div><div class="stars" id="stars">${[1,2,3,4,5].map(n=>`<button class="star" data-rate="${n}">★</button>`).join("")}</div><div class="thanks" id="thanks"></div></div></section></div></main><div class="bar"><div class="barIn"><button id="share" class="btn">↗ Share</button><a class="btn primary" href="${escapeAttr(wa)}">💬 Message Owner</a></div></div><div id="lightbox" class="lightbox"><button id="close" class="close">×</button><button id="prev" class="prev">‹</button><img id="lightImg" class="lightImg" src="${img}" alt=""><button id="next" class="next">›</button></div><script>const IMAGES=${imageJson};let i=0;const main=document.getElementById('mainImg'),light=document.getElementById('lightImg'),lb=document.getElementById('lightbox');function render(){main.src=IMAGES[i]||'';light.src=IMAGES[i]||'';document.querySelectorAll('.thumb').forEach((x,n)=>x.classList.toggle('active',n===i))}document.querySelectorAll('.thumb').forEach(x=>x.onclick=()=>{i=+x.dataset.i;render()});main.onclick=()=>lb.classList.add('show');document.getElementById('close').onclick=()=>lb.classList.remove('show');document.getElementById('prev').onclick=()=>{i=(i-1+IMAGES.length)%IMAGES.length;render()};document.getElementById('next').onclick=()=>{i=(i+1)%IMAGES.length;render()};let sx=0;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{let dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50){if(dx<0)document.getElementById('next').click();else document.getElementById('prev').click()}},{passive:true});document.querySelectorAll('.star').forEach(s=>s.onclick=()=>{document.querySelectorAll('.star').forEach(x=>x.classList.toggle('on',+x.dataset.rate<=+s.dataset.rate));document.getElementById('thanks').textContent='Thanks! Your rating was recorded for this visit.'});document.getElementById('share').onclick=async()=>{const text=${JSON.stringify(p.name+" — ₹"+Number(p.price||0).toLocaleString("en-IN")+"\\nProduct ID: "+p.id+"\\n"+url)};try{if(navigator.share&&IMAGES[0]&&navigator.canShare){const r=await fetch(IMAGES[0]);const b=await r.blob();const f=new File([b],'product.jpg',{type:b.type||'image/jpeg'});if(navigator.canShare({files:[f]})){await navigator.share({title:${JSON.stringify(p.name)},text,files:[f]});return}}if(navigator.share){await navigator.share({title:${JSON.stringify(p.name)},text,url:${JSON.stringify(url)}})}else{await navigator.clipboard.writeText(text);alert('Product link copied.')}}catch(e){}};<\/script></body></html>`;
+}
+function categoryStatic(c){
+ const url=settings().site+"categories/"+c.seo.slug+".html", ps=prods.filter(p=>p.category===c.id);
+ const cards=ps.map(p=>`<article style="border:1px solid #e2e8f0;border-radius:15px;overflow:hidden;background:#fff"><a href="../products/${escapeAttr(p.seo.slug)}.html" style="text-decoration:none;color:#0f172a"><img src="${escapeAttr(p.images?.[0]||"")}" alt="${escapeAttr(p.name)}" style="width:100%;height:220px;object-fit:cover"><div style="padding:10px"><b>${escapeAttr(p.name)}</b><div style="margin-top:5px;font-weight:800">₹${Number(p.price||0).toLocaleString("en-IN")}</div></div></a></article>`).join("");
+ return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeAttr(c.seo.title)}</title><meta name="description" content="${escapeAttr(c.seo.description||"")}"><meta name="keywords" content="${escapeAttr(c.seo.keywords||"")}"><link rel="canonical" href="${escapeAttr(url)}"><meta property="og:title" content="${escapeAttr(c.seo.title)}"><meta property="og:description" content="${escapeAttr(c.seo.description||"")}"><meta property="og:image" content="${escapeAttr(c.image||"")}"><style>body{margin:0;background:#f8fafc;color:#0f172a;font-family:Arial,sans-serif}.wrap{max-width:1000px;margin:auto;padding:18px}.hero{background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:18px;margin-bottom:14px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}}img{display:block}a{color:inherit}.muted{color:#64748b;font-size:12px}</style></head><body><main class="wrap"><p><a href="../index.html">← ${escapeAttr(SHOP.name)}</a></p><section class="hero"><h1>${escapeAttr(c.name)}</h1><p class="muted">${escapeAttr(c.seo.description||"")}</p></section><section class="grid">${cards||"<p>No products yet.</p>"}</section></main></body></html>`;
+}
+function sitemap(){
+ const site=settings().site;
+ const urls=[site,site+"index.html",...cats.map(c=>site+"categories/"+c.seo.slug+".html"),...prods.map(p=>site+"products/"+p.seo.slug+".html")];
+ return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u=>`<url><loc>${escXml(u)}</loc><changefreq>weekly</changefreq></url>`).join("")}</urlset>`;
+}
+function escXml(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+async function publishAll(reason){
+ log("Starting publish mechanism...");
+ if(!settings().site || settings().site.includes("YOUR-")) throw Error("Set the real Website URL first.");
+ log("1/5 Generating data.js...");
+ let oldDataSha=null; try{oldDataSha=(await getFile("data.js")).sha}catch(e){}
+ await putFile("data.js",dataText(),reason,oldDataSha); log("✓ data.js uploaded with categories, products and Base64 images.","ok");
+ log("2/5 Generating product SEO pages...");
+ for(const p of prods){await publishText("products/"+p.seo.slug+".html",productStatic(p),reason);log(`✓ products/${p.seo.slug}.html`,"ok")}
+ log("3/5 Generating category SEO pages...");
+ for(const c of cats){await publishText("categories/"+c.seo.slug+".html",categoryStatic(c),reason);log(`✓ categories/${c.seo.slug}.html`,"ok")}
+ log("4/5 Updating sitemap.xml...");
+ await publishText("sitemap.xml",sitemap(),reason); log("✓ sitemap.xml updated.","ok");
+ log("5/5 Updating robots.txt...");
+ await publishText("robots.txt",`User-agent: *\nAllow: /\nSitemap: ${settings().site}sitemap.xml\n`,reason); log("✓ robots.txt updated.","ok");
+ log("✓ PUBLISH COMPLETE — GitHub has the latest data, SEO pages and sitemap.","ok");
+}
+$("#publishProduct").title="Publish";
+$("#publishCategory").title="Publish";
+})();
+</script></body></html>
