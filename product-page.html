@@ -1,18 +1,634 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#2563EB"><meta id="metaDesc" name="description" content="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+
+<meta id="metaDesc" name="description" content="">
 <meta id="canonical" rel="canonical" href="">
-<meta id="ogTitle" property="og:title" content=""><meta id="ogDesc" property="og:description" content=""><meta id="ogImage" property="og:image" content=""><meta id="ogUrl" property="og:url" content="">
-<title id="pageTitle">Product | BALAJI GARMENTS</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<meta id="ogTitle" property="og:title" content="">
+<meta id="ogDesc" property="og:description" content="">
+<meta id="ogImage" property="og:image" content="">
+<meta id="ogUrl" property="og:url" content="">
+
+<title id="pageTitle">
+  Product | BALAJI GARMENTS
+</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--navy:#0F172A;--blue:#2563EB;--blue2:#1D4ED8;--teal:#14B8A6;--bg:#F8FAFC;--line:#E2E8F0;--muted:#64748B}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--navy);font-family:Inter,system-ui,sans-serif;padding-bottom:70px}.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.head{height:58px;max-width:1050px;margin:auto;padding:0 14px;display:flex;align-items:center;gap:9px}.back{text-decoration:none;color:var(--navy);font-size:20px}.brand{font-size:15px;font-weight:800}.wrap{max-width:1050px;margin:auto;padding:12px 14px 25px}.gallery{position:relative;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line)}.mainImg{width:100%;height:min(68vh,520px);display:block;object-fit:contain;background:#F1F5F9}.dots{position:absolute;bottom:9px;left:50%;transform:translateX(-50%);display:flex;gap:5px}.dot{width:6px;height:6px;border-radius:50%;background:#CBD5E1}.dot.active{background:var(--blue);width:16px;border-radius:4px}.info{padding-top:15px}.name{font-size:20px;line-height:1.2;margin:0}.id{font-size:9px;color:var(--muted);margin-top:5px}.priceLine{display:flex;align-items:center;gap:7px;margin-top:10px}.price{font-size:19px;font-weight:800}.old{text-decoration:line-through;color:#94A3B8;font-size:11px}.off{color:#059669;font-size:10px;font-weight:700}.descTitle{font-size:13px;margin:18px 0 6px}.desc{font-size:12px;line-height:1.65;color:#475569;white-space:pre-wrap}.details{margin-top:12px;border-top:1px solid var(--line)}.detail{display:flex;justify-content:space-between;gap:15px;padding:9px 0;border-bottom:1px solid var(--line);font-size:11px}.detail span:first-child{color:var(--muted)}.ratingBox{margin-top:17px;padding:13px;background:#fff;border:1px solid var(--line);border-radius:14px}.ratingTitle{font-size:12px}.stars{display:flex;gap:3px;margin-top:7px}.star{border:0;background:none;font-size:25px;color:#CBD5E1;padding:0}.star.on{color:#F59E0B}.thanks{font-size:10px;color:#059669;margin-top:4px;min-height:14px}.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:8px}.barIn{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1.4fr;gap:8px}.btn{height:44px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:12px;background:#fff;color:var(--navy)}.btn.primary{border-color:var(--blue);background:var(--blue);color:#fff}.btn.primary:active{background:var(--blue2)}.thumbs{display:flex;gap:7px;padding:8px 0;overflow:auto}.thumb{width:55px;height:55px;object-fit:cover;border-radius:9px;border:2px solid transparent}.thumb.active{border-color:var(--blue)}.lightbox{position:fixed;inset:0;z-index:100;background:rgba(2,6,23,.96);display:none;align-items:center;justify-content:center}.lightbox.show{display:flex}.lightImg{max-width:96vw;max-height:88vh;object-fit:contain}.close{position:absolute;right:16px;top:12px;color:#fff;font-size:30px;background:none;border:0}.prev,.next{position:absolute;top:50%;transform:translateY(-50%);color:#fff;background:rgba(255,255,255,.12);border:0;border-radius:50%;width:42px;height:42px;font-size:24px}.prev{left:10px}.next{right:10px}@media(min-width:800px){.wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:start}.info{padding-top:5px}.gallery{position:sticky;top:72px}}
-</style></head><body>
-<header class="top"><div class="head"><a class="back" href="javascript:history.back()">‹</a><div id="shopName" class="brand">YOUR SHOP</div></div></header>
-<main class="wrap"><section><div class="gallery"><img id="mainImg" class="mainImg" alt="Product image"><div id="dots" class="dots"></div></div><div id="thumbs" class="thumbs"></div></section>
-<section class="info"><h1 id="name" class="name">Product</h1><div id="pid" class="id"></div><div class="priceLine"><span id="price" class="price"></span><span id="old" class="old"></span><span id="off" class="off"></span></div><h2 class="descTitle">Description</h2><div id="description" class="desc"></div><div id="details" class="details"></div><div class="ratingBox"><div class="ratingTitle">Rate this product</div><div id="stars" class="stars"></div><div id="thanks" class="thanks"></div></div></section></main>
-<div class="bar"><div class="barIn"><button id="shareBtn" class="btn">↗ Share</button><button id="waBtn" class="btn primary">💬 Message Owner</button></div></div>
-<div id="lightbox" class="lightbox"><button class="close" id="closeLb">×</button><button class="prev" id="prevLb">‹</button><img id="lightImg" class="lightImg"><button class="next" id="nextLb">›</button></div>
-<script src="data.js"></script><script src="script.js"></script></body></html>
+:root{
+  --ink:#111827;
+  --gold:#B78A3B;
+  --gold2:#D4AF62;
+  --cream:#FAF8F4;
+  --paper:#fff;
+  --muted:#6B7280;
+  --line:#E8E3DA;
+  --soft:#F4F0E8;
+  --green:#159447;
+  --shadow:0 12px 35px rgba(17,24,39,.065);
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body{
+  margin:0;
+  padding-bottom:76px;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;
+}
+
+.top{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(250,248,244,.95);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+
+.head{
+  height:64px;
+  max-width:1120px;
+  margin:auto;
+  padding:0 15px;
+  display:flex;
+  align-items:center;
+  gap:11px;
+}
+
+.back{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  color:var(--ink);
+  text-decoration:none;
+  font-size:20px;
+}
+
+.brand{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:15px;
+  font-weight:700;
+}
+
+.wrap{
+  max-width:1120px;
+  margin:auto;
+  padding:15px 15px 30px;
+}
+
+.gallery{
+  position:relative;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+
+.mainImg{
+  width:100%;
+  height:min(65vh,520px);
+  display:block;
+  object-fit:contain;
+  background:#F1EEE8;
+}
+
+.dots{
+  position:absolute;
+  left:50%;
+  bottom:10px;
+  transform:translateX(-50%);
+  display:flex;
+  gap:5px;
+}
+
+.dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#C9C4BB;
+}
+
+.dot.active{
+  width:16px;
+  border-radius:4px;
+  background:var(--gold);
+}
+
+.thumbs{
+  display:flex;
+  gap:7px;
+  overflow:auto;
+  padding:9px 0;
+  scrollbar-width:none;
+}
+
+.thumbs::-webkit-scrollbar{
+  display:none;
+}
+
+.thumb{
+  width:56px;
+  height:56px;
+  flex:none;
+  object-fit:cover;
+  border-radius:9px;
+  border:2px solid transparent;
+  background:#eee;
+}
+
+.thumb.active{
+  border-color:var(--gold);
+}
+
+.info{
+  padding-top:10px;
+}
+
+.name{
+  margin:0;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:27px;
+  line-height:1.12;
+  font-weight:600;
+  letter-spacing:-.5px;
+}
+
+.id{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:8px;
+}
+
+.priceLine{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:12px;
+}
+
+.price{
+  font-size:21px;
+  font-weight:700;
+}
+
+.old{
+  color:#9CA3AF;
+  font-size:10px;
+  text-decoration:line-through;
+}
+
+.off{
+  color:var(--green);
+  font-size:9px;
+  font-weight:700;
+}
+
+.descTitle{
+  margin:21px 0 7px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.desc{
+  color:#4B5563;
+  font-size:11px;
+  line-height:1.7;
+  white-space:pre-wrap;
+}
+
+.details{
+  margin-top:15px;
+  border-top:1px solid var(--line);
+}
+
+.detail{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+  font-size:10px;
+}
+
+.detail span:first-child{
+  color:var(--muted);
+}
+
+
+/* RATING */
+
+.ratingBox{
+  margin-top:18px;
+  padding:15px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  box-shadow:0 4px 16px rgba(17,24,39,.035);
+}
+
+.ratingTitle{
+  font-size:11px;
+  font-weight:600;
+}
+
+.stars{
+  display:flex;
+  gap:3px;
+  margin-top:7px;
+}
+
+.star{
+  padding:0;
+  border:0;
+  background:none;
+  color:#D6D1C8;
+  font-size:25px;
+  cursor:pointer;
+}
+
+.star.on{
+  color:#C48A2A;
+}
+
+.thanks{
+  min-height:14px;
+  margin-top:4px;
+  color:var(--green);
+  font-size:9px;
+}
+
+
+/* BOTTOM ACTION BAR */
+
+.bar{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:80;
+  padding:8px;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);
+}
+
+.barIn{
+  max-width:1120px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1.45fr;
+  gap:8px;
+}
+
+.btn{
+  height:45px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--ink);
+  font-size:11px;
+  font-weight:700;
+}
+
+.btn.primary{
+  border-color:var(--ink);
+  background:var(--ink);
+  color:#fff;
+}
+
+
+/* LIGHTBOX */
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:rgba(2,6,23,.96);
+}
+
+.lightbox.show{
+  display:flex;
+}
+
+.lightImg{
+  max-width:96vw;
+  max-height:88vh;
+  object-fit:contain;
+}
+
+.close{
+  position:absolute;
+  right:14px;
+  top:10px;
+  border:0;
+  background:none;
+  color:#fff;
+  font-size:30px;
+}
+
+.prev,
+.next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:42px;
+  height:42px;
+  border:0;
+  border-radius:50%;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  font-size:24px;
+}
+
+.prev{
+  left:10px;
+}
+
+.next{
+  right:10px;
+}
+
+
+/* DESKTOP */
+
+@media(min-width:800px){
+
+  body{
+    padding-bottom:35px;
+  }
+
+  .head{
+    height:68px;
+  }
+
+  .wrap{
+    padding-top:28px;
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    gap:28px;
+    align-items:start;
+  }
+
+  .gallery{
+    position:sticky;
+    top:82px;
+  }
+
+  .info{
+    padding-top:4px;
+  }
+
+  .name{
+    font-size:34px;
+  }
+
+  .bar{
+    position:static;
+    padding:0;
+    margin-top:25px;
+    background:none;
+    border:0;
+    backdrop-filter:none;
+  }
+
+  .barIn{
+    max-width:none;
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+  <div class="head">
+
+    <a
+      class="back"
+      href="javascript:history.back()"
+    >
+      ‹
+    </a>
+
+    <div
+      id="shopName"
+      class="brand"
+    >
+      YOUR SHOP
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<main class="wrap">
+
+
+  <!-- PRODUCT GALLERY -->
+
+  <section>
+
+    <div class="gallery">
+
+      <img
+        id="mainImg"
+        class="mainImg"
+        alt="Product image"
+      >
+
+      <div
+        id="dots"
+        class="dots"
+      ></div>
+
+    </div>
+
+
+    <div
+      id="thumbs"
+      class="thumbs"
+    ></div>
+
+  </section>
+
+
+
+  <!-- PRODUCT INFORMATION -->
+
+  <section class="info">
+
+    <h1
+      id="name"
+      class="name"
+    >
+      Product
+    </h1>
+
+
+    <div
+      id="pid"
+      class="id"
+    ></div>
+
+
+    <div class="priceLine">
+
+      <span
+        id="price"
+        class="price"
+      ></span>
+
+      <span
+        id="old"
+        class="old"
+      ></span>
+
+      <span
+        id="off"
+        class="off"
+      ></span>
+
+    </div>
+
+
+    <h2 class="descTitle">
+      Description
+    </h2>
+
+
+    <div
+      id="description"
+      class="desc"
+    ></div>
+
+
+    <div
+      id="details"
+      class="details"
+    ></div>
+
+
+    <!-- RATING -->
+
+    <div class="ratingBox">
+
+      <div class="ratingTitle">
+        Rate this product
+      </div>
+
+      <div
+        id="stars"
+        class="stars"
+      ></div>
+
+      <div
+        id="thanks"
+        class="thanks"
+      ></div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+
+<!-- ACTION BAR -->
+
+<div class="bar">
+
+  <div class="barIn">
+
+    <button
+      id="shareBtn"
+      class="btn"
+    >
+      ↗ Share
+    </button>
+
+    <button
+      id="waBtn"
+      class="btn primary"
+    >
+      💬 Message Owner
+    </button>
+
+  </div>
+
+</div>
+
+
+
+<!-- LIGHTBOX -->
+
+<div
+  id="lightbox"
+  class="lightbox"
+>
+
+  <button
+    class="close"
+    id="closeLb"
+  >
+    ×
+  </button>
+
+  <button
+    class="prev"
+    id="prevLb"
+  >
+    ‹
+  </button>
+
+  <img
+    id="lightImg"
+    class="lightImg"
+  >
+
+  <button
+    class="next"
+    id="nextLb"
+  >
+    ›
+  </button>
+
+</div>
+
+
+
+<!-- EXISTING SYSTEM -->
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
