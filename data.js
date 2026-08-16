@@ -12,7 +12,7 @@ const CATEGORIES = [
   {
     "id": "wk1",
     "name": "Women Kurti",
-    "image": "https://ibb.co/ynxt3qdJ",
+    "image": "https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/n7etwb24zn6nsdxfmkh6",
     "seo": {
       "title": "Women Kurti | Balaji Garments",
       "description": "Discover the latest Women's Kurtis at Balaji Garments & Saree Centre with stylish designs, premium fabrics, and comfortable fits. Perfect for daily wear, office, college, festivals, and casual occasions. Enjoy trendy fashion at affordable prices with excellent quality. Shop now for the latest collection at the best prices.",
