@@ -1,13 +1,344 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#2563EB"><meta id="metaDesc" name="description" content="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+<meta id="metaDesc" name="description" content="">
 <title id="pageTitle">Products | BALAJI GARMENTS</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--navy:#0F172A;--blue:#2563EB;--teal:#14B8A6;--bg:#F8FAFC;--line:#E2E8F0;--muted:#64748B}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--navy);font-family:Inter,system-ui,sans-serif}.top{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}.head{max-width:1050px;height:58px;margin:auto;padding:0 14px;display:flex;align-items:center;gap:9px}.back{font-size:18px;text-decoration:none;color:var(--navy)}.brand{font-size:15px;font-weight:800}.wrap{max-width:1050px;margin:auto;padding:16px 14px 35px}.crumb{font-size:10px;color:var(--muted);margin-bottom:6px}.title{font-size:21px;margin:0}.sub{font-size:11px;color:var(--muted);margin:4px 0 14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 8px 22px rgba(15,23,42,.05)}.pic{width:100%;height:150px;object-fit:cover;display:block;background:#EEF2FF}.body{padding:9px}.name{font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.price{font-size:13px;font-weight:800;margin-top:5px}.old{text-decoration:line-through;color:#94A3B8;font-weight:500;font-size:10px;margin-left:4px}.off{color:#059669;font-size:9px;margin-left:4px}.rating{font-size:10px;color:#F59E0B;margin-top:4px}.share{position:absolute;right:7px;top:7px;width:28px;height:28px;border:0;border-radius:50%;background:rgba(255,255,255,.94);box-shadow:0 4px 12px rgba(0,0,0,.12);font-size:14px}.empty{padding:30px 10px;text-align:center;color:var(--muted);font-size:12px}@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}.pic{height:210px}}
-</style></head><body>
-<header class="top"><div class="head"><a class="back" href="index.html">‹</a><div id="shopName" class="brand">YOUR SHOP</div></div></header>
-<main class="wrap"><div class="crumb">Home / Category</div><h1 id="catName" class="title">Products</h1><p id="catDesc" class="sub"></p><div id="products" class="grid"></div></main>
-<script src="data.js"></script><script src="script.js"></script></body></html>
+:root{
+  --ink:#111827;
+  --gold:#B78A3B;
+  --gold2:#D4AF62;
+  --cream:#FAF8F4;
+  --paper:#fff;
+  --muted:#6B7280;
+  --line:#E8E3DA;
+  --soft:#F4F0E8;
+  --green:#159447;
+  --shadow:0 10px 30px rgba(17,24,39,.055);
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;
+}
+
+.top{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(250,248,244,.95);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+
+.head{
+  max-width:1120px;
+  height:64px;
+  margin:auto;
+  padding:0 15px;
+  display:flex;
+  align-items:center;
+  gap:11px;
+}
+
+.back{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  color:var(--ink);
+  text-decoration:none;
+  font-size:20px;
+}
+
+.brand{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:15px;
+  font-weight:700;
+}
+
+.wrap{
+  max-width:1120px;
+  margin:auto;
+  padding:25px 15px 45px;
+}
+
+.crumb{
+  color:var(--muted);
+  font-size:9px;
+  margin-bottom:8px;
+}
+
+.titleRow{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:12px;
+  margin-bottom:16px;
+}
+
+.titleBox{
+  min-width:0;
+}
+
+.kicker{
+  display:block;
+  color:var(--gold);
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:4px;
+}
+
+.title{
+  margin:0;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:29px;
+  line-height:1.1;
+  font-weight:600;
+}
+
+.sub{
+  margin:7px 0 0;
+  max-width:620px;
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.5;
+}
+
+.count{
+  flex:none;
+  padding:7px 9px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:#fff;
+  color:var(--muted);
+  font-size:8px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:11px;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+  display:block;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:17px;
+  color:inherit;
+  text-decoration:none;
+  box-shadow:var(--shadow);
+  transition:transform .2s ease;
+}
+
+.card:active{
+  transform:scale(.985);
+}
+
+.pic{
+  width:100%;
+  height:165px;
+  display:block;
+  object-fit:cover;
+  background:#EEE9DF;
+}
+
+.body{
+  padding:11px;
+}
+
+.name{
+  font-size:11px;
+  font-weight:600;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.price{
+  margin-top:6px;
+  font-size:13px;
+  font-weight:700;
+}
+
+.old{
+  text-decoration:line-through;
+  color:#9CA3AF;
+  font-size:9px;
+  font-weight:500;
+  margin-left:4px;
+}
+
+.off{
+  color:#159447;
+  font-size:8px;
+  font-weight:700;
+  margin-left:4px;
+}
+
+.rating{
+  margin-top:5px;
+  color:#B7791F;
+  font-size:9px;
+}
+
+.share{
+  position:absolute;
+  top:8px;
+  right:8px;
+  width:30px;
+  height:30px;
+  border:1px solid rgba(255,255,255,.8);
+  border-radius:50%;
+  background:rgba(255,255,255,.94);
+  box-shadow:0 5px 14px rgba(0,0,0,.12);
+  font-size:13px;
+  cursor:pointer;
+}
+
+.empty{
+  grid-column:1/-1;
+  padding:45px 15px;
+  text-align:center;
+  color:var(--muted);
+  font-size:11px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+}
+
+@media(min-width:600px){
+  .wrap{
+    padding-left:22px;
+    padding-right:22px;
+  }
+
+  .grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:13px;
+  }
+
+  .pic{
+    height:220px;
+  }
+}
+
+@media(min-width:850px){
+  .head{
+    height:68px;
+  }
+
+  .wrap{
+    padding-top:35px;
+  }
+
+  .grid{
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+  }
+
+  .pic{
+    height:245px;
+  }
+
+  .title{
+    font-size:38px;
+  }
+}
+
+@media(max-width:370px){
+  .pic{
+    height:145px;
+  }
+
+  .title{
+    font-size:26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="top">
+  <div class="head">
+
+    <a class="back" href="index.html">‹</a>
+
+    <div id="shopName" class="brand">
+      YOUR SHOP
+    </div>
+
+  </div>
+</header>
+
+
+<main class="wrap">
+
+  <div class="crumb">
+    Home / Category
+  </div>
+
+  <div class="titleRow">
+
+    <div class="titleBox">
+
+      <span class="kicker">
+        Collection
+      </span>
+
+      <h1 id="catName" class="title">
+        Products
+      </h1>
+
+      <p id="catDesc" class="sub"></p>
+
+    </div>
+
+    <div class="count">
+      Explore
+    </div>
+
+  </div>
+
+
+  <div id="products" class="grid"></div>
+
+</main>
+
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
