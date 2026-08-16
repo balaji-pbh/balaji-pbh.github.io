@@ -39,13 +39,20 @@
   -webkit-tap-highlight-color:transparent;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   margin:0;
-  padding-bottom:76px;
+  padding-bottom:82px;
   background:var(--cream);
   color:var(--ink);
   font-family:Inter,system-ui,sans-serif;
 }
+
+
+/* ================= HEADER ================= */
 
 .top{
   position:sticky;
@@ -57,26 +64,26 @@ body{
 }
 
 .head{
-  height:64px;
+  height:68px;
   max-width:1120px;
   margin:auto;
-  padding:0 15px;
+  padding:0 16px;
   display:flex;
   align-items:center;
-  gap:11px;
+  gap:12px;
 }
 
 .back{
-  width:34px;
-  height:34px;
+  width:40px;
+  height:40px;
   display:grid;
   place-items:center;
   border:1px solid var(--line);
-  border-radius:10px;
+  border-radius:11px;
   background:#fff;
   color:var(--ink);
   text-decoration:none;
-  font-size:20px;
+  font-size:25px;
 }
 
 .brand{
@@ -84,15 +91,23 @@ body{
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
-  font-size:15px;
+  font-size:17px;
   font-weight:700;
 }
+
+
+/* ================= MAIN ================= */
 
 .wrap{
   max-width:1120px;
   margin:auto;
-  padding:15px 15px 30px;
+  padding:18px 16px 35px;
 }
+
+
+/* ================= GALLERY ================= */
+
+/* Image dimensions/behavior intentionally kept as original */
 
 .gallery{
   position:relative;
@@ -114,30 +129,30 @@ body{
 .dots{
   position:absolute;
   left:50%;
-  bottom:10px;
+  bottom:11px;
   transform:translateX(-50%);
   display:flex;
-  gap:5px;
+  gap:6px;
 }
 
 .dot{
-  width:6px;
-  height:6px;
+  width:7px;
+  height:7px;
   border-radius:50%;
   background:#C9C4BB;
 }
 
 .dot.active{
-  width:16px;
-  border-radius:4px;
+  width:17px;
+  border-radius:5px;
   background:var(--gold);
 }
 
 .thumbs{
   display:flex;
-  gap:7px;
+  gap:8px;
   overflow:auto;
-  padding:9px 0;
+  padding:10px 0;
   scrollbar-width:none;
 }
 
@@ -146,8 +161,8 @@ body{
 }
 
 .thumb{
-  width:56px;
-  height:56px;
+  width:58px;
+  height:58px;
   flex:none;
   object-fit:cover;
   border-radius:9px;
@@ -159,65 +174,74 @@ body{
   border-color:var(--gold);
 }
 
+
+/* ================= PRODUCT INFORMATION ================= */
+
 .info{
-  padding-top:10px;
+  padding-top:12px;
 }
 
 .name{
   margin:0;
   font-family:"Playfair Display",Georgia,serif;
-  font-size:27px;
+  font-size:32px;
   line-height:1.12;
   font-weight:600;
   letter-spacing:-.5px;
 }
 
 .id{
-  margin-top:6px;
+  margin-top:7px;
   color:var(--muted);
-  font-size:8px;
+  font-size:10px;
 }
 
 .priceLine{
   display:flex;
   align-items:center;
   flex-wrap:wrap;
-  gap:6px;
-  margin-top:12px;
+  gap:7px;
+  margin-top:13px;
 }
 
 .price{
-  font-size:21px;
+  font-size:23px;
   font-weight:700;
 }
 
 .old{
   color:#9CA3AF;
-  font-size:10px;
+  font-size:11px;
   text-decoration:line-through;
 }
 
 .off{
   color:var(--green);
-  font-size:9px;
+  font-size:10px;
   font-weight:700;
 }
 
+
+/* ================= DESCRIPTION ================= */
+
 .descTitle{
-  margin:21px 0 7px;
-  font-size:13px;
+  margin:23px 0 8px;
+  font-size:15px;
   font-weight:600;
 }
 
 .desc{
   color:#4B5563;
-  font-size:11px;
+  font-size:12px;
   line-height:1.7;
   white-space:pre-wrap;
 }
 
+
+/* ================= DETAILS ================= */
+
 .details{
-  margin-top:15px;
+  margin-top:17px;
   border-top:1px solid var(--line);
 }
 
@@ -225,9 +249,9 @@ body{
   display:flex;
   justify-content:space-between;
   gap:15px;
-  padding:10px 0;
+  padding:11px 0;
   border-bottom:1px solid var(--line);
-  font-size:10px;
+  font-size:11px;
 }
 
 .detail span:first-child{
@@ -235,26 +259,26 @@ body{
 }
 
 
-/* RATING */
+/* ================= RATING ================= */
 
 .ratingBox{
-  margin-top:18px;
-  padding:15px;
+  margin-top:20px;
+  padding:17px;
   background:#fff;
   border:1px solid var(--line);
-  border-radius:15px;
+  border-radius:16px;
   box-shadow:0 4px 16px rgba(17,24,39,.035);
 }
 
 .ratingTitle{
-  font-size:11px;
+  font-size:12px;
   font-weight:600;
 }
 
 .stars{
   display:flex;
-  gap:3px;
-  margin-top:7px;
+  gap:4px;
+  margin-top:8px;
 }
 
 .star{
@@ -262,7 +286,7 @@ body{
   border:0;
   background:none;
   color:#D6D1C8;
-  font-size:25px;
+  font-size:27px;
   cursor:pointer;
 }
 
@@ -271,14 +295,14 @@ body{
 }
 
 .thanks{
-  min-height:14px;
-  margin-top:4px;
+  min-height:15px;
+  margin-top:5px;
   color:var(--green);
-  font-size:9px;
+  font-size:10px;
 }
 
 
-/* BOTTOM ACTION BAR */
+/* ================= BOTTOM ACTION BAR ================= */
 
 .bar{
   position:fixed;
@@ -286,7 +310,7 @@ body{
   right:0;
   bottom:0;
   z-index:80;
-  padding:8px;
+  padding:9px;
   background:rgba(255,255,255,.96);
   backdrop-filter:blur(14px);
   border-top:1px solid var(--line);
@@ -297,16 +321,16 @@ body{
   margin:auto;
   display:grid;
   grid-template-columns:1fr 1.45fr;
-  gap:8px;
+  gap:9px;
 }
 
 .btn{
-  height:45px;
-  border-radius:12px;
+  height:48px;
+  border-radius:13px;
   border:1px solid var(--line);
   background:#fff;
   color:var(--ink);
-  font-size:11px;
+  font-size:12px;
   font-weight:700;
 }
 
@@ -317,7 +341,7 @@ body{
 }
 
 
-/* LIGHTBOX */
+/* ================= LIGHTBOX ================= */
 
 .lightbox{
   position:fixed;
@@ -341,12 +365,12 @@ body{
 
 .close{
   position:absolute;
-  right:14px;
+  right:16px;
   top:10px;
   border:0;
   background:none;
   color:#fff;
-  font-size:30px;
+  font-size:34px;
 }
 
 .prev,
@@ -354,25 +378,75 @@ body{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  width:42px;
-  height:42px;
+  width:46px;
+  height:46px;
   border:0;
   border-radius:50%;
   background:rgba(255,255,255,.12);
   color:#fff;
-  font-size:24px;
+  font-size:27px;
 }
 
 .prev{
-  left:10px;
+  left:12px;
 }
 
 .next{
-  right:10px;
+  right:12px;
 }
 
 
-/* DESKTOP */
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:370px){
+
+  .head{
+    height:64px;
+    padding:0 13px;
+  }
+
+  .back{
+    width:36px;
+    height:36px;
+    font-size:23px;
+  }
+
+  .brand{
+    font-size:16px;
+  }
+
+  .wrap{
+    padding:16px 13px 30px;
+  }
+
+  .name{
+    font-size:29px;
+  }
+
+  .price{
+    font-size:21px;
+  }
+
+  .descTitle{
+    font-size:14px;
+  }
+
+  .desc{
+    font-size:11px;
+  }
+
+  .ratingBox{
+    padding:15px;
+  }
+
+  .btn{
+    height:46px;
+    font-size:11px;
+  }
+}
+
+
+/* ================= DESKTOP ================= */
 
 @media(min-width:800px){
 
@@ -381,14 +455,14 @@ body{
   }
 
   .head{
-    height:68px;
+    height:72px;
   }
 
   .wrap{
-    padding-top:28px;
+    padding-top:30px;
     display:grid;
     grid-template-columns:1.08fr .92fr;
-    gap:28px;
+    gap:30px;
     align-items:start;
   }
 
@@ -398,17 +472,29 @@ body{
   }
 
   .info{
-    padding-top:4px;
+    padding-top:5px;
   }
 
   .name{
-    font-size:34px;
+    font-size:36px;
+  }
+
+  .price{
+    font-size:25px;
+  }
+
+  .descTitle{
+    font-size:16px;
+  }
+
+  .desc{
+    font-size:12px;
   }
 
   .bar{
     position:static;
     padding:0;
-    margin-top:25px;
+    margin-top:27px;
     background:none;
     border:0;
     backdrop-filter:none;
@@ -419,6 +505,7 @@ body{
   }
 }
 </style>
+  
 </head>
 
 
