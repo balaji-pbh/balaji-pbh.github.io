@@ -41,6 +41,8 @@ body{
   font-family:Inter,system-ui,sans-serif;
 }
 
+/* ================= HEADER ================= */
+
 .top{
   position:sticky;
   top:0;
@@ -52,25 +54,25 @@ body{
 
 .head{
   max-width:1120px;
-  height:64px;
+  height:68px;
   margin:auto;
-  padding:0 15px;
+  padding:0 16px;
   display:flex;
   align-items:center;
-  gap:11px;
+  gap:12px;
 }
 
 .back{
-  width:34px;
-  height:34px;
+  width:40px;
+  height:40px;
   display:grid;
   place-items:center;
   border:1px solid var(--line);
-  border-radius:10px;
+  border-radius:11px;
   background:#fff;
   color:var(--ink);
   text-decoration:none;
-  font-size:20px;
+  font-size:25px;
 }
 
 .brand{
@@ -78,28 +80,30 @@ body{
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
-  font-size:15px;
+  font-size:17px;
   font-weight:700;
 }
+
+/* ================= MAIN WRAPPER ================= */
 
 .wrap{
   max-width:1120px;
   margin:auto;
-  padding:25px 15px 45px;
+  padding:28px 16px 50px;
 }
 
 .crumb{
   color:var(--muted);
-  font-size:9px;
-  margin-bottom:8px;
+  font-size:11px;
+  margin-bottom:10px;
 }
 
 .titleRow{
   display:flex;
   justify-content:space-between;
   align-items:flex-end;
-  gap:12px;
-  margin-bottom:16px;
+  gap:14px;
+  margin-bottom:20px;
 }
 
 .titleBox{
@@ -109,44 +113,48 @@ body{
 .kicker{
   display:block;
   color:var(--gold);
-  font-size:8px;
+  font-size:10px;
   font-weight:700;
-  letter-spacing:1px;
+  letter-spacing:1.2px;
   text-transform:uppercase;
-  margin-bottom:4px;
+  margin-bottom:5px;
 }
 
 .title{
   margin:0;
   font-family:"Playfair Display",Georgia,serif;
-  font-size:29px;
+  font-size:32px;
   line-height:1.1;
   font-weight:600;
 }
 
 .sub{
-  margin:7px 0 0;
+  margin:8px 0 0;
   max-width:620px;
   color:var(--muted);
-  font-size:10px;
-  line-height:1.5;
+  font-size:12px;
+  line-height:1.55;
 }
 
 .count{
   flex:none;
-  padding:7px 9px;
+  padding:8px 11px;
   border:1px solid var(--line);
-  border-radius:9px;
+  border-radius:10px;
   background:#fff;
   color:var(--muted);
-  font-size:8px;
+  font-size:10px;
 }
+
+/* ================= PRODUCT GRID ================= */
 
 .grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:11px;
+  gap:13px;
 }
+
+/* ================= PRODUCT CARD ================= */
 
 .card{
   position:relative;
@@ -165,20 +173,24 @@ body{
   transform:scale(.985);
 }
 
+/* ================= PRODUCT IMAGE ================= */
+
 .pic{
   width:100%;
-  height:165px;
+  height:190px;
   display:block;
   object-fit:cover;
   background:#EEE9DF;
 }
 
+/* ================= PRODUCT BODY ================= */
+
 .body{
-  padding:11px;
+  padding:12px;
 }
 
 .name{
-  font-size:11px;
+  font-size:13px;
   font-weight:600;
   white-space:nowrap;
   overflow:hidden;
@@ -186,58 +198,65 @@ body{
 }
 
 .price{
-  margin-top:6px;
-  font-size:13px;
+  margin-top:7px;
+  font-size:15px;
   font-weight:700;
 }
 
 .old{
   text-decoration:line-through;
   color:#9CA3AF;
-  font-size:9px;
+  font-size:10px;
   font-weight:500;
-  margin-left:4px;
+  margin-left:5px;
 }
 
 .off{
   color:#159447;
-  font-size:8px;
+  font-size:9px;
   font-weight:700;
-  margin-left:4px;
+  margin-left:5px;
 }
 
 .rating{
-  margin-top:5px;
+  margin-top:6px;
   color:#B7791F;
-  font-size:9px;
+  font-size:10px;
 }
+
+/* ================= SHARE BUTTON ================= */
 
 .share{
   position:absolute;
-  top:8px;
-  right:8px;
-  width:30px;
-  height:30px;
+  top:9px;
+  right:9px;
+  width:32px;
+  height:32px;
   border:1px solid rgba(255,255,255,.8);
   border-radius:50%;
   background:rgba(255,255,255,.94);
   box-shadow:0 5px 14px rgba(0,0,0,.12);
-  font-size:13px;
+  font-size:14px;
   cursor:pointer;
 }
 
+/* ================= EMPTY STATE ================= */
+
 .empty{
   grid-column:1/-1;
-  padding:45px 15px;
+  padding:55px 16px;
   text-align:center;
   color:var(--muted);
-  font-size:11px;
+  font-size:12px;
   background:#fff;
   border:1px solid var(--line);
   border-radius:16px;
 }
 
+/* ================= TABLET ================= */
+
 @media(min-width:600px){
+
   .wrap{
     padding-left:22px;
     padding-right:22px;
@@ -245,26 +264,58 @@ body{
 
   .grid{
     grid-template-columns:repeat(3,1fr);
-    gap:13px;
+    gap:15px;
   }
 
   .pic{
     height:220px;
   }
+
+  .body{
+    padding:13px;
+  }
+
+  .name{
+    font-size:14px;
+  }
+
+  .price{
+    font-size:16px;
+  }
+
+  .old{
+    font-size:10px;
+  }
+
+  .off{
+    font-size:9px;
+  }
+
+  .rating{
+    font-size:10px;
+  }
+
+  .share{
+    width:32px;
+    height:32px;
+  }
 }
 
+/* ================= DESKTOP ================= */
+
 @media(min-width:850px){
+
   .head{
-    height:68px;
+    height:72px;
   }
 
   .wrap{
-    padding-top:35px;
+    padding-top:38px;
   }
 
   .grid{
     grid-template-columns:repeat(4,1fr);
-    gap:15px;
+    gap:17px;
   }
 
   .pic{
@@ -274,15 +325,128 @@ body{
   .title{
     font-size:38px;
   }
+
+  .body{
+    padding:14px;
+  }
+
+  .name{
+    font-size:14px;
+  }
+
+  .price{
+    font-size:17px;
+  }
+
+  .old{
+    font-size:10px;
+  }
+
+  .off{
+    font-size:9px;
+  }
+
+  .rating{
+    font-size:10px;
+  }
+
+  .share{
+    width:34px;
+    height:34px;
+    top:10px;
+    right:10px;
+  }
 }
 
+/* ================= SMALL MOBILE ================= */
+
 @media(max-width:370px){
-  .pic{
-    height:145px;
+
+  .head{
+    height:64px;
+    padding:0 13px;
+  }
+
+  .back{
+    width:36px;
+    height:36px;
+    font-size:23px;
+  }
+
+  .brand{
+    font-size:16px;
+  }
+
+  .wrap{
+    padding:24px 13px 45px;
+  }
+
+  .crumb{
+    font-size:10px;
+  }
+
+  .titleRow{
+    gap:10px;
+    margin-bottom:17px;
+  }
+
+  .kicker{
+    font-size:9px;
   }
 
   .title{
-    font-size:26px;
+    font-size:28px;
+  }
+
+  .sub{
+    font-size:11px;
+  }
+
+  .count{
+    padding:7px 9px;
+    font-size:9px;
+  }
+
+  /* Still 2 columns on small mobile */
+  .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+
+  .pic{
+    height:170px;
+  }
+
+  .body{
+    padding:10px;
+  }
+
+  .name{
+    font-size:12px;
+  }
+
+  .price{
+    font-size:14px;
+  }
+
+  .old{
+    font-size:9px;
+  }
+
+  .off{
+    font-size:8px;
+  }
+
+  .rating{
+    font-size:9px;
+  }
+
+  .share{
+    width:30px;
+    height:30px;
+    top:8px;
+    right:8px;
+    font-size:13px;
   }
 }
 </style>
