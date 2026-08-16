@@ -208,7 +208,7 @@ a{
 
 .banner{
   position:relative;
-  height:185px;
+  aspect-ratio:3/1;
   overflow:hidden;
   border-radius:20px;
   background:#E9E4DA;
@@ -222,18 +222,6 @@ a{
   object-fit:cover;
 }
 
-.banner .shade{
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(17,24,39,.62) 0%,
-      rgba(17,24,39,.24) 48%,
-      rgba(17,24,39,.03) 100%
-    );
-}
 
 
 /* =========================================================
@@ -701,8 +689,6 @@ a{
       id="banner"
       alt="Balaji Garments shop banner"
     >
-
-    <div class="shade"></div>
 
   </div>
 
