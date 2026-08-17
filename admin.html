@@ -44,7 +44,7 @@
   <!-- PRODUCT TAB -->
   <div id="productTab">
     <h2>2. Product Manager</h2>
-    <p class="hint">Add/edit product. Images saved in /images/products/ folder.</p>
+    <p class="hint">Add/edit product. Images uploaded to /images/products/ folder.</p>
     <input id="editingId" type="hidden">
     <div class="field"><label>Product Name *</label><input id="pName" placeholder="Stylish Blue Shirt"></div>
     <div class="row">
@@ -61,6 +61,7 @@
       <div class="fileBox">
         <input id="pImages" type="file" accept="image/*" multiple>
         <div id="preview" class="preview"></div>
+        <div style="margin-top:6px;font-size:9px;color:var(--muted);">Images will be uploaded to GitHub and saved as path.</div>
       </div>
     </div>
     <div class="field">
@@ -77,7 +78,7 @@
   <!-- CATEGORY TAB -->
   <div id="categoryTab" class="hidden">
     <h2>2B. Category Manager</h2>
-    <p class="hint">Categories published to data.js. Image saved in /images/category/.</p>
+    <p class="hint">Categories published to data.js. Image uploaded to /images/category/.</p>
     <input id="editingCatId" type="hidden">
     <div class="field"><label>Category Name *</label><input id="cName" placeholder="Men's Shirts"></div>
     <div class="row">
@@ -88,6 +89,7 @@
       <div class="fileBox">
         <input id="cImageFile" type="file" accept="image/*">
         <div id="cPreview" class="preview" style="margin-top:6px"></div>
+        <div style="margin-top:6px;font-size:9px;color:var(--muted);">Image will be uploaded to GitHub and saved as path.</div>
       </div>
     </div>
     <div class="actions">
@@ -100,7 +102,7 @@
 <!-- Publish Log -->
 <section class="panel">
   <h2>3. Publish Log</h2>
-  <p class="hint">Validation → Image upload → data.js</p>
+  <p class="hint">Image upload → data.js update</p>
   <div id="status" class="status"><div class="info">Ready.</div></div>
 </section>
 
@@ -109,14 +111,13 @@
 <script src="data.js"></script>
 <script>
 /* ============================================================
-   ADMIN SCRIPT - SHOPPING VERSION (LIVE MANAGER REMOVED)
+   ADMIN SCRIPT - IMAGE PATH UPLOAD SYSTEM
    ============================================================ */
 
 (() => {
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const KEY="balajiAdminV3";
 
-// ✅ Direct use - CATEGORIES aur PRODUCTS global scope mein available hain
 let cats = JSON.parse(JSON.stringify(CATEGORIES || []));
 let prods = JSON.parse(JSON.stringify(PRODUCTS || []));
 
@@ -130,40 +131,69 @@ function loadSettings(){const s=JSON.parse(localStorage.getItem(KEY)||"{}");$("#
 function save(){localStorage.setItem(KEY,JSON.stringify(settings()));log("Settings saved.");}
 loadSettings();
 
-// ===== IMAGE HANDLING =====
-let selectedImages=[];
-let catImageData=null;
-
-$("#pImages").onchange=async e=>{
-  selectedImages=[];
-  $("#preview").innerHTML="";
-  for(const file of [...e.target.files]){
-    const reader=new FileReader();
-    const data=await new Promise((resolve,reject)=>{
-      reader.onload=()=>resolve(reader.result);
-      reader.onerror=reject;
-      reader.readAsDataURL(file);
-    });
-    selectedImages.push({file,data});
-    const img=document.createElement("img");
-    img.src=data;
-    $("#preview").appendChild(img);
-    log(`📷 ${file.name} loaded.`);
-  }
-};
-
-$("#cImageFile").onchange=async e=>{
-  const file=e.target.files[0];
-  if(!file)return;
+// ===== UPLOAD IMAGE TO GITHUB =====
+async function uploadImageToGitHub(file, folder) {
+  const s=settings();
+  if(!s.user||!s.repo||!s.token)throw Error("GitHub settings required.");
+  
+  // Generate unique filename
+  const ext = file.name.split('.').pop();
+  const baseName = file.name.replace(/\.[^.]+$/, '').toLowerCase().replace(/[^a-z0-9]/g, '-');
+  const timestamp = Date.now();
+  const fileName = `${baseName}-${timestamp}.${ext}`;
+  const path = `images/${folder}/${fileName}`;
+  
+  // Read file as base64
   const reader=new FileReader();
-  const data=await new Promise((resolve,reject)=>{
-    reader.onload=()=>resolve(reader.result);
+  const base64=await new Promise((resolve,reject)=>{
+    reader.onload=()=>resolve(reader.result.split(",")[1]);
     reader.onerror=reject;
     reader.readAsDataURL(file);
   });
-  catImageData={file,data};
-  $("#cPreview").innerHTML=`<img src="${data}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;
-  log(`📷 Category image loaded.`);
+  
+  // Upload to GitHub
+  const url=`https://api.github.com/repos/${s.user}/${s.repo}/contents/${path}`;
+  const res=await fetch(url,{
+    method:"PUT",
+    headers:{Authorization:`Bearer ${s.token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
+    body:JSON.stringify({message:`Upload ${path}`,content:base64,branch:"main"})
+  });
+  if(!res.ok)throw Error("Upload failed: "+res.status);
+  
+  // Return the path
+  return path;
+}
+
+// ===== IMAGE HANDLING =====
+let selectedFiles = [];
+let catFile = null;
+
+$("#pImages").onchange=()=>{
+  selectedFiles = [];
+  $("#preview").innerHTML="";
+  for(const file of [...$("#pImages").files]){
+    selectedFiles.push(file);
+    const reader=new FileReader();
+    reader.onload=()=>{
+      const img=document.createElement("img");
+      img.src=reader.result;
+      $("#preview").appendChild(img);
+    };
+    reader.readAsDataURL(file);
+    log(`📷 ${file.name} selected.`);
+  }
+};
+
+$("#cImageFile").onchange=()=>{
+  const file=$("#cImageFile").files[0];
+  if(!file)return;
+  catFile=file;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    $("#cPreview").innerHTML=`<img src="${reader.result}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;
+  };
+  reader.readAsDataURL(file);
+  log(`📷 ${file.name} selected for category.`);
 };
 
 // ===== POPULATE CATEGORY DROPDOWN =====
@@ -183,7 +213,7 @@ $("#addDetail").onclick=()=>addDetailRow();
 function addDetailRow(k="",v=""){const r=document.createElement("div");r.className="detailRow";r.innerHTML=`<input class="dk" placeholder="Name" value="${esc(k)}"><input class="dv" placeholder="Value" value="${esc(v)}"><button class="remove" type="button">×</button>`;r.querySelector(".remove").onclick=()=>r.remove();$("#detailRows").appendChild(r)}
 
 // ===== PRODUCT CRUD =====
-function resetProduct(){["editingId","pName","pPrice","pOld","pOff","pDesc"].forEach(id=>$("#"+id).value="");$("#detailRows").innerHTML="";$("#pImages").value="";$("#preview").innerHTML="";selectedImages=[];}
+function resetProduct(){["editingId","pName","pPrice","pOld","pOff","pDesc"].forEach(id=>$("#"+id).value="");$("#detailRows").innerHTML="";$("#pImages").value="";$("#preview").innerHTML="";selectedFiles=[];}
 $("#clearProduct").onclick=resetProduct;
 
 function readProduct(){
@@ -191,15 +221,13 @@ function readProduct(){
  const name=$("#pName").value.trim();if(!name)throw Error("Product name required.");
  const cat=$("#pCategory").value;if(!cat)throw Error("Select category.");
  
- let images=[];
- if(selectedImages.length){
-   images=selectedImages.map(s=>s.data);
- }
- if(!images.length)throw Error("At least one image required.");
+ // Check if images are selected
+ if(!selectedFiles.length)throw Error("At least one image required.");
  
  const details={};
  $$(".detailRow").forEach(r=>{const k=r.querySelector(".dk").value.trim(),v=r.querySelector(".dv").value.trim();if(k)details[k]=v});
  
+ // Images will be uploaded during publish
  return {
    id,
    name,
@@ -209,29 +237,80 @@ function readProduct(){
    discount: +$("#pOff").value||0,
    rating: 4.5,
    ratingCount: 0,
-   images,
+   images: [], // Will be filled after upload
    description: $("#pDesc").value.trim(),
-   details
+   details,
+   _files: selectedFiles // Temporary store for upload
  };
 }
 
-$("#publishProduct").onclick=async()=>{try{save();const p=readProduct();log(`📦 Product ${p.id}...`);const i=prods.findIndex(x=>x.id===p.id);if(i>=0)prods[i]=p;else prods.push(p);await publishAll(`Product ${p.id} published`);resetProduct();populateCats();}catch(e){log("❌ "+e.message,"err")}};
+$("#publishProduct").onclick=async()=>{try{
+  save();
+  const p=readProduct();
+  log(`📦 Product ${p.id}...`);
+  
+  // Upload images first
+  const uploadedPaths = [];
+  for(const file of p._files){
+    try{
+      const path = await uploadImageToGitHub(file, 'products');
+      uploadedPaths.push(path);
+      log(`✅ Uploaded: ${path}`, 'ok');
+    }catch(e){
+      log(`❌ Failed to upload ${file.name}: ${e.message}`, 'err');
+      throw e;
+    }
+  }
+  
+  // Update product with paths
+  p.images = uploadedPaths;
+  delete p._files;
+  
+  const i=prods.findIndex(x=>x.id===p.id);
+  if(i>=0)prods[i]=p;
+  else prods.push(p);
+  
+  await publishAll(`Product ${p.id} published`);
+  resetProduct();
+  populateCats();
+}catch(e){log("❌ "+e.message,"err")}};
 
 // ===== CATEGORY CRUD =====
-function resetCat(){["editingCatId","cName","cId"].forEach(id=>$("#"+id).value="");$("#cImageFile").value="";$("#cPreview").innerHTML="";catImageData=null}
+function resetCat(){["editingCatId","cName","cId"].forEach(id=>$("#"+id).value="");$("#cImageFile").value="";$("#cPreview").innerHTML="";catFile=null}
 $("#clearCategory").onclick=resetCat;
 
 function readCat(){
  const name=$("#cName").value.trim();if(!name)throw Error("Category name required.");
  const id=($("#cId").value.trim()||name.toLowerCase().replace(/[^a-z0-9]+/g,"-")).toLowerCase();
- let image=catImageData?.data||"";
- const oldId=$("#editingCatId").value;
- if(oldId){const old=cats.find(c=>c.id===oldId);if(old&&!image)image=old.image;}
- if(!image)throw Error("Category image required.");
- return {id,name,image};
+ if(!catFile)throw Error("Category image required.");
+ return {id,name,_file:catFile};
 }
 
-$("#publishCategory").onclick=async()=>{try{save();const c=readCat();const oldId=$("#editingCatId").value;if(oldId&&oldId!==c.id)cats=cats.filter(x=>x.id!==oldId);const i=cats.findIndex(x=>x.id===c.id);if(i>=0)cats[i]=c;else cats.push(c);await publishAll(`Category ${c.id} published`);resetCat();populateCats();}catch(e){log("❌ "+e.message,"err")}};
+$("#publishCategory").onclick=async()=>{try{
+  save();
+  const c=readCat();
+  
+  // Upload category image
+  let imagePath = '';
+  try{
+    imagePath = await uploadImageToGitHub(c._file, 'category');
+    log(`✅ Uploaded: ${imagePath}`, 'ok');
+  }catch(e){
+    log(`❌ Failed to upload category image: ${e.message}`, 'err');
+    throw e;
+  }
+  
+  const catData = {id:c.id, name:c.name, image:imagePath};
+  const oldId=$("#editingCatId").value;
+  if(oldId&&oldId!==c.id)cats=cats.filter(x=>x.id!==oldId);
+  const i=cats.findIndex(x=>x.id===c.id);
+  if(i>=0)cats[i]=catData;
+  else cats.push(catData);
+  
+  await publishAll(`Category ${c.id} published`);
+  resetCat();
+  populateCats();
+}catch(e){log("❌ "+e.message,"err")}};
 
 // ===== GITHUB API =====
 async function api(path,opts={}){const s=settings();if(!s.user||!s.repo||!s.token)throw Error("GitHub settings required.");const r=await fetch(`https://api.github.com${path}`,{...opts,headers:{Accept:"application/vnd.github+json",Authorization:`Bearer ${s.token}`,"X-GitHub-Api-Version":"2022-11-28","Content-Type":"application/json"}});const j=await r.json();if(!r.ok)throw Error(j.message||`API ${r.status}`);return j}
