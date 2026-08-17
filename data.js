@@ -1,4 +1,5 @@
 /* AUTO-GENERATED */
+
 var SHOP={
   "name": "BALAJI GARMENTS PBH",
   "ownerWhatsApp": "919532328020",
@@ -6,6 +7,7 @@ var SHOP={
   "headerLogo": "logo.jpg",
   "websiteUrl": "https://balaji-pbh.github.io/"
 };
+
 var CATEGORIES=[
   {
     "id": "mens-shirt",
@@ -33,6 +35,7 @@ var CATEGORIES=[
     "image": "images/category/1000087235-1786952432267.png"
   }
 ];
+
 var PRODUCTS=[
   {
     "id": "PRD-001",
@@ -151,6 +154,24 @@ var PRODUCTS=[
     "details": {
       "Ejej": "Ieie",
       "Jeej": "Ueue"
+    }
+  },
+  {
+    "id": "PRD-P6YMSI",
+    "category": "3iwu",
+    "name": "Wiwi2i",
+    "price": 64646,
+    "oldPrice": 64643464,
+    "discount": 466,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/1000088969-1786953991356-fgkws.jpg",
+      "images/products/1000088985-1786953997939-0vghw.jpg"
+    ],
+    "description": "Yruei3i3i3iwiiwueueeuruiriwjwwiowjeieieiddjrjrj",
+    "details": {
+      "Jeje": "Eiie"
     }
   }
 ];
