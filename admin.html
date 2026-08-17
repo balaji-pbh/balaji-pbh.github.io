@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#B78A3B"><title>Balaji Garments | Admin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#B78A3B">
+<title>Balaji Garments | Admin</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <style>
-:root{--ink:#111827;--gold:#B78A3B;--gold2:#D4AF62;--cream:#FAF8F4;--paper:#fff;--muted:#6B7280;--line:#E8E3DA;--soft:#F4F0E8;--shadow:0 12px 30px rgba(17,24,39,.07)}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif}.top{background:rgba(250,248,244,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.head{max-width:1120px;margin:auto;min-height:62px;padding:8px 14px;display:flex;align-items:center;gap:10px}.mark{width:36px;height:36px;border-radius:11px;background:var(--gold);display:grid;place-items:center;color:#fff;font-weight:800}.title{font-weight:800;font-size:15px}.sub{font-size:9px;color:var(--muted)}.spacer{flex:1}.back{font-size:11px;color:var(--gold);text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:16px 14px 40px}.grid2{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:850px){.grid2{grid-template-columns:1fr 1fr}}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}.panel h2{font-size:14px;margin:0 0 3px}.hint{font-size:10px;color:var(--muted);margin:0 0 12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{margin:8px 0}.field label{display:block;font-size:10px;font-weight:700;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:11px;outline:0;background:#fff}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(183,138,59,.15)}.btn{border:0;border-radius:10px;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#fff}.secondary{background:#F4F0E8;color:var(--gold)}.danger{background:#FEF2F2;color:#DC2626}.mutedBtn{background:#F1F5F9;color:#334155}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.status{background:#111827;color:#DCE7FF;border-radius:14px;padding:11px;font:10px/1.6 ui-monospace,monospace;min-height:145px;max-height:310px;overflow:auto}.ok{color:#6EE7B7}.warn{color:#FCD34D}.err{color:#FCA5A5}.info{color:#93C5FD}.details{display:grid;gap:7px}.detailRow{display:grid;grid-template-columns:1fr 1fr 30px;gap:6px}.detailRow input{min-width:0}.remove{border:0;border-radius:9px;background:#FEF2F2;color:#DC2626}.fileBox{border:1px dashed #CBD5E1;border-radius:12px;padding:10px;background:#FAF8F4}.preview{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.preview img{width:100%;height:72px;object-fit:cover;border-radius:9px}.catList,.prodList{display:grid;gap:7px;margin-top:10px}.item{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:8px}.item img{width:40px;height:40px;border-radius:8px;object-fit:cover}.itemMain{min-width:0;flex:1}.itemMain b{font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.itemMain span{font-size:9px;color:var(--muted)}.notice{font-size:10px;padding:9px 10px;background:#F0FDFA;border:1px solid #CCFBF1;border-radius:10px;color:#0F766E;margin-top:9px}.hidden{display:none!important}.tabs{display:flex;gap:5px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px;font-size:10px;font-weight:800}.tab.active{background:#F4F0E8;border-color:var(--gold);color:var(--gold)}.publishBox{margin-top:12px}.check{display:flex;gap:7px;align-items:flex-start;font-size:10px;color:var(--muted);margin:9px 0}.check input{margin-top:2px}.crop-area{display:none;margin-top:10px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}.crop-area.show{display:block}.crop-area canvas{max-width:100%;border-radius:8px;border:1px solid var(--line)}.crop-area .crop-actions{display:flex;gap:7px;margin-top:8px}
+:root{--ink:#111827;--gold:#B78A3B;--gold2:#D4AF62;--cream:#FAF8F4;--paper:#fff;--muted:#6B7280;--line:#E8E3DA;--soft:#F4F0E8;--shadow:0 12px 30px rgba(17,24,39,.07)}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif}.top{background:rgba(250,248,244,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.head{max-width:1120px;margin:auto;min-height:62px;padding:8px 14px;display:flex;align-items:center;gap:10px}.mark{width:36px;height:36px;border-radius:11px;background:var(--gold);display:grid;place-items:center;color:#fff;font-weight:800}.title{font-weight:800;font-size:15px}.sub{font-size:9px;color:var(--muted)}.spacer{flex:1}.back{font-size:11px;color:var(--gold);text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:16px 14px 40px}.grid2{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:850px){.grid2{grid-template-columns:1fr 1fr}}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}.panel h2{font-size:14px;margin:0 0 3px}.hint{font-size:10px;color:var(--muted);margin:0 0 12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{margin:8px 0}.field label{display:block;font-size:10px;font-weight:700;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:11px;outline:0;background:#fff}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(183,138,59,.15)}.btn{border:0;border-radius:10px;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#fff}.secondary{background:#F4F0E8;color:var(--gold)}.danger{background:#FEF2F2;color:#DC2626}.mutedBtn{background:#F1F5F9;color:#334155}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.status{background:#111827;color:#DCE7FF;border-radius:14px;padding:11px;font:10px/1.6 ui-monospace,monospace;min-height:145px;max-height:310px;overflow:auto}.ok{color:#6EE7B7}.warn{color:#FCD34D}.err{color:#FCA5A5}.info{color:#93C5FD}.details{display:grid;gap:7px}.detailRow{display:grid;grid-template-columns:1fr 1fr 30px;gap:6px}.detailRow input{min-width:0}.remove{border:0;border-radius:9px;background:#FEF2F2;color:#DC2626;cursor:pointer}.fileBox{border:1px dashed #CBD5E1;border-radius:12px;padding:10px;background:#FAF8F4}.preview{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.preview img{width:100%;height:72px;object-fit:cover;border-radius:9px}.catList,.prodList{display:grid;gap:7px;margin-top:10px}.item{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:8px}.item img{width:40px;height:40px;border-radius:8px;object-fit:cover}.itemMain{min-width:0;flex:1}.itemMain b{font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.itemMain span{font-size:9px;color:var(--muted)}.notice{font-size:10px;padding:9px 10px;background:#F0FDFA;border:1px solid #CCFBF1;border-radius:10px;color:#0F766E;margin-top:9px}.hidden{display:none!important}.tabs{display:flex;gap:5px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px;font-size:10px;font-weight:800;cursor:pointer}.tab.active{background:#F4F0E8;border-color:var(--gold);color:var(--gold)}
 </style>
 </head>
 <body>
@@ -26,32 +28,24 @@
 
 <!-- PRODUCT TAB -->
 <div id="productTab">
-<h2>2. Product Manager</h2><p class="hint">Add/edit product. Images saved in /images/ folder.</p>
+<h2>2. Product Manager</h2><p class="hint">Add/edit product. Images saved in /images/products/ folder.</p>
 <input id="editingId" type="hidden">
-<div class="field"><label>Product Name *</label><input id="pName" placeholder="Premium Shirt"></div>
-<div class="row"><div class="field"><label>Price (₹)</label><input id="pPrice" type="number" placeholder="499"></div><div class="field"><label>Old Price</label><input id="pOld" type="number" placeholder="999"></div></div>
-<div class="row"><div class="field"><label>Discount %</label><input id="pOff" type="number" placeholder="50"></div><div class="field"><label>Category *</label><select id="pCategory"></select></div></div>
+<div class="field"><label>Product Name *</label><input id="pName" placeholder="Stylish Blue Shirt"></div>
+<div class="row"><div class="field"><label>Price (₹)</label><input id="pPrice" type="number" placeholder="249"></div><div class="field"><label>Old Price</label><input id="pOld" type="number" placeholder="999"></div></div>
+<div class="row"><div class="field"><label>Discount %</label><input id="pOff" type="number" placeholder="75"></div><div class="field"><label>Category *</label><select id="pCategory"></select></div></div>
 <div class="field"><label>Description</label><textarea id="pDesc" placeholder="Write product details..."></textarea></div>
 <div class="field"><label>Product Images</label><div class="fileBox"><input id="pImages" type="file" accept="image/*" multiple><div id="preview" class="preview"></div></div></div>
 <div class="field"><label>Details</label><div id="detailRows" class="details"></div><button class="btn secondary" id="addDetail" type="button" style="margin-top:7px">+ Add Detail</button></div>
-<div class="field"><label>SEO Title</label><input id="pSeoTitle" placeholder="Product Name | Balaji Garments"></div>
-<div class="field"><label>SEO Description</label><textarea id="pSeoDesc" placeholder="Short description"></textarea></div>
-<div class="field"><label>SEO Keywords</label><input id="pSeoKeywords" placeholder="shirt, cotton"></div>
-<div class="field"><label>SEO Slug</label><input id="pSlug" placeholder="premium-shirt"></div>
-<label class="check"><input id="replaceImages" type="checkbox"> Replace old images</label>
 <div class="actions"><button class="btn primary" id="publishProduct">Publish Product</button><button class="btn mutedBtn" id="clearProduct">Clear</button></div>
 </div>
 
 <!-- CATEGORY TAB -->
 <div id="categoryTab" class="hidden">
-<h2>2B. Category Manager</h2><p class="hint">Categories published to data.js. Image saved in /images/.</p>
+<h2>2B. Category Manager</h2><p class="hint">Categories published to data.js. Image saved in /images/category/.</p>
 <input id="editingCatId" type="hidden">
 <div class="field"><label>Category Name *</label><input id="cName" placeholder="Men's Shirts"></div>
-<div class="row"><div class="field"><label>Category ID</label><input id="cId" placeholder="mens-shirts"></div><div class="field"><label>SEO Slug</label><input id="cSlug" placeholder="mens-shirts"></div></div>
+<div class="row"><div class="field"><label>Category ID</label><input id="cId" placeholder="mens-shirts"></div></div>
 <div class="field"><label>Category Image</label><div class="fileBox"><input id="cImageFile" type="file" accept="image/*"><div id="cPreview" class="preview" style="margin-top:6px"></div></div></div>
-<div class="field"><label>SEO Title</label><input id="cSeoTitle" placeholder="Men's Shirts | Balaji Garments"></div>
-<div class="field"><label>SEO Description</label><textarea id="cSeoDesc"></textarea></div>
-<div class="field"><label>SEO Keywords</label><input id="cSeoKeywords" placeholder="men shirts, cotton"></div>
 <div class="actions"><button class="btn primary" id="publishCategory">Publish Category</button><button class="btn mutedBtn" id="clearCategory">Clear</button></div>
 </div>
 </section>
@@ -70,21 +64,20 @@
 <script src="data.js"></script>
 <script>
 /* ============================================================
-   ADMIN SCRIPT - COMPLETE FIXED VERSION
+   ADMIN SCRIPT - SHOPPING VERSION
    ============================================================ */
 
 (() => {
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const KEY="balajiAdminV3";
-let cats=JSON.parse(JSON.stringify(window.CATEGORIES||[])), prods=JSON.parse(JSON.stringify(window.PRODUCTS||[]));
-let selectedImages=[];
+let cats=JSON.parse(JSON.stringify(window.CATEGORIES||[]));
+let prods=JSON.parse(JSON.stringify(window.PRODUCTS||[]));
 
 // ===== HELPERS =====
 const log=(m,t="info")=>{const d=document.createElement("div");d.className=t;d.textContent=`[${new Date().toLocaleTimeString()}] ${m}`;$("#status").appendChild(d);$("#status").scrollTop=$("#status").scrollHeight;};
 const settings=()=>({user:$("#ghUser").value.trim(),repo:$("#ghRepo").value.trim(),token:$("#ghToken").value.trim(),site:$("#siteUrl").value.trim().replace(/\/?$/,"/")});
 const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]||m));
 const money=n=>"₹"+Number(n||0).toLocaleString("en-IN");
-const slugify=s=>String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
 
 function loadSettings(){const s=JSON.parse(localStorage.getItem(KEY)||"{}");$("#ghUser").value=s.user||"";$("#ghRepo").value=s.repo||"";$("#ghToken").value=s.token||"";$("#siteUrl").value=s.site||SHOP.websiteUrl||""}
 function save(){localStorage.setItem(KEY,JSON.stringify(settings()));log("Settings saved.");}
@@ -95,7 +88,6 @@ async function uploadImageToGitHub(file, path) {
   const s=settings();
   if(!s.user||!s.repo||!s.token)throw Error("GitHub settings required.");
   
-  // Read file as base64
   const reader=new FileReader();
   const base64=await new Promise((resolve,reject)=>{
     reader.onload=()=>resolve(reader.result.split(",")[1]);
@@ -103,7 +95,6 @@ async function uploadImageToGitHub(file, path) {
     reader.readAsDataURL(file);
   });
   
-  // Upload to GitHub
   const url=`https://api.github.com/repos/${s.user}/${s.repo}/contents/${path}`;
   const res=await fetch(url,{
     method:"PUT",
@@ -114,84 +105,50 @@ async function uploadImageToGitHub(file, path) {
   return path;
 }
 
-// ===== COMPRESS IMAGE TO 4:3 RATIO FOR CARDS =====
-function compressAndCrop(file, ratio=4/3) {
-  return new Promise((resolve,reject)=>{
-    const reader=new FileReader();
-    reader.onload=()=>{
-      const img=new Image();
-      img.onload=()=>{
-        const canvas=document.createElement("canvas");
-        const ctx=canvas.getContext("2d");
-        
-        // Calculate crop to 4:3 ratio
-        let sw=img.width, sh=img.height;
-        let targetRatio=ratio;
-        let cropX=0, cropY=0, cropW=sw, cropH=sh;
-        
-        if(sw/sh > targetRatio){
-          cropW=sh*targetRatio;
-          cropX=(sw-cropW)/2;
-        } else {
-          cropH=sw/targetRatio;
-          cropY=(sh-cropH)/2;
-        }
-        
-        // Target size (max 800px width)
-        const maxW=800;
-        const scale=Math.min(1,maxW/cropW);
-        const outW=Math.round(cropW*scale);
-        const outH=Math.round(cropH*scale);
-        
-        canvas.width=outW;
-        canvas.height=outH;
-        ctx.imageSmoothingQuality="high";
-        ctx.drawImage(img,cropX,cropY,cropW,cropH,0,0,outW,outH);
-        
-        resolve(canvas.toDataURL("image/jpeg",0.85));
-      };
-      img.onerror=reject;
-      img.src=reader.result;
-    };
-    reader.onerror=reject;
-    reader.readAsDataURL(file);
-  });
-}
+// ===== IMAGE HANDLING =====
+let selectedImages=[];
+let catImageData=null;
 
-// ===== PRODUCT IMAGE UPLOAD =====
 $("#pImages").onchange=async e=>{
   selectedImages=[];
   $("#preview").innerHTML="";
   for(const file of [...e.target.files]){
-    try{
-      const compressed=await compressAndCrop(file);
-      selectedImages.push({file,data:compressed});
-      const img=document.createElement("img");
-      img.src=compressed;
-      $("#preview").appendChild(img);
-      log(`✅ ${file.name} compressed.`);
-    }catch(err){log("❌ "+err.message,"err")}
+    const reader=new FileReader();
+    const data=await new Promise((resolve,reject)=>{
+      reader.onload=()=>resolve(reader.result);
+      reader.onerror=reject;
+      reader.readAsDataURL(file);
+    });
+    selectedImages.push({file,data});
+    const img=document.createElement("img");
+    img.src=data;
+    $("#preview").appendChild(img);
+    log(`📷 ${file.name} loaded.`);
   }
 };
 
-// ===== CATEGORY IMAGE UPLOAD =====
-let catImageData=null;
 $("#cImageFile").onchange=async e=>{
   const file=e.target.files[0];
   if(!file)return;
-  try{
-    const compressed=await compressAndCrop(file);
-    catImageData={file,data:compressed};
-    $("#cPreview").innerHTML=`<img src="${compressed}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;
-    log(`✅ Category image compressed.`);
-  }catch(err){log("❌ "+err.message,"err")}
+  const reader=new FileReader();
+  const data=await new Promise((resolve,reject)=>{
+    reader.onload=()=>resolve(reader.result);
+    reader.onerror=reject;
+    reader.readAsDataURL(file);
+  });
+  catImageData={file,data};
+  $("#cPreview").innerHTML=`<img src="${data}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;
+  log(`📷 Category image loaded.`);
 };
 
 // ===== RENDER LISTS =====
-function populateCats(){ $("#pCategory").innerHTML=cats.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("")||`<option value="">No categories</option>`;}
+function populateCats(){ 
+  $("#pCategory").innerHTML=cats.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("")||`<option value="">No categories</option>`;
+}
+
 function renderLists(){
- $("#catList").innerHTML=cats.map(c=>`<div class="item"><img src="${c.image||""}"><div class="itemMain"><b>${esc(c.name)}</b><span>${c.id}</span></div><button class="btn secondary" data-edit-cat="${c.id}">Edit</button><button class="btn danger" data-del-cat="${c.id}">Delete</button></div>`).join("")||"<div class='hint'>No categories.</div>";
- $("#prodList").innerHTML=prods.map(p=>`<div class="item"><img src="${p.images?.[0]||""}"><div class="itemMain"><b>${esc(p.name)}</b><span>${p.id} • ${money(p.price)}</span></div><button class="btn secondary" data-edit-prod="${p.id}">Edit</button><button class="btn danger" data-del-prod="${p.id}">Delete</button></div>`).join("")||"<div class='hint'>No products.</div>";
+ $("#catList").innerHTML=cats.map(c=>`<div class="item"><img src="${c.image||''}"><div class="itemMain"><b>${esc(c.name)}</b><span>${c.id}</span></div><button class="btn secondary" data-edit-cat="${c.id}">Edit</button><button class="btn danger" data-del-cat="${c.id}">Delete</button></div>`).join("")||"<div class='hint'>No categories.</div>";
+ $("#prodList").innerHTML=prods.map(p=>`<div class="item"><img src="${p.images?.[0]||''}"><div class="itemMain"><b>${esc(p.name)}</b><span>${p.id} • ${money(p.price)}</span></div><button class="btn secondary" data-edit-prod="${p.id}">Edit</button><button class="btn danger" data-del-prod="${p.id}">Delete</button></div>`).join("")||"<div class='hint'>No products.</div>";
  $$("[data-edit-cat]").forEach(b=>b.onclick=()=>editCat(b.dataset.editCat));
  $$("[data-del-cat]").forEach(b=>b.onclick=()=>deleteCat(b.dataset.delCat));
  $$("[data-edit-prod]").forEach(b=>b.onclick=()=>editProd(b.dataset.editProd));
@@ -211,47 +168,61 @@ $("#addDetail").onclick=()=>addDetailRow();
 function addDetailRow(k="",v=""){const r=document.createElement("div");r.className="detailRow";r.innerHTML=`<input class="dk" placeholder="Name" value="${esc(k)}"><input class="dv" placeholder="Value" value="${esc(v)}"><button class="remove" type="button">×</button>`;r.querySelector(".remove").onclick=()=>r.remove();$("#detailRows").appendChild(r)}
 
 // ===== PRODUCT CRUD =====
-function resetProduct(){["editingId","pName","pPrice","pOld","pOff","pDesc","pSeoTitle","pSeoDesc","pSeoKeywords","pSlug"].forEach(id=>$("#"+id).value="");$("#detailRows").innerHTML="";$("#pImages").value="";$("#preview").innerHTML="";selectedImages=[];$("#replaceImages").checked=false}
+function resetProduct(){["editingId","pName","pPrice","pOld","pOff","pDesc"].forEach(id=>$("#"+id).value="");$("#detailRows").innerHTML="";$("#pImages").value="";$("#preview").innerHTML="";selectedImages=[];}
 $("#clearProduct").onclick=resetProduct;
 
 function readProduct(){
- const id=$("#editingId").value||"PRD-"+Math.random().toString(36).slice(2,8).toUpperCase();
+ const id=$("#editingId").value||"PRD-"+String(Math.random().toString(36).slice(2,8).toUpperCase());
  const name=$("#pName").value.trim();if(!name)throw Error("Product name required.");
  const cat=$("#pCategory").value;if(!cat)throw Error("Select category.");
- const old=prods.find(p=>p.id===id);
- let images=old?.images||[];
- if(selectedImages.length && ($("#replaceImages").checked||!old)){
+ 
+ let images=[];
+ if(selectedImages.length){
    images=selectedImages.map(s=>s.data);
  }
  if(!images.length)throw Error("At least one image required.");
- const details={};$$(".detailRow").forEach(r=>{const k=r.querySelector(".dk").value.trim(),v=r.querySelector(".dv").value.trim();if(k)details[k]=v});
- const slug=($("#pSlug").value.trim()||slugify(name+"-"+id)).toLowerCase();
- return {id,name,category:cat,price:+$("#pPrice").value||0,oldPrice:+$("#pOld").value||0,discount:+$("#pOff").value||0,rating:old?.rating||4.5,ratingCount:old?.ratingCount||0,images,description:$("#pDesc").value.trim(),details,seo:{title:$("#pSeoTitle").value.trim()||`${name} | ${SHOP.name}`,description:$("#pSeoDesc").value.trim()||$("#pDesc").value.trim().slice(0,160),keywords:$("#pSeoKeywords").value.trim(),slug}};
+ 
+ const details={};
+ $$(".detailRow").forEach(r=>{const k=r.querySelector(".dk").value.trim(),v=r.querySelector(".dv").value.trim();if(k)details[k]=v});
+ 
+ return {
+   id,
+   name,
+   category: cat,
+   price: +$("#pPrice").value||0,
+   oldPrice: +$("#pOld").value||0,
+   discount: +$("#pOff").value||0,
+   rating: 4.5,
+   ratingCount: 0,
+   images,
+   description: $("#pDesc").value.trim(),
+   details
+ };
 }
 
-$("#publishProduct").onclick=async()=>{try{save();const p=readProduct();log(`📦 Product ${p.id}...`);const i=prods.findIndex(x=>x.id===p.id);if(i>=0)prods[i]=p;else prods.unshift(p);await publishAll(`Product ${p.id} published`);resetProduct();renderLists();}catch(e){log("❌ "+e.message,"err")}};
+$("#publishProduct").onclick=async()=>{try{save();const p=readProduct();log(`📦 Product ${p.id}...`);const i=prods.findIndex(x=>x.id===p.id);if(i>=0)prods[i]=p;else prods.push(p);await publishAll(`Product ${p.id} published`);resetProduct();renderLists();}catch(e){log("❌ "+e.message,"err")}};
 
-function editProd(id){const p=prods.find(x=>x.id===id);if(!p)return;$("#editingId").value=p.id;$("#pName").value=p.name;$("#pPrice").value=p.price;$("#pOld").value=p.oldPrice||"";$("#pOff").value=p.discount||"";$("#pCategory").value=p.category;$("#pDesc").value=p.description||"";$("#pSeoTitle").value=p.seo?.title||"";$("#pSeoDesc").value=p.seo?.description||"";$("#pSeoKeywords").value=p.seo?.keywords||"";$("#pSlug").value=p.seo?.slug||"";$("#detailRows").innerHTML="";Object.entries(p.details||{}).forEach(([k,v])=>addDetailRow(k,v));$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="product"));$("#productTab").classList.remove("hidden");$("#categoryTab").classList.add("hidden");scrollTo(0,0);log(`✏️ Editing ${id}`,"info")}
+function editProd(id){const p=prods.find(x=>x.id===id);if(!p)return;$("#editingId").value=p.id;$("#pName").value=p.name;$("#pPrice").value=p.price;$("#pOld").value=p.oldPrice||"";$("#pOff").value=p.discount||"";$("#pCategory").value=p.category;$("#pDesc").value=p.description||"";$("#detailRows").innerHTML="";Object.entries(p.details||{}).forEach(([k,v])=>addDetailRow(k,v));$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="product"));$("#productTab").classList.remove("hidden");$("#categoryTab").classList.add("hidden");scrollTo(0,0);log(`✏️ Editing ${id}`,"info")}
 
 async function deleteProd(id){if(!confirm("Delete?"))return;prods=prods.filter(p=>p.id!==id);try{await publishAll(`Product ${id} deleted`);renderLists()}catch(e){log(e.message,"err")}}
 
 // ===== CATEGORY CRUD =====
-function resetCat(){["editingCatId","cName","cId","cSlug","cSeoTitle","cSeoDesc","cSeoKeywords"].forEach(id=>$("#"+id).value="");$("#cImageFile").value="";$("#cPreview").innerHTML="";catImageData=null}
+function resetCat(){["editingCatId","cName","cId"].forEach(id=>$("#"+id).value="");$("#cImageFile").value="";$("#cPreview").innerHTML="";catImageData=null}
 $("#clearCategory").onclick=resetCat;
 
 function readCat(){
  const name=$("#cName").value.trim();if(!name)throw Error("Category name required.");
- const id=($("#cId").value.trim()||slugify(name)).toLowerCase();
+ const id=($("#cId").value.trim()||name.toLowerCase().replace(/[^a-z0-9]+/g,"-")).toLowerCase();
  let image=catImageData?.data||"";
  const oldId=$("#editingCatId").value;
  if(oldId){const old=cats.find(c=>c.id===oldId);if(old&&!image)image=old.image;}
  if(!image)throw Error("Category image required.");
- return {id,name,image,seo:{title:$("#cSeoTitle").value.trim()||`${name} | ${SHOP.name}`,description:$("#cSeoDesc").value.trim(),keywords:$("#cSeoKeywords").value.trim(),slug:($("#cSlug").value.trim()||slugify(name)).toLowerCase()}};
+ return {id,name,image};
 }
 
 $("#publishCategory").onclick=async()=>{try{save();const c=readCat();const oldId=$("#editingCatId").value;if(oldId&&oldId!==c.id)cats=cats.filter(x=>x.id!==oldId);const i=cats.findIndex(x=>x.id===c.id);if(i>=0)cats[i]=c;else cats.push(c);await publishAll(`Category ${c.id} published`);resetCat();renderLists()}catch(e){log("❌ "+e.message,"err")}};
 
-function editCat(id){const c=cats.find(x=>x.id===id);if(!c)return;$("#editingCatId").value=c.id;$("#cName").value=c.name;$("#cId").value=c.id;$("#cSlug").value=c.seo?.slug||c.id;$("#cSeoTitle").value=c.seo?.title||"";$("#cSeoDesc").value=c.seo?.description||"";$("#cSeoKeywords").value=c.seo?.keywords||"";if(c.image){$("#cPreview").innerHTML=`<img src="${c.image}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;}$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="category"));$("#productTab").classList.add("hidden");$("#categoryTab").classList.remove("hidden");scrollTo(0,0);log(`✏️ Editing category ${id}`,"info")}
+function editCat(id){const c=cats.find(x=>x.id===id);if(!c)return;$("#editingCatId").value=c.id;$("#cName").value=c.name;$("#cId").value=c.id;if(c.image){$("#cPreview").innerHTML=`<img src="${c.image}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;}$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="category"));$("#productTab").classList.add("hidden");$("#categoryTab").classList.remove("hidden");scrollTo(0,0);log(`✏️ Editing category ${id}`,"info")}
 
 async function deleteCat(id){const has=prods.some(p=>p.category===id);if(has)return alert("Category has products. Delete them first.");if(!confirm("Delete?"))return;cats=cats.filter(c=>c.id!==id);try{await publishAll(`Category ${id} deleted`);renderLists()}catch(e){log(e.message,"err")}}
 
@@ -264,164 +235,16 @@ function parseData(text){const fn=new Function(text+";return {categories:CATEGOR
 
 // ===== DATA GENERATION =====
 function dataText(){return `/* AUTO-GENERATED */\nconst SHOP=${JSON.stringify({...SHOP,websiteUrl:settings().site||SHOP.websiteUrl},null,2)};\nconst CATEGORIES=${JSON.stringify(cats,null,2)};\nconst PRODUCTS=${JSON.stringify(prods,null,2)};\n`}
-function escXml(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
 
 // ===== PUBLISH ALL =====
 async function publishAll(reason){
  if(!settings().site||settings().site.includes("YOUR-"))throw Error("Set Website URL first.");
  log("🚀 Publishing...");
  
- // data.js
  let sha=null;try{sha=(await getFile("data.js")).sha}catch(e){}
  await putFile("data.js",dataText(),reason,sha);
  log("✅ data.js uploaded","ok");
- 
- // Products - USE product-page.html STYLE
- for(const p of prods){
-   const page = generateProductPage(p);
-   await publishText("products/"+p.seo.slug+".html",page,reason);
-   log(`✅ products/${p.seo.slug}.html`,"ok");
- }
- 
- // Categories - USE product-list.html STYLE
- for(const c of cats){
-   const page = generateCategoryPage(c);
-   await publishText("categories/"+c.seo.slug+".html",page,reason);
-   log(`✅ categories/${c.seo.slug}.html`,"ok");
- }
- 
- // Sitemap
- const site=settings().site;
- const urls=[site,site+"index.html",...cats.map(c=>site+"categories/"+c.seo.slug+".html"),...prods.map(p=>site+"products/"+p.seo.slug+".html")];
- await publishText("sitemap.xml",`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u=>`<url><loc>${escXml(u)}</loc><changefreq>weekly</changefreq></url>`).join("")}</urlset>`,reason);
- await publishText("robots.txt",`User-agent: *\nAllow: /\nSitemap: ${site}sitemap.xml\n`,reason);
  log("🎉 PUBLISH COMPLETE!","ok");
-}
-
-// ===== GENERATE PRODUCT PAGE (Uses product-page.html style) =====
-function generateProductPage(p){
- const url=settings().site+"products/"+p.seo.slug+".html";
- return `<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111827">
-<title>${esc(p.seo.title)}</title><meta name="description" content="${esc(p.seo.description||'')}"><link rel="canonical" href="${esc(url)}">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#111827;--gold:#B78A3B;--gold2:#D4AF62;--cream:#FAF8F4;--paper:#fff;--muted:#6B7280;--line:#E8E3DA;--soft:#F4F0E8;--green:#159447;--shadow:0 12px 35px rgba(17,24,39,.065)}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html{scroll-behavior:smooth}body{margin:0;padding-bottom:82px;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif}
-.top{position:sticky;top:0;z-index:50;background:rgba(250,248,244,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.head{height:68px;max-width:1120px;margin:auto;padding:0 16px;display:flex;align-items:center;gap:12px}
-.back{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);text-decoration:none;font-size:25px}
-.brand{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:17px;font-weight:700}
-.wrap{max-width:1120px;margin:auto;padding:18px 16px 35px}
-.gallery{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
-.mainImg{width:100%;height:min(65vh,520px);display:block;object-fit:contain;background:#F1EEE8}
-.dots{position:absolute;left:50%;bottom:11px;transform:translateX(-50%);display:flex;gap:6px}
-.dot{width:7px;height:7px;border-radius:50%;background:#C9C4BB}
-.dot.active{width:17px;border-radius:5px;background:var(--gold)}
-.thumbs{display:flex;gap:8px;overflow:auto;padding:10px 0;scrollbar-width:none}
-.thumbs::-webkit-scrollbar{display:none}
-.thumb{width:58px;height:58px;flex:none;object-fit:cover;border-radius:9px;border:2px solid transparent;background:#eee}
-.thumb.active{border-color:var(--gold)}
-.info{padding-top:12px}
-.name{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:32px;line-height:1.12;font-weight:600;letter-spacing:-.5px}
-.id{margin-top:7px;color:var(--muted);font-size:10px}
-.priceLine{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-top:13px}
-.price{font-size:23px;font-weight:700}
-.old{color:#9CA3AF;font-size:11px;text-decoration:line-through}
-.off{color:var(--green);font-size:10px;font-weight:700}
-.descTitle{margin:23px 0 8px;font-size:15px;font-weight:600}
-.desc{color:#4B5563;font-size:12px;line-height:1.7;white-space:pre-wrap}
-.details{margin-top:17px;border-top:1px solid var(--line)}
-.detail{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid var(--line);font-size:11px}
-.detail span:first-child{color:var(--muted)}
-.ratingBox{margin-top:20px;padding:17px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 16px rgba(17,24,39,.035)}
-.ratingTitle{font-size:12px;font-weight:600}
-.stars{display:flex;gap:4px;margin-top:8px}
-.star{padding:0;border:0;background:none;color:#D6D1C8;font-size:27px;cursor:pointer}
-.star.on{color:#C48A2A}
-.thanks{min-height:15px;margin-top:5px;color:var(--green);font-size:10px}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:9px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
-.barIn{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr 1.45fr;gap:9px}
-.btn{height:48px;border-radius:13px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700}
-.btn.primary{border-color:var(--ink);background:var(--ink);color:#fff}
-.lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,.96)}
-.lightbox.show{display:flex}
-.lightImg{max-width:96vw;max-height:88vh;object-fit:contain}
-.close{position:absolute;right:16px;top:10px;border:0;background:none;color:#fff;font-size:34px}
-.prev,.next{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:27px}
-.prev{left:12px}.next{right:12px}
-@media(min-width:800px){body{padding-bottom:35px}.wrap{padding-top:30px;display:grid;grid-template-columns:1.08fr .92fr;gap:30px;align-items:start}.gallery{position:sticky;top:82px}.info{padding-top:5px}.name{font-size:36px}.price{font-size:25px}.bar{position:static;padding:0;margin-top:27px;background:none;border:0;backdrop-filter:none}.barIn{max-width:none}}
-</style></head>
-<body>
-<header class="top"><div class="head"><a class="back" href="../index.html">‹</a><div class="brand">${esc(SHOP.name)}</div></div></header>
-<main class="wrap">
-<section><div class="gallery"><img id="mainImg" class="mainImg" src="${esc(p.images?.[0]||'')}" alt="${esc(p.name)}"><div id="dots" class="dots"></div></div><div id="thumbs" class="thumbs"></div></section>
-<section class="info"><h1 class="name">${esc(p.name)}</h1><div id="pid" class="id">Product ID: ${esc(p.id)}</div><div class="priceLine"><span id="price" class="price">${money(p.price)}</span><span id="old" class="old">${p.oldPrice?money(p.oldPrice):''}</span><span id="off" class="off">${p.discount?p.discount+'% OFF':''}</span></div><h2 class="descTitle">Description</h2><div id="description" class="desc">${esc(p.description||'No description added.')}</div><div id="details" class="details">${Object.entries(p.details||{}).map(([k,v])=>`<div class="detail"><span>${esc(k)}</span><b>${esc(String(v))}</b></div>`).join('')}</div><div class="ratingBox"><div class="ratingTitle">Rate this product</div><div id="stars" class="stars">${[1,2,3,4,5].map(n=>`<button class="star" data-rate="${n}">★</button>`).join('')}</div><div id="thanks" class="thanks"></div></div></section></main>
-<div class="bar"><div class="barIn"><button id="shareBtn" class="btn">↗ Share</button><button id="waBtn" class="btn primary">💬 Message Owner</button></div></div>
-<div id="lightbox" class="lightbox"><button id="closeLb" class="close">×</button><button id="prevLb" class="prev">‹</button><img id="lightImg" class="lightImg"><button id="nextLb" class="next">›</button></div>
-<script>
-const IMAGES=${JSON.stringify(p.images||[])};let i=0;const main=document.getElementById('mainImg'),light=document.getElementById('lightImg'),lb=document.getElementById('lightbox');
-function render(){main.src=IMAGES[i]||'';light.src=IMAGES[i]||'';document.querySelectorAll('.thumb').forEach((x,n)=>x.classList.toggle('active',n===i));document.querySelectorAll('.dot').forEach((x,n)=>x.classList.toggle('active',n===i))}
-document.querySelectorAll('.thumb').forEach(x=>x.onclick=()=>{i=+x.dataset.i;render()});
-main.onclick=()=>lb.classList.add('show');document.getElementById('closeLb').onclick=()=>lb.classList.remove('show');
-document.getElementById('prevLb').onclick=()=>{i=(i-1+IMAGES.length)%IMAGES.length;render()};
-document.getElementById('nextLb').onclick=()=>{i=(i+1)%IMAGES.length;render()};
-document.querySelectorAll('.star').forEach(s=>s.onclick=()=>{document.querySelectorAll('.star').forEach(x=>x.classList.toggle('on',+x.dataset.rate<=+s.dataset.rate));document.getElementById('thanks').textContent='Thanks!'});
-document.getElementById('shareBtn').onclick=()=>{const url='${esc(url)}';const text='${esc(p.name)} — ${money(p.price)}\\nProduct ID: ${esc(p.id)}\\n'+url;if(navigator.share)navigator.share({title:'${esc(p.name)}',text,url});else navigator.clipboard?.writeText(text).then(()=>alert('Copied!'))};
-document.getElementById('waBtn').onclick=()=>{const num=('${SHOP.ownerWhatsApp||''}').replace(/\\D/g,'');if(!num)return alert('WhatsApp number not configured');const msg='Hello, I am interested in this product.\\n\\nProduct: ${esc(p.name)}\\nProduct ID: ${esc(p.id)}\\nPrice: ${money(p.price)}\\nLink: ${esc(url)}';location.href='https://wa.me/'+num+'?text='+encodeURIComponent(msg)};
-<\/script>
-</body></html>`;
-}
-
-// ===== GENERATE CATEGORY PAGE (Uses product-list.html style) =====
-function generateCategoryPage(c){
- const ps=prods.filter(p=>p.category===c.id);
- return `<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111827"><meta name="description" content="${esc(c.seo.description||'')}"><title>${esc(c.seo.title)}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#111827;--gold:#B78A3B;--gold2:#D4AF62;--cream:#FAF8F4;--paper:#fff;--muted:#6B7280;--line:#E8E3DA;--soft:#F4F0E8;--green:#159447;--shadow:0 10px 30px rgba(17,24,39,.055)}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif}
-.top{position:sticky;top:0;z-index:50;background:rgba(250,248,244,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.head{max-width:1120px;height:68px;margin:auto;padding:0 16px;display:flex;align-items:center;gap:12px}
-.back{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);text-decoration:none;font-size:25px}
-.brand{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:17px;font-weight:700}
-.wrap{max-width:1120px;margin:auto;padding:28px 16px 50px}
-.crumb{color:var(--muted);font-size:11px;margin-bottom:10px}
-.titleRow{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;margin-bottom:20px}
-.titleBox{min-width:0}
-.kicker{display:block;color:var(--gold);font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:5px}
-.title{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:32px;line-height:1.1;font-weight:600}
-.sub{margin:8px 0 0;max-width:620px;color:var(--muted);font-size:12px;line-height:1.55}
-.count{flex:none;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--muted);font-size:10px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
-.card{position:relative;overflow:hidden;display:block;background:#fff;border:1px solid var(--line);border-radius:17px;color:inherit;text-decoration:none;box-shadow:var(--shadow);transition:transform .2s ease}
-.card:active{transform:scale(.985)}
-.pic{width:100%;height:190px;display:block;object-fit:cover;background:#EEE9DF}
-.body{padding:12px}
-.name{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.price{margin-top:7px;font-size:15px;font-weight:700}
-.old{text-decoration:line-through;color:#9CA3AF;font-size:10px;font-weight:500;margin-left:5px}
-.off{color:#159447;font-size:9px;font-weight:700;margin-left:5px}
-.rating{margin-top:6px;color:#B7791F;font-size:10px}
-.share{position:absolute;top:9px;right:9px;width:32px;height:32px;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(255,255,255,.94);box-shadow:0 5px 14px rgba(0,0,0,.12);font-size:14px;cursor:pointer}
-.empty{grid-column:1/-1;padding:55px 16px;text-align:center;color:var(--muted);font-size:12px;background:#fff;border:1px solid var(--line);border-radius:16px}
-@media(min-width:600px){.grid{grid-template-columns:repeat(3,1fr);gap:15px}.pic{height:220px}}
-@media(min-width:850px){.head{height:72px}.grid{grid-template-columns:repeat(4,1fr);gap:17px}.pic{height:245px}.title{font-size:38px}}
-</style></head>
-<body>
-<header class="top"><div class="head"><a class="back" href="../index.html">‹</a><div class="brand">${esc(SHOP.name)}</div></div></header>
-<main class="wrap"><div class="crumb">Home / Category</div><div class="titleRow"><div class="titleBox"><span class="kicker">Collection</span><h1 class="title">${esc(c.name)}</h1><p class="sub">${esc(c.seo.description||'')}</p></div><div class="count">${ps.length} items</div></div>
-<div class="grid">${ps.length?ps.map(p=>`
-<a class="card" href="../products/${esc(p.seo.slug)}.html">
-<button class="share" data-share="${esc(p.id)}" type="button">↗</button>
-<img class="pic" loading="lazy" src="${esc(p.images?.[0]||'')}" alt="${esc(p.name)}">
-<div class="body"><div class="name">${esc(p.name)}</div><div class="price">${money(p.price)}${p.oldPrice?` <span class="old">${money(p.oldPrice)}</span>`:''}${p.discount?` <span class="off">${p.discount}% OFF</span>`:''}</div><div class="rating">★ ${Number(p.rating||0).toFixed(1)} (${p.ratingCount||0})</div></div>
-</a>`).join(''):'<div class="empty">No products in this category yet.</div>'}</div>
-<script>document.querySelectorAll('.share').forEach(b=>b.onclick=function(e){e.preventDefault();e.stopPropagation();const pid=this.dataset.share;const url='${settings().site}products/'+pid;const text='Product ID: '+pid;if(navigator.share)navigator.share({title:'Product',text,url});else navigator.clipboard?.writeText(url+'\n'+text).then(()=>alert('Copied!'))});<\/script>
-</body></html>`;
 }
 
 // ===== INIT =====
