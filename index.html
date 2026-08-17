@@ -978,7 +978,9 @@ a{
      EXISTING DATA & SCRIPT
      ======================================================= -->
 
-<script src="data.js"></script>
+<script>
+document.write('<script src="data.js?v=' + Date.now() + '"><\/script>');
+</script>
 <script src="script.js"></script>
 
 </body>
