@@ -5,337 +5,3142 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#B78A3B">
 <title>Balaji Garments | Admin</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
 <style>
-:root{--ink:#111827;--gold:#B78A3B;--gold2:#D4AF62;--cream:#FAF8F4;--paper:#fff;--muted:#6B7280;--line:#E8E3DA;--soft:#F4F0E8;--shadow:0 12px 30px rgba(17,24,39,.07)}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif}.top{background:rgba(250,248,244,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.head{max-width:1120px;margin:auto;min-height:62px;padding:8px 14px;display:flex;align-items:center;gap:10px}.mark{width:36px;height:36px;border-radius:11px;background:var(--gold);display:grid;place-items:center;color:#fff;font-weight:800}.title{font-weight:800;font-size:15px}.sub{font-size:9px;color:var(--muted)}.spacer{flex:1}.back{font-size:11px;color:var(--gold);text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:16px 14px 40px}.grid2{display:grid;grid-template-columns:1fr;gap:14px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}.panel h2{font-size:14px;margin:0 0 3px}.hint{font-size:10px;color:var(--muted);margin:0 0 12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{margin:8px 0}.field label{display:block;font-size:10px;font-weight:700;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:11px;outline:0;background:#fff}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(183,138,59,.15)}.btn{border:0;border-radius:10px;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#fff}.secondary{background:#F4F0E8;color:var(--gold)}.danger{background:#FEF2F2;color:#DC2626}.mutedBtn{background:#F1F5F9;color:#334155}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.status{background:#111827;color:#DCE7FF;border-radius:14px;padding:11px;font:10px/1.6 ui-monospace,monospace;min-height:145px;max-height:310px;overflow:auto}.ok{color:#6EE7B7}.warn{color:#FCD34D}.err{color:#FCA5A5}.info{color:#93C5FD}.details{display:grid;gap:7px}.detailRow{display:grid;grid-template-columns:1fr 1fr 30px;gap:6px}.detailRow input{min-width:0}.remove{border:0;border-radius:9px;background:#FEF2F2;color:#DC2626;cursor:pointer}.fileBox{border:1px dashed #CBD5E1;border-radius:12px;padding:10px;background:#FAF8F4}.preview{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.preview img{width:100%;height:72px;object-fit:cover;border-radius:9px}.notice{font-size:10px;padding:9px 10px;background:#F0FDFA;border:1px solid #CCFBF1;border-radius:10px;color:#0F766E;margin-top:9px}.hidden{display:none!important}.tabs{display:flex;gap:5px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px;font-size:10px;font-weight:800;cursor:pointer}.tab.active{background:#F4F0E8;border-color:var(--gold);color:var(--gold)}
+:root{
+  --ink:#111827;
+  --gold:#B78A3B;
+  --gold2:#D4AF62;
+  --cream:#FAF8F4;
+  --paper:#fff;
+  --muted:#6B7280;
+  --line:#E8E3DA;
+  --soft:#F4F0E8;
+  --shadow:0 12px 30px rgba(17,24,39,.07)
+}
+
+*{
+  box-sizing:border-box
+}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:Inter,system-ui,sans-serif
+}
+
+.top{
+  background:rgba(250,248,244,.95);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:20
+}
+
+.head{
+  max-width:1120px;
+  margin:auto;
+  min-height:62px;
+  padding:8px 14px;
+  display:flex;
+  align-items:center;
+  gap:10px
+}
+
+.mark{
+  width:36px;
+  height:36px;
+  border-radius:11px;
+  background:var(--gold);
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-weight:800
+}
+
+.title{
+  font-weight:800;
+  font-size:15px
+}
+
+.sub{
+  font-size:9px;
+  color:var(--muted)
+}
+
+.spacer{
+  flex:1
+}
+
+.back{
+  font-size:11px;
+  color:var(--gold);
+  text-decoration:none
+}
+
+.wrap{
+  max-width:1120px;
+  margin:auto;
+  padding:16px 14px 40px
+}
+
+.panel{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:14px;
+  box-shadow:var(--shadow);
+  margin-bottom:14px
+}
+
+.panel h2{
+  font-size:14px;
+  margin:0 0 3px
+}
+
+.hint{
+  font-size:10px;
+  color:var(--muted);
+  margin:0 0 12px
+}
+
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px
+}
+
+.field{
+  margin:8px 0
+}
+
+.field label{
+  display:block;
+  font-size:10px;
+  font-weight:700;
+  margin-bottom:5px
+}
+
+.field input,
+.field textarea,
+.field select{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px;
+  font:inherit;
+  font-size:11px;
+  outline:0;
+  background:#fff
+}
+
+.field textarea{
+  min-height:78px;
+  resize:vertical
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(183,138,59,.15)
+}
+
+.btn{
+  border:0;
+  border-radius:10px;
+  padding:10px 13px;
+  font-size:11px;
+  font-weight:800;
+  cursor:pointer
+}
+
+.btn:disabled{
+  opacity:.5;
+  cursor:not-allowed
+}
+
+.primary{
+  background:var(--gold);
+  color:#fff
+}
+
+.secondary{
+  background:var(--soft);
+  color:var(--gold)
+}
+
+.mutedBtn{
+  background:#F1F5F9;
+  color:#334155
+}
+
+.actions{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-top:10px
+}
+
+.status{
+  background:#111827;
+  color:#DCE7FF;
+  border-radius:14px;
+  padding:11px;
+  font:10px/1.6 ui-monospace,monospace;
+  min-height:145px;
+  max-height:320px;
+  overflow:auto
+}
+
+.ok{
+  color:#6EE7B7
+}
+
+.warn{
+  color:#FCD34D
+}
+
+.err{
+  color:#FCA5A5
+}
+
+.info{
+  color:#93C5FD
+}
+
+.fileBox{
+  border:1px dashed #CBD5E1;
+  border-radius:12px;
+  padding:10px;
+  background:#FAF8F4
+}
+
+.preview{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:6px;
+  margin-top:8px
+}
+
+.preview img{
+  width:100%;
+  height:72px;
+  object-fit:cover;
+  border-radius:9px;
+  border:1px solid var(--line)
+}
+
+.details{
+  display:grid;
+  gap:7px
+}
+
+.detailRow{
+  display:grid;
+  grid-template-columns:1fr 1fr 30px;
+  gap:6px
+}
+
+.detailRow input{
+  min-width:0
+}
+
+.remove{
+  border:0;
+  border-radius:9px;
+  background:#FEF2F2;
+  color:#DC2626;
+  cursor:pointer
+}
+
+.notice{
+  font-size:10px;
+  padding:9px 10px;
+  background:#F0FDFA;
+  border:1px solid #CCFBF1;
+  border-radius:10px;
+  color:#0F766E;
+  margin-top:9px;
+  line-height:1.5
+}
+
+.warning{
+  font-size:10px;
+  padding:9px 10px;
+  background:#FFFBEB;
+  border:1px solid #FDE68A;
+  border-radius:10px;
+  color:#92400E;
+  margin-top:9px;
+  line-height:1.5
+}
+
+.tabs{
+  display:flex;
+  gap:5px;
+  margin-bottom:14px
+}
+
+.tab{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:10px;
+  padding:8px 12px;
+  font-size:10px;
+  font-weight:800;
+  cursor:pointer
+}
+
+.tab.active{
+  background:var(--soft);
+  border-color:var(--gold);
+  color:var(--gold)
+}
+
+.hidden{
+  display:none!important
+}
+
+.progress{
+  margin-top:9px;
+  height:5px;
+  background:#E5E7EB;
+  border-radius:99px;
+  overflow:hidden
+}
+
+.progressBar{
+  height:100%;
+  width:0%;
+  background:var(--gold);
+  transition:width .2s ease
+}
+
+.counts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-bottom:14px
+}
+
+.countBox{
+  background:#FAF8F4;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px
+}
+
+.countNumber{
+  font-size:18px;
+  font-weight:800
+}
+
+.countLabel{
+  font-size:9px;
+  color:var(--muted);
+  margin-top:2px
+}
+
+@media(max-width:600px){
+
+  .row{
+    grid-template-columns:1fr
+  }
+
+  .preview{
+    grid-template-columns:repeat(3,1fr)
+  }
+
+  .detailRow{
+    grid-template-columns:1fr 1fr 32px
+  }
+
+}
 </style>
 </head>
+
 <body>
-<header class="top"><div class="head"><div class="mark">BG</div><div><div class="title">Balaji Garments Admin</div><div class="sub">Product & Category Manager</div></div><div class="spacer"></div><a class="back" href="index.html">View Store →</a></div></header>
+
+<header class="top">
+
+  <div class="head">
+
+    <div class="mark">BG</div>
+
+    <div>
+      <div class="title">Balaji Garments Admin</div>
+      <div class="sub">Upload Products & Categories</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <a class="back" href="index.html">
+      View Store →
+    </a>
+
+  </div>
+
+</header>
+
 
 <main class="wrap">
 
-<!-- GitHub Settings -->
-<div class="panel" style="margin-bottom:14px">
-  <h2>1. GitHub Connection</h2>
-  <p class="hint">Settings saved locally. Data published to data.js on GitHub.</p>
-  <div class="row">
-    <div class="field"><label>GitHub Username</label><input id="ghUser" placeholder="your-username"></div>
-    <div class="field"><label>Repository</label><input id="ghRepo" placeholder="your-repo"></div>
-  </div>
-  <div class="row">
-    <div class="field"><label>GitHub Token</label><input id="ghToken" type="password" placeholder="github_pat_..."></div>
-    <div class="field"><label>Website URL</label><input id="siteUrl" placeholder="https://username.github.io/repo/"></div>
-  </div>
-  <div class="actions">
-    <button class="btn secondary" id="saveSettings">Save Settings</button>
-    <button class="btn mutedBtn" id="loadRemote">Load data.js</button>
-  </div>
-  <div class="notice">Use fine-grained GitHub token with repo access only.</div>
-</div>
 
-<!-- Product & Category Form -->
-<div class="panel" style="margin-bottom:14px">
-  <div class="tabs">
-    <button class="tab active" data-tab="product">Product</button>
-    <button class="tab" data-tab="category">Category</button>
-  </div>
+<!-- =========================================================
+     GITHUB SETTINGS
+========================================================= -->
 
-  <!-- PRODUCT TAB -->
-  <div id="productTab">
-    <h2>2. Product Manager</h2>
-    <p class="hint">Add/edit product. Images uploaded to /images/products/ folder.</p>
-    <input id="editingId" type="hidden">
-    <div class="field"><label>Product Name *</label><input id="pName" placeholder="Stylish Blue Shirt"></div>
-    <div class="row">
-      <div class="field"><label>Price (₹)</label><input id="pPrice" type="number" placeholder="249"></div>
-      <div class="field"><label>Old Price</label><input id="pOld" type="number" placeholder="999"></div>
-    </div>
-    <div class="row">
-      <div class="field"><label>Discount %</label><input id="pOff" type="number" placeholder="75"></div>
-      <div class="field"><label>Category *</label><select id="pCategory"></select></div>
-    </div>
-    <div class="field"><label>Description</label><textarea id="pDesc" placeholder="Write product details..."></textarea></div>
-    <div class="field">
-      <label>Product Images</label>
-      <div class="fileBox">
-        <input id="pImages" type="file" accept="image/*" multiple>
-        <div id="preview" class="preview"></div>
-        <div style="margin-top:6px;font-size:9px;color:var(--muted);">Images will be uploaded to GitHub and saved as path.</div>
-      </div>
-    </div>
-    <div class="field">
-      <label>Details</label>
-      <div id="detailRows" class="details"></div>
-      <button class="btn secondary" id="addDetail" type="button" style="margin-top:7px">+ Add Detail</button>
-    </div>
-    <div class="actions">
-      <button class="btn primary" id="publishProduct">Publish Product</button>
-      <button class="btn mutedBtn" id="clearProduct">Clear</button>
-    </div>
-  </div>
-
-  <!-- CATEGORY TAB -->
-  <div id="categoryTab" class="hidden">
-    <h2>2B. Category Manager</h2>
-    <p class="hint">Categories published to data.js. Image uploaded to /images/category/.</p>
-    <input id="editingCatId" type="hidden">
-    <div class="field"><label>Category Name *</label><input id="cName" placeholder="Men's Shirts"></div>
-    <div class="row">
-      <div class="field"><label>Category ID</label><input id="cId" placeholder="mens-shirts"></div>
-    </div>
-    <div class="field">
-      <label>Category Image</label>
-      <div class="fileBox">
-        <input id="cImageFile" type="file" accept="image/*">
-        <div id="cPreview" class="preview" style="margin-top:6px"></div>
-        <div style="margin-top:6px;font-size:9px;color:var(--muted);">Image will be uploaded to GitHub and saved as path.</div>
-      </div>
-    </div>
-    <div class="actions">
-      <button class="btn primary" id="publishCategory">Publish Category</button>
-      <button class="btn mutedBtn" id="clearCategory">Clear</button>
-    </div>
-  </div>
-</div>
-
-<!-- Publish Log -->
 <section class="panel">
-  <h2>3. Publish Log</h2>
-  <p class="hint">Image upload → data.js update</p>
-  <div id="status" class="status"><div class="info">Ready.</div></div>
+
+  <h2>1. GitHub Connection</h2>
+
+  <p class="hint">
+    GitHub settings are saved only in this browser.
+  </p>
+
+  <div class="row">
+
+    <div class="field">
+
+      <label>GitHub Username</label>
+
+      <input
+        id="ghUser"
+        placeholder="balaji-pbh"
+      >
+
+    </div>
+
+    <div class="field">
+
+      <label>Repository</label>
+
+      <input
+        id="ghRepo"
+        placeholder="balaji-pbh.github.io"
+      >
+
+    </div>
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="field">
+
+      <label>GitHub Token</label>
+
+      <input
+        id="ghToken"
+        type="password"
+        placeholder="github_pat_..."
+      >
+
+    </div>
+
+    <div class="field">
+
+      <label>Website URL</label>
+
+      <input
+        id="siteUrl"
+        placeholder="https://balaji-pbh.github.io/"
+      >
+
+    </div>
+
+  </div>
+
+
+  <div class="actions">
+
+    <button
+      class="btn secondary"
+      id="saveSettings"
+    >
+      Save Settings
+    </button>
+
+    <button
+      class="btn mutedBtn"
+      id="loadRemote"
+    >
+      Reload Remote Data
+    </button>
+
+  </div>
+
+
+  <div class="notice">
+    Your GitHub token must have permission to read and write repository contents.
+  </div>
+
+  <div class="warning">
+    This admin page is intended for your personal/admin use. Do not share the GitHub token with anyone.
+  </div>
+
 </section>
+
+
+
+<!-- =========================================================
+     CURRENT DATA COUNT
+========================================================= -->
+
+<section class="counts">
+
+  <div class="countBox">
+
+    <div
+      id="categoryCount"
+      class="countNumber"
+    >
+      0
+    </div>
+
+    <div class="countLabel">
+      Existing Categories
+    </div>
+
+  </div>
+
+
+  <div class="countBox">
+
+    <div
+      id="productCount"
+      class="countNumber"
+    >
+      0
+    </div>
+
+    <div class="countLabel">
+      Existing Products
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     UPLOAD PANEL
+========================================================= -->
+
+<section class="panel">
+
+  <div class="tabs">
+
+    <button
+      class="tab active"
+      data-tab="product"
+    >
+      + Product
+    </button>
+
+    <button
+      class="tab"
+      data-tab="category"
+    >
+      + Category
+    </button>
+
+  </div>
+
+
+
+<!-- =========================================================
+     PRODUCT UPLOAD
+========================================================= -->
+
+<div id="productTab">
+
+  <h2>2. Upload New Product</h2>
+
+  <p class="hint">
+    This creates a completely new product. Existing products will not be edited or deleted.
+  </p>
+
+
+  <div class="field">
+
+    <label>Product Name *</label>
+
+    <input
+      id="pName"
+      placeholder="Stylish Blue Shirt"
+    >
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="field">
+
+      <label>Price (₹) *</label>
+
+      <input
+        id="pPrice"
+        type="number"
+        min="0"
+        placeholder="249"
+      >
+
+    </div>
+
+
+    <div class="field">
+
+      <label>Old Price (₹)</label>
+
+      <input
+        id="pOld"
+        type="number"
+        min="0"
+        placeholder="999"
+      >
+
+    </div>
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="field">
+
+      <label>Discount %</label>
+
+      <input
+        id="pOff"
+        type="number"
+        min="0"
+        max="100"
+        placeholder="75"
+      >
+
+    </div>
+
+
+    <div class="field">
+
+      <label>Category *</label>
+
+      <select id="pCategory">
+        <option value="">
+          Loading categories...
+        </option>
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <div class="field">
+
+    <label>Description</label>
+
+    <textarea
+      id="pDesc"
+      placeholder="Write product details..."
+    ></textarea>
+
+  </div>
+
+
+  <!-- PRODUCT IMAGES -->
+
+  <div class="field">
+
+    <label>Product Images *</label>
+
+    <div class="fileBox">
+
+      <input
+        id="pImages"
+        type="file"
+        accept="image/*"
+        multiple
+      >
+
+      <div
+        id="preview"
+        class="preview"
+      ></div>
+
+      <div
+        style="margin-top:6px;font-size:9px;color:var(--muted)"
+      >
+        You can select multiple images.
+        They will be uploaded to
+        images/products/
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- DETAILS -->
+
+  <div class="field">
+
+    <label>Product Details</label>
+
+    <div
+      id="detailRows"
+      class="details"
+    ></div>
+
+    <button
+      class="btn secondary"
+      id="addDetail"
+      type="button"
+      style="margin-top:7px"
+    >
+      + Add Detail
+    </button>
+
+  </div>
+
+
+  <div class="actions">
+
+    <button
+      class="btn primary"
+      id="publishProduct"
+    >
+      Upload Product
+    </button>
+
+    <button
+      class="btn mutedBtn"
+      id="clearProduct"
+    >
+      Clear
+    </button>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     CATEGORY UPLOAD
+========================================================= -->
+
+<div
+  id="categoryTab"
+  class="hidden"
+>
+
+  <h2>2B. Upload New Category</h2>
+
+  <p class="hint">
+    This creates a completely new category. Existing categories will not be edited or deleted.
+  </p>
+
+
+  <div class="field">
+
+    <label>Category Name *</label>
+
+    <input
+      id="cName"
+      placeholder="Men's Stylish Shirts"
+    >
+
+  </div>
+
+
+  <div class="field">
+
+    <label>Category ID</label>
+
+    <input
+      id="cId"
+      placeholder="mens-stylish-shirts"
+    >
+
+    <div
+      style="margin-top:5px;font-size:9px;color:var(--muted)"
+    >
+      Leave empty to generate automatically.
+    </div>
+
+  </div>
+
+
+  <div class="field">
+
+    <label>Category Image *</label>
+
+    <div class="fileBox">
+
+      <input
+        id="cImageFile"
+        type="file"
+        accept="image/*"
+      >
+
+      <div
+        id="cPreview"
+        class="preview"
+      ></div>
+
+      <div
+        style="margin-top:6px;font-size:9px;color:var(--muted)"
+      >
+        Image will be uploaded to images/category/
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="actions">
+
+    <button
+      class="btn primary"
+      id="publishCategory"
+    >
+      Upload Category
+    </button>
+
+    <button
+      class="btn mutedBtn"
+      id="clearCategory"
+    >
+      Clear
+    </button>
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LOG
+========================================================= -->
+
+<section class="panel">
+
+  <h2>3. Upload Status</h2>
+
+  <p class="hint">
+    Image upload → data.js update
+  </p>
+
+  <div
+    id="status"
+    class="status"
+  >
+    <div class="info">
+      Ready.
+    </div>
+  </div>
+
+  <div class="progress">
+
+    <div
+      id="progressBar"
+      class="progressBar"
+    ></div>
+
+  </div>
+
+</section>
+
 
 </main>
 
-<script src="data.js"></script>
+
+
+<!-- =========================================================
+     LOAD DATA.JS
+========================================================= -->
+
 <script>
-/* ============================================================
-   ADMIN SCRIPT - IMAGE PATH UPLOAD SYSTEM
-   ============================================================ */
-
-(() => {
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const KEY="balajiAdminV3";
-
-let cats = JSON.parse(JSON.stringify(CATEGORIES || []));
-let prods = JSON.parse(JSON.stringify(PRODUCTS || []));
-
-// ===== HELPERS =====
-const log=(m,t="info")=>{const d=document.createElement("div");d.className=t;d.textContent=`[${new Date().toLocaleTimeString()}] ${m}`;$("#status").appendChild(d);$("#status").scrollTop=$("#status").scrollHeight;};
-const settings=()=>({user:$("#ghUser").value.trim(),repo:$("#ghRepo").value.trim(),token:$("#ghToken").value.trim(),site:$("#siteUrl").value.trim().replace(/\/?$/,"/")});
-const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]||m));
-const money=n=>"₹"+Number(n||0).toLocaleString("en-IN");
-
-function loadSettings(){const s=JSON.parse(localStorage.getItem(KEY)||"{}");$("#ghUser").value=s.user||"";$("#ghRepo").value=s.repo||"";$("#ghToken").value=s.token||"";$("#siteUrl").value=s.site||SHOP.websiteUrl||""}
-function save(){localStorage.setItem(KEY,JSON.stringify(settings()));log("Settings saved.");}
-loadSettings();
-
-// ===== UPLOAD IMAGE TO GITHUB =====
-async function uploadImageToGitHub(file, folder) {
-  const s=settings();
-  if(!s.user||!s.repo||!s.token)throw Error("GitHub settings required.");
-  
-  // Generate unique filename
-  const ext = file.name.split('.').pop();
-  const baseName = file.name.replace(/\.[^.]+$/, '').toLowerCase().replace(/[^a-z0-9]/g, '-');
-  const timestamp = Date.now();
-  const fileName = `${baseName}-${timestamp}.${ext}`;
-  const path = `images/${folder}/${fileName}`;
-  
-  // Read file as base64
-  const reader=new FileReader();
-  const base64=await new Promise((resolve,reject)=>{
-    reader.onload=()=>resolve(reader.result.split(",")[1]);
-    reader.onerror=reject;
-    reader.readAsDataURL(file);
-  });
-  
-  // Upload to GitHub
-  const url=`https://api.github.com/repos/${s.user}/${s.repo}/contents/${path}`;
-  const res=await fetch(url,{
-    method:"PUT",
-    headers:{Authorization:`Bearer ${s.token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
-    body:JSON.stringify({message:`Upload ${path}`,content:base64,branch:"main"})
-  });
-  if(!res.ok)throw Error("Upload failed: "+res.status);
-  
-  // Return the path
-  return path;
-}
-
-// ===== IMAGE HANDLING =====
-let selectedFiles = [];
-let catFile = null;
-
-$("#pImages").onchange=()=>{
-  selectedFiles = [];
-  $("#preview").innerHTML="";
-  for(const file of [...$("#pImages").files]){
-    selectedFiles.push(file);
-    const reader=new FileReader();
-    reader.onload=()=>{
-      const img=document.createElement("img");
-      img.src=reader.result;
-      $("#preview").appendChild(img);
-    };
-    reader.readAsDataURL(file);
-    log(`📷 ${file.name} selected.`);
-  }
-};
-
-$("#cImageFile").onchange=()=>{
-  const file=$("#cImageFile").files[0];
-  if(!file)return;
-  catFile=file;
-  const reader=new FileReader();
-  reader.onload=()=>{
-    $("#cPreview").innerHTML=`<img src="${reader.result}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;
-  };
-  reader.readAsDataURL(file);
-  log(`📷 ${file.name} selected for category.`);
-};
-
-// ===== POPULATE CATEGORY DROPDOWN =====
-function populateCats(){ 
-  $("#pCategory").innerHTML=cats.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("")||`<option value="">No categories</option>`;
-}
-
-// ===== TABS =====
-$$(".tab").forEach(b=>b.onclick=()=>{$$(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");$("#productTab").classList.toggle("hidden",b.dataset.tab!=="product");$("#categoryTab").classList.toggle("hidden",b.dataset.tab!=="category")});
-
-// ===== SETTINGS =====
-$("#saveSettings").onclick=save;
-$("#loadRemote").onclick=async()=>{try{save();const raw=await getFile("data.js");if(!raw)throw Error("data.js not found");const parsed=parseData(raw.content);cats=parsed.categories;prods=parsed.products;populateCats();log("✅ Remote data.js loaded.","ok")}catch(e){log(e.message,"err")}};
-
-// ===== DETAIL ROWS =====
-$("#addDetail").onclick=()=>addDetailRow();
-function addDetailRow(k="",v=""){const r=document.createElement("div");r.className="detailRow";r.innerHTML=`<input class="dk" placeholder="Name" value="${esc(k)}"><input class="dv" placeholder="Value" value="${esc(v)}"><button class="remove" type="button">×</button>`;r.querySelector(".remove").onclick=()=>r.remove();$("#detailRows").appendChild(r)}
-
-// ===== PRODUCT CRUD =====
-function resetProduct(){["editingId","pName","pPrice","pOld","pOff","pDesc"].forEach(id=>$("#"+id).value="");$("#detailRows").innerHTML="";$("#pImages").value="";$("#preview").innerHTML="";selectedFiles=[];}
-$("#clearProduct").onclick=resetProduct;
-
-function readProduct(){
- const id=$("#editingId").value||"PRD-"+String(Math.random().toString(36).slice(2,8).toUpperCase());
- const name=$("#pName").value.trim();if(!name)throw Error("Product name required.");
- const cat=$("#pCategory").value;if(!cat)throw Error("Select category.");
- 
- // Check if images are selected
- if(!selectedFiles.length)throw Error("At least one image required.");
- 
- const details={};
- $$(".detailRow").forEach(r=>{const k=r.querySelector(".dk").value.trim(),v=r.querySelector(".dv").value.trim();if(k)details[k]=v});
- 
- // Images will be uploaded during publish
- return {
-   id,
-   name,
-   category: cat,
-   price: +$("#pPrice").value||0,
-   oldPrice: +$("#pOld").value||0,
-   discount: +$("#pOff").value||0,
-   rating: 4.5,
-   ratingCount: 0,
-   images: [], // Will be filled after upload
-   description: $("#pDesc").value.trim(),
-   details,
-   _files: selectedFiles // Temporary store for upload
- };
-}
-
-$("#publishProduct").onclick=async()=>{try{
-  save();
-  const p=readProduct();
-  log(`📦 Product ${p.id}...`);
-  
-  // Upload images first
-  const uploadedPaths = [];
-  for(const file of p._files){
-    try{
-      const path = await uploadImageToGitHub(file, 'products');
-      uploadedPaths.push(path);
-      log(`✅ Uploaded: ${path}`, 'ok');
-    }catch(e){
-      log(`❌ Failed to upload ${file.name}: ${e.message}`, 'err');
-      throw e;
-    }
-  }
-  
-  // Update product with paths
-  p.images = uploadedPaths;
-  delete p._files;
-  
-  const i=prods.findIndex(x=>x.id===p.id);
-  if(i>=0)prods[i]=p;
-  else prods.push(p);
-  
-  await publishAll(`Product ${p.id} published`);
-  resetProduct();
-  populateCats();
-}catch(e){log("❌ "+e.message,"err")}};
-
-// ===== CATEGORY CRUD =====
-function resetCat(){["editingCatId","cName","cId"].forEach(id=>$("#"+id).value="");$("#cImageFile").value="";$("#cPreview").innerHTML="";catFile=null}
-$("#clearCategory").onclick=resetCat;
-
-function readCat(){
- const name=$("#cName").value.trim();if(!name)throw Error("Category name required.");
- const id=($("#cId").value.trim()||name.toLowerCase().replace(/[^a-z0-9]+/g,"-")).toLowerCase();
- if(!catFile)throw Error("Category image required.");
- return {id,name,_file:catFile};
-}
-
-$("#publishCategory").onclick=async()=>{try{
-  save();
-  const c=readCat();
-  
-  // Upload category image
-  let imagePath = '';
-  try{
-    imagePath = await uploadImageToGitHub(c._file, 'category');
-    log(`✅ Uploaded: ${imagePath}`, 'ok');
-  }catch(e){
-    log(`❌ Failed to upload category image: ${e.message}`, 'err');
-    throw e;
-  }
-  
-  const catData = {id:c.id, name:c.name, image:imagePath};
-  const oldId=$("#editingCatId").value;
-  if(oldId&&oldId!==c.id)cats=cats.filter(x=>x.id!==oldId);
-  const i=cats.findIndex(x=>x.id===c.id);
-  if(i>=0)cats[i]=catData;
-  else cats.push(catData);
-  
-  await publishAll(`Category ${c.id} published`);
-  resetCat();
-  populateCats();
-}catch(e){log("❌ "+e.message,"err")}};
-
-// ===== GITHUB API =====
-async function api(path,opts={}){const s=settings();if(!s.user||!s.repo||!s.token)throw Error("GitHub settings required.");const r=await fetch(`https://api.github.com${path}`,{...opts,headers:{Accept:"application/vnd.github+json",Authorization:`Bearer ${s.token}`,"X-GitHub-Api-Version":"2022-11-28","Content-Type":"application/json"}});const j=await r.json();if(!r.ok)throw Error(j.message||`API ${r.status}`);return j}
-async function getFile(path){return api(`/repos/${settings().user}/${settings().repo}/contents/${path}?ref=main`)}
-async function putFile(path,content,message,sha=null){const body={message,content:btoa(unescape(encodeURIComponent(content))),branch:"main"};if(sha)body.sha=sha;return api(`/repos/${settings().user}/${settings().repo}/contents/${path}`,{method:"PUT",body:JSON.stringify(body)})}
-function parseData(text){const fn=new Function(text+";return {categories:CATEGORIES,products:PRODUCTS};");const x=fn();return {categories:JSON.parse(JSON.stringify(x.categories||[])),products:JSON.parse(JSON.stringify(x.products||[]))};}
-
-// ===== DATA GENERATION =====
-function dataText(){return `/* AUTO-GENERATED */\nvar SHOP=${JSON.stringify({...SHOP,websiteUrl:settings().site||SHOP.websiteUrl},null,2)};\nvar CATEGORIES=${JSON.stringify(cats,null,2)};\nvar PRODUCTS=${JSON.stringify(prods,null,2)};\n`}
-
-// ===== PUBLISH ALL =====
-async function publishAll(reason){
- if(!settings().site||settings().site.includes("YOUR-"))throw Error("Set Website URL first.");
- log("🚀 Publishing...");
- 
- let sha=null;try{sha=(await getFile("data.js")).sha}catch(e){}
- await putFile("data.js",dataText(),reason,sha);
- log("✅ data.js uploaded","ok");
- log("🎉 PUBLISH COMPLETE!","ok");
-}
-
-// ===== INIT =====
-populateCats();
-log("✅ Admin ready. "+cats.length+" categories, "+prods.length+" products.","ok");
-})();
+document.write(
+  '<script src="data.js?v=' +
+  Date.now() +
+  '"><\/script>'
+);
 </script>
+
+
+
+<script>
+
+"use strict";
+
+
+/* =========================================================
+   BASIC
+========================================================= */
+
+const $ = selector =>
+  document.querySelector(selector);
+
+const $$ = selector =>
+  [...document.querySelectorAll(selector)];
+
+
+const STORAGE_KEY =
+  "balajiAdminUploadV1";
+
+
+let categories = [];
+
+let products = [];
+
+let selectedProductFiles = [];
+
+let selectedCategoryFile = null;
+
+let uploading = false;
+
+
+
+/* =========================================================
+   LOG
+========================================================= */
+
+function log(message,type="info"){
+
+  const item =
+    document.createElement("div");
+
+  item.className = type;
+
+  item.textContent =
+    "[" +
+    new Date().toLocaleTimeString() +
+    "] " +
+    message;
+
+  $("#status")
+    .appendChild(item);
+
+  $("#status").scrollTop =
+    $("#status").scrollHeight;
+
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+function progress(value){
+
+  value =
+    Math.max(
+      0,
+      Math.min(
+        100,
+        Number(value) || 0
+      )
+    );
+
+  $("#progressBar")
+    .style.width =
+    value + "%";
+
+}
+
+
+/* =========================================================
+   ESCAPE
+========================================================= */
+
+function escapeHtml(value){
+
+  return String(value ?? "")
+    .replace(
+      /[&<>"']/g,
+      char => ({
+        "&":"&amp;",
+        "<":"&lt;",
+        ">":"&gt;",
+        '"':"&quot;",
+        "'":"&#039;"
+      }[char])
+    );
+
+}
+
+
+/* =========================================================
+   SETTINGS
+========================================================= */
+
+function getSettings(){
+
+  let site =
+    $("#siteUrl")
+      .value
+      .trim();
+
+  if(site){
+
+    site =
+      site.replace(
+        /\/?$/,
+        "/"
+      );
+
+  }
+
+
+  return {
+
+    user:
+      $("#ghUser")
+        .value
+        .trim(),
+
+    repo:
+      $("#ghRepo")
+        .value
+        .trim(),
+
+    token:
+      $("#ghToken")
+        .value
+        .trim(),
+
+    site
+
+  };
+
+}
+
+
+/* =========================================================
+   LOAD SETTINGS
+========================================================= */
+
+function loadSettings(){
+
+  try{
+
+    const saved =
+      JSON.parse(
+        localStorage.getItem(
+          STORAGE_KEY
+        ) || "{}"
+      );
+
+
+    $("#ghUser").value =
+      saved.user || "";
+
+
+    $("#ghRepo").value =
+      saved.repo || "";
+
+
+    $("#ghToken").value =
+      saved.token || "";
+
+
+    $("#siteUrl").value =
+      saved.site ||
+      (
+        window.SHOP &&
+        SHOP.websiteUrl
+          ? SHOP.websiteUrl
+          : ""
+      );
+
+
+  }catch(error){
+
+    log(
+      "Could not load saved settings.",
+      "warn"
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   SAVE SETTINGS
+========================================================= */
+
+function saveSettings(){
+
+  const settings =
+    getSettings();
+
+
+  if(!settings.user){
+
+    throw Error(
+      "GitHub Username required."
+    );
+
+  }
+
+
+  if(!settings.repo){
+
+    throw Error(
+      "Repository required."
+    );
+
+  }
+
+
+  if(!settings.token){
+
+    throw Error(
+      "GitHub Token required."
+    );
+
+  }
+
+
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify(settings)
+  );
+
+
+  log(
+    "GitHub settings saved.",
+    "ok"
+  );
+
+}
+
+
+/* =========================================================
+   UTF-8 BASE64 ENCODE
+========================================================= */
+
+function encodeBase64(text){
+
+  const bytes =
+    new TextEncoder()
+      .encode(
+        String(text)
+      );
+
+
+  let binary = "";
+
+  const chunkSize =
+    0x8000;
+
+
+  for(
+    let i = 0;
+    i < bytes.length;
+    i += chunkSize
+  ){
+
+    binary +=
+      String.fromCharCode(
+        ...bytes.subarray(
+          i,
+          i + chunkSize
+        )
+      );
+
+  }
+
+
+  return btoa(binary);
+
+}
+
+
+/* =========================================================
+   UTF-8 BASE64 DECODE
+========================================================= */
+
+function decodeBase64(base64){
+
+  const clean =
+    String(base64 || "")
+      .replace(/\s/g,"");
+
+
+  const binary =
+    atob(clean);
+
+
+  const bytes =
+    Uint8Array.from(
+      binary,
+      char =>
+        char.charCodeAt(0)
+    );
+
+
+  return new TextDecoder()
+    .decode(bytes);
+
+}
+
+
+/* =========================================================
+   GITHUB API
+========================================================= */
+
+async function githubApi(
+  path,
+  options={}
+){
+
+  const settings =
+    getSettings();
+
+
+  if(!settings.user){
+
+    throw Error(
+      "GitHub Username required."
+    );
+
+  }
+
+
+  if(!settings.repo){
+
+    throw Error(
+      "Repository required."
+    );
+
+  }
+
+
+  if(!settings.token){
+
+    throw Error(
+      "GitHub Token required."
+    );
+
+  }
+
+
+  let response;
+
+
+  try{
+
+    response =
+      await fetch(
+        "https://api.github.com" +
+        path,
+        {
+
+          ...options,
+
+          headers:{
+
+            Accept:
+              "application/vnd.github+json",
+
+            Authorization:
+              `Bearer ${settings.token}`,
+
+            "X-GitHub-Api-Version":
+              "2022-11-28",
+
+            "Content-Type":
+              "application/json",
+
+            ...(options.headers || {})
+
+          }
+
+        }
+      );
+
+  }catch(error){
+
+    throw Error(
+      "Internet/network error."
+    );
+
+  }
+
+
+  let data = null;
+
+
+  try{
+
+    data =
+      await response.json();
+
+  }catch(error){
+
+    data = null;
+
+  }
+
+
+  if(!response.ok){
+
+    let message =
+      data &&
+      data.message
+        ? data.message
+        : `GitHub API error ${response.status}`;
+
+
+    if(response.status === 401){
+
+      message =
+        "GitHub Token invalid or expired.";
+
+    }
+
+
+    if(response.status === 403){
+
+      message =
+        "GitHub permission denied. Check token permissions.";
+
+    }
+
+
+    if(response.status === 404){
+
+      message =
+        "Repository or data.js not found.";
+
+    }
+
+
+    if(response.status === 409){
+
+      message =
+        "GitHub conflict. Please reload and try again.";
+
+    }
+
+
+    throw Error(
+      message +
+      ` [${response.status}]`
+    );
+
+  }
+
+
+  return data;
+
+}
+
+
+/* =========================================================
+   GET FILE
+========================================================= */
+
+async function getGithubFile(path){
+
+  const settings =
+    getSettings();
+
+
+  return githubApi(
+    `/repos/` +
+    encodeURIComponent(settings.user) +
+    `/` +
+    encodeURIComponent(settings.repo) +
+    `/contents/` +
+    path +
+    `?ref=main`
+  );
+
+}
+
+
+/* =========================================================
+   PUT FILE
+========================================================= */
+
+async function putGithubFile(
+  path,
+  content,
+  message,
+  sha
+){
+
+  const settings =
+    getSettings();
+
+
+  const body = {
+
+    message,
+
+    content:
+      encodeBase64(content),
+
+    branch:
+      "main"
+
+  };
+
+
+  if(sha){
+
+    body.sha =
+      sha;
+
+  }
+
+
+  return githubApi(
+
+    `/repos/` +
+    encodeURIComponent(settings.user) +
+    `/` +
+    encodeURIComponent(settings.repo) +
+    `/contents/` +
+    path,
+
+    {
+
+      method:"PUT",
+
+      body:
+        JSON.stringify(body)
+
+    }
+
+  );
+
+}
+
+
+/* =========================================================
+   IMAGE BASE64
+========================================================= */
+
+function fileToBase64(file){
+
+  return new Promise(
+    (resolve,reject)=>{
+
+      const reader =
+        new FileReader();
+
+
+      reader.onload = () => {
+
+        try{
+
+          const result =
+            String(
+              reader.result || ""
+            );
+
+
+          const comma =
+            result.indexOf(",");
+
+
+          if(comma < 0){
+
+            throw Error(
+              "Could not read image."
+            );
+
+          }
+
+
+          resolve(
+            result.slice(
+              comma + 1
+            )
+          );
+
+        }catch(error){
+
+          reject(error);
+
+        }
+
+      };
+
+
+      reader.onerror = () =>
+        reject(
+          Error(
+            "Image reading failed."
+          )
+        );
+
+
+      reader.readAsDataURL(
+        file
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   SAFE FILE NAME
+========================================================= */
+
+function makeFileName(file){
+
+  const original =
+    file.name ||
+    "image";
+
+
+  const extensionMatch =
+    original.match(
+      /\.([a-zA-Z0-9]+)$/
+    );
+
+
+  const extension =
+    extensionMatch
+      ? extensionMatch[1]
+          .toLowerCase()
+      : "jpg";
+
+
+  const name =
+    original
+      .replace(
+        /\.[^.]+$/,
+        ""
+      )
+      .toLowerCase()
+      .replace(
+        /[^a-z0-9]+/g,
+        "-"
+      )
+      .replace(
+        /^-+|-+$/g,
+        ""
+      )
+      .slice(
+        0,
+        50
+      ) ||
+    "image";
+
+
+  const unique =
+    Date.now() +
+    "-" +
+    Math.random()
+      .toString(36)
+      .slice(2,7);
+
+
+  return (
+    name +
+    "-" +
+    unique +
+    "." +
+    extension
+  );
+
+}
+
+
+/* =========================================================
+   UPLOAD IMAGE
+========================================================= */
+
+async function uploadImage(
+  file,
+  folder
+){
+
+  if(!file){
+
+    throw Error(
+      "Image file missing."
+    );
+
+  }
+
+
+  if(
+    !file.type ||
+    !file.type.startsWith(
+      "image/"
+    )
+  ){
+
+    throw Error(
+      `${file.name} is not an image.`
+    );
+
+  }
+
+
+  const fileName =
+    makeFileName(file);
+
+
+  const path =
+    `images/${folder}/${fileName}`;
+
+
+  log(
+    `⬆ Uploading ${file.name}...`
+  );
+
+
+  const base64 =
+    await fileToBase64(
+      file
+    );
+
+
+  const settings =
+    getSettings();
+
+
+  let response;
+
+
+  try{
+
+    response =
+      await fetch(
+
+        `https://api.github.com/repos/` +
+        `${encodeURIComponent(settings.user)}/` +
+        `${encodeURIComponent(settings.repo)}/` +
+        `contents/${path}`,
+
+        {
+
+          method:"PUT",
+
+          headers:{
+
+            Authorization:
+              `Bearer ${settings.token}`,
+
+            Accept:
+              "application/vnd.github+json",
+
+            "Content-Type":
+              "application/json",
+
+            "X-GitHub-Api-Version":
+              "2022-11-28"
+
+          },
+
+          body:
+            JSON.stringify({
+
+              message:
+                `Upload ${path}`,
+
+              content:
+                base64,
+
+              branch:
+                "main"
+
+            })
+
+        }
+
+      );
+
+  }catch(error){
+
+    throw Error(
+      "Network error while uploading image."
+    );
+
+  }
+
+
+  let data = null;
+
+
+  try{
+
+    data =
+      await response.json();
+
+  }catch(error){}
+
+
+  if(!response.ok){
+
+    const message =
+      data &&
+      data.message
+        ? data.message
+        : `Image upload failed ${response.status}`;
+
+
+    throw Error(
+      message +
+      ` [${response.status}]`
+    );
+
+  }
+
+
+  log(
+    `✅ Image uploaded: ${path}`,
+    "ok"
+  );
+
+
+  return path;
+
+}
+
+
+/* =========================================================
+   READ CURRENT DATA
+========================================================= */
+
+function loadCurrentData(){
+
+  categories =
+    Array.isArray(
+      window.CATEGORIES
+    )
+      ? JSON.parse(
+          JSON.stringify(
+            window.CATEGORIES
+          )
+        )
+      : [];
+
+
+  products =
+    Array.isArray(
+      window.PRODUCTS
+    )
+      ? JSON.parse(
+          JSON.stringify(
+            window.PRODUCTS
+          )
+        )
+      : [];
+
+
+  updateCounts();
+
+  populateCategories();
+
+}
+
+
+/* =========================================================
+   UPDATE COUNTS
+========================================================= */
+
+function updateCounts(){
+
+  $("#categoryCount")
+    .textContent =
+    categories.length;
+
+
+  $("#productCount")
+    .textContent =
+    products.length;
+
+}
+
+
+/* =========================================================
+   CATEGORY DROPDOWN
+========================================================= */
+
+function populateCategories(){
+
+  const select =
+    $("#pCategory");
+
+
+  if(!categories.length){
+
+    select.innerHTML =
+      `<option value="">
+        No categories available
+      </option>`;
+
+    return;
+
+  }
+
+
+  select.innerHTML =
+    categories
+      .map(category =>
+
+        `<option value="${escapeHtml(category.id)}">
+          ${escapeHtml(category.name)}
+        </option>`
+
+      )
+      .join("");
+
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE SELECT
+========================================================= */
+
+$("#pImages").onchange =
+  function(){
+
+    selectedProductFiles =
+      [];
+
+
+    $("#preview")
+      .innerHTML =
+      "";
+
+
+    const files =
+      [...this.files];
+
+
+    for(const file of files){
+
+      if(
+        !file.type.startsWith(
+          "image/"
+        )
+      ){
+
+        log(
+          `${file.name} skipped: not an image.`,
+          "warn"
+        );
+
+        continue;
+
+      }
+
+
+      selectedProductFiles
+        .push(file);
+
+
+      const reader =
+        new FileReader();
+
+
+      reader.onload =
+        function(){
+
+          const image =
+            document.createElement(
+              "img"
+            );
+
+
+          image.src =
+            reader.result;
+
+
+          image.alt =
+            file.name;
+
+
+          $("#preview")
+            .appendChild(
+              image
+            );
+
+        };
+
+
+      reader.readAsDataURL(
+        file
+      );
+
+    }
+
+
+    log(
+      `${selectedProductFiles.length} product image(s) selected.`
+    );
+
+  };
+
+
+/* =========================================================
+   CATEGORY IMAGE SELECT
+========================================================= */
+
+$("#cImageFile").onchange =
+  function(){
+
+    const file =
+      this.files[0];
+
+
+    selectedCategoryFile =
+      file || null;
+
+
+    $("#cPreview")
+      .innerHTML =
+      "";
+
+
+    if(!file){
+
+      return;
+
+    }
+
+
+    if(
+      !file.type.startsWith(
+        "image/"
+      )
+    ){
+
+      log(
+        "Category image must be an image.",
+        "err"
+      );
+
+
+      this.value =
+        "";
+
+
+      selectedCategoryFile =
+        null;
+
+
+      return;
+
+    }
+
+
+    const reader =
+      new FileReader();
+
+
+    reader.onload =
+      function(){
+
+        const image =
+          document.createElement(
+            "img"
+          );
+
+
+        image.src =
+          reader.result;
+
+
+        image.alt =
+          file.name;
+
+
+        $("#cPreview")
+          .appendChild(
+            image
+          );
+
+      };
+
+
+    reader.readAsDataURL(
+      file
+    );
+
+
+    log(
+      `📷 Category image selected: ${file.name}`
+    );
+
+  };
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+$$(".tab").forEach(
+  button => {
+
+    button.onclick =
+      function(){
+
+        $$(".tab")
+          .forEach(
+            tab =>
+              tab.classList
+                .remove("active")
+          );
+
+
+        this.classList
+          .add("active");
+
+
+        const product =
+          this.dataset.tab ===
+          "product";
+
+
+        $("#productTab")
+          .classList
+          .toggle(
+            "hidden",
+            !product
+          );
+
+
+        $("#categoryTab")
+          .classList
+          .toggle(
+            "hidden",
+            product
+          );
+
+      };
+
+  }
+);
+
+
+/* =========================================================
+   SAVE SETTINGS BUTTON
+========================================================= */
+
+$("#saveSettings").onclick =
+  function(){
+
+    try{
+
+      saveSettings();
+
+    }catch(error){
+
+      log(
+        "❌ " +
+        error.message,
+        "err"
+      );
+
+    }
+
+  };
+
+
+/* =========================================================
+   RELOAD REMOTE DATA
+========================================================= */
+
+$("#loadRemote").onclick =
+  async function(){
+
+    if(uploading){
+
+      log(
+        "Please wait until current upload finishes.",
+        "warn"
+      );
+
+      return;
+
+    }
+
+
+    try{
+
+      saveSettings();
+
+
+      log(
+        "☁ Loading latest data.js from GitHub..."
+      );
+
+
+      progress(15);
+
+
+      const remote =
+        await getGithubFile(
+          "data.js"
+        );
+
+
+      progress(45);
+
+
+      if(
+        !remote ||
+        !remote.content
+      ){
+
+        throw Error(
+          "data.js content not found."
+        );
+
+      }
+
+
+      const text =
+        decodeBase64(
+          remote.content
+        );
+
+
+      const parsed =
+        parseDataJs(
+          text
+        );
+
+
+      categories =
+        parsed.categories;
+
+
+      products =
+        parsed.products;
+
+
+      populateCategories();
+
+      updateCounts();
+
+
+      progress(100);
+
+
+      log(
+        `✅ Loaded ${categories.length} categories and ${products.length} products.`,
+        "ok"
+      );
+
+
+    }catch(error){
+
+      progress(0);
+
+
+      log(
+        "❌ " +
+        error.message,
+        "err"
+      );
+
+    }
+
+  };
+
+
+/* =========================================================
+   PARSE DATA.JS
+========================================================= */
+
+function parseDataJs(text){
+
+  try{
+
+    const fn =
+      new Function(
+
+        text +
+
+        `
+
+        return {
+          categories:
+            Array.isArray(CATEGORIES)
+              ? CATEGORIES
+              : [],
+
+          products:
+            Array.isArray(PRODUCTS)
+              ? PRODUCTS
+              : []
+        };
+
+        `
+
+      );
+
+
+    const result =
+      fn();
+
+
+    return {
+
+      categories:
+        JSON.parse(
+          JSON.stringify(
+            result.categories || []
+          )
+        ),
+
+      products:
+        JSON.parse(
+          JSON.stringify(
+            result.products || []
+          )
+        )
+
+    };
+
+  }catch(error){
+
+    throw Error(
+      "data.js could not be read: " +
+      error.message
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   ADD DETAIL
+========================================================= */
+
+$("#addDetail").onclick =
+  function(){
+
+    const row =
+      document.createElement(
+        "div"
+      );
+
+
+    row.className =
+      "detailRow";
+
+
+    row.innerHTML = `
+
+      <input
+        class="detailKey"
+        placeholder="Name"
+      >
+
+      <input
+        class="detailValue"
+        placeholder="Value"
+      >
+
+      <button
+        class="remove"
+        type="button"
+      >
+        ×
+      </button>
+
+    `;
+
+
+    row
+      .querySelector(".remove")
+      .onclick =
+      function(){
+
+        row.remove();
+
+      };
+
+
+    $("#detailRows")
+      .appendChild(
+        row
+      );
+
+  };
+
+
+/* =========================================================
+   READ DETAILS
+========================================================= */
+
+function readDetails(){
+
+  const details = {};
+
+
+  $$(".detailRow")
+    .forEach(
+      row => {
+
+        const key =
+          row
+            .querySelector(
+              ".detailKey"
+            )
+            .value
+            .trim();
+
+
+        const value =
+          row
+            .querySelector(
+              ".detailValue"
+            )
+            .value
+            .trim();
+
+
+        if(key){
+
+          details[key] =
+            value;
+
+        }
+
+      }
+    );
+
+
+  return details;
+
+}
+
+
+/* =========================================================
+   GENERATE PRODUCT ID
+========================================================= */
+
+function generateProductId(){
+
+  let id;
+
+
+  do{
+
+    id =
+      "PRD-" +
+      Math.random()
+        .toString(36)
+        .substring(
+          2,
+          8
+        )
+        .toUpperCase();
+
+  }while(
+    products.some(
+      product =>
+        product.id === id
+    )
+  );
+
+
+  return id;
+
+}
+
+
+/* =========================================================
+   GENERATE CATEGORY ID
+========================================================= */
+
+function generateCategoryId(
+  name
+){
+
+  let base =
+    name
+      .toLowerCase()
+      .trim()
+      .replace(
+        /[^a-z0-9]+/g,
+        "-"
+      )
+      .replace(
+        /^-+|-+$/g,
+        ""
+      );
+
+
+  if(!base){
+
+    base =
+      "category";
+
+  }
+
+
+  let id =
+    base;
+
+  let number =
+    2;
+
+
+  while(
+    categories.some(
+      category =>
+        category.id === id
+    )
+  ){
+
+    id =
+      `${base}-${number}`;
+
+    number++;
+
+  }
+
+
+  return id;
+
+}
+
+
+/* =========================================================
+   CLEAR PRODUCT
+========================================================= */
+
+function clearProduct(){
+
+  $("#pName").value = "";
+
+  $("#pPrice").value = "";
+
+  $("#pOld").value = "";
+
+  $("#pOff").value = "";
+
+  $("#pDesc").value = "";
+
+  $("#pImages").value = "";
+
+  $("#preview").innerHTML = "";
+
+  $("#detailRows").innerHTML = "";
+
+  selectedProductFiles = [];
+
+}
+
+
+/* =========================================================
+   CLEAR CATEGORY
+========================================================= */
+
+function clearCategory(){
+
+  $("#cName").value = "";
+
+  $("#cId").value = "";
+
+  $("#cImageFile").value = "";
+
+  $("#cPreview").innerHTML = "";
+
+  selectedCategoryFile = null;
+
+}
+
+
+/* =========================================================
+   CLEAR BUTTONS
+========================================================= */
+
+$("#clearProduct").onclick =
+  clearProduct;
+
+
+$("#clearCategory").onclick =
+  clearCategory;
+
+
+/* =========================================================
+   BUILD DATA.JS
+========================================================= */
+
+function buildDataJs(){
+
+  const currentShop =
+    window.SHOP &&
+    typeof SHOP === "object"
+      ? JSON.parse(
+          JSON.stringify(SHOP)
+        )
+      : {
+
+          name:
+            "BALAJI GARMENTS PBH",
+
+          ownerWhatsApp:
+            "919532328020",
+
+          bannerImage:
+            "banner.jpg",
+
+          headerLogo:
+            "logo.jpg",
+
+          websiteUrl:
+            getSettings().site
+
+        };
+
+
+  currentShop.websiteUrl =
+    getSettings().site ||
+    currentShop.websiteUrl ||
+    "";
+
+
+  return (
+
+`/* AUTO-GENERATED */
+
+var SHOP=${JSON.stringify(
+  currentShop,
+  null,
+  2
+)};
+
+var CATEGORIES=${JSON.stringify(
+  categories,
+  null,
+  2
+)};
+
+var PRODUCTS=${JSON.stringify(
+  products,
+  null,
+  2
+)};
+`
+
+  );
+
+}
+
+
+/* =========================================================
+   PUBLISH DATA.JS
+========================================================= */
+
+async function publishData(
+  reason
+){
+
+  log(
+    "📄 Preparing data.js..."
+  );
+
+
+  progress(82);
+
+
+  let remote;
+
+
+  try{
+
+    remote =
+      await getGithubFile(
+        "data.js"
+      );
+
+  }catch(error){
+
+    if(
+      String(error.message)
+        .includes("[404]")
+    ){
+
+      remote =
+        null;
+
+    }else{
+
+      throw error;
+
+    }
+
+  }
+
+
+  const content =
+    buildDataJs();
+
+
+  await putGithubFile(
+
+    "data.js",
+
+    content,
+
+    reason,
+
+    remote
+      ? remote.sha
+      : null
+
+  );
+
+
+  progress(100);
+
+
+  log(
+    "✅ data.js updated successfully.",
+    "ok"
+  );
+
+}
+
+
+/* =========================================================
+   PRODUCT UPLOAD
+========================================================= */
+
+$("#publishProduct").onclick =
+  async function(){
+
+    if(uploading){
+
+      return;
+
+    }
+
+
+    uploading = true;
+
+
+    const button =
+      $("#publishProduct");
+
+
+    button.disabled =
+      true;
+
+
+    $("#publishCategory")
+      .disabled =
+      true;
+
+
+    progress(0);
+
+
+    try{
+
+      saveSettings();
+
+
+      const name =
+        $("#pName")
+          .value
+          .trim();
+
+
+      if(!name){
+
+        throw Error(
+          "Product name required."
+        );
+
+      }
+
+
+      const price =
+        Number(
+          $("#pPrice")
+            .value
+        ) || 0;
+
+
+      if(price <= 0){
+
+        throw Error(
+          "Enter a valid product price."
+        );
+
+      }
+
+
+      const category =
+        $("#pCategory")
+          .value;
+
+
+      if(!category){
+
+        throw Error(
+          "Select a category."
+        );
+
+      }
+
+
+      if(
+        !selectedProductFiles.length
+      ){
+
+        throw Error(
+          "Select at least one product image."
+        );
+
+      }
+
+
+      log(
+        "📦 Creating new product..."
+      );
+
+
+      progress(5);
+
+
+      const productId =
+        generateProductId();
+
+
+      const imagePaths = [];
+
+
+      /*
+       Upload images one by one.
+      */
+
+      for(
+        let i = 0;
+        i < selectedProductFiles.length;
+        i++
+      ){
+
+        const path =
+          await uploadImage(
+
+            selectedProductFiles[i],
+
+            "products"
+
+          );
+
+
+        imagePaths.push(
+          path
+        );
+
+
+        progress(
+          10 +
+          (
+            (i + 1) /
+            selectedProductFiles.length
+          ) *
+          60
+        );
+
+      }
+
+
+      /*
+       Create new product.
+       */
+
+      const product = {
+
+        id:
+          productId,
+
+        category:
+          category,
+
+        name:
+          name,
+
+        price:
+          price,
+
+        oldPrice:
+          Number(
+            $("#pOld")
+              .value
+          ) || 0,
+
+        discount:
+          Number(
+            $("#pOff")
+              .value
+          ) || 0,
+
+        rating:
+          4.5,
+
+        ratingCount:
+          0,
+
+        images:
+          imagePaths,
+
+        description:
+          $("#pDesc")
+            .value
+            .trim(),
+
+        details:
+          readDetails()
+
+      };
+
+
+      /*
+       IMPORTANT:
+       Always ADD.
+       Never replace.
+      */
+
+      products.push(
+        product
+      );
+
+
+      log(
+        `➕ New product ${productId} added.`,
+        "ok"
+      );
+
+
+      progress(78);
+
+
+      await publishData(
+        `Add product ${productId}`
+      );
+
+
+      updateCounts();
+
+
+      clearProduct();
+
+
+      log(
+        "🎉 PRODUCT UPLOAD COMPLETE!",
+        "ok"
+      );
+
+
+    }catch(error){
+
+      log(
+        "❌ " +
+        error.message,
+        "err"
+      );
+
+
+      progress(0);
+
+    }finally{
+
+      uploading =
+        false;
+
+
+      button.disabled =
+        false;
+
+
+      $("#publishCategory")
+        .disabled =
+        false;
+
+    }
+
+  };
+
+
+/* =========================================================
+   CATEGORY UPLOAD
+========================================================= */
+
+$("#publishCategory").onclick =
+  async function(){
+
+    if(uploading){
+
+      return;
+
+    }
+
+
+    uploading = true;
+
+
+    const button =
+      $("#publishCategory");
+
+
+    button.disabled =
+      true;
+
+
+    $("#publishProduct")
+      .disabled =
+      true;
+
+
+    progress(0);
+
+
+    try{
+
+      saveSettings();
+
+
+      const name =
+        $("#cName")
+          .value
+          .trim();
+
+
+      if(!name){
+
+        throw Error(
+          "Category name required."
+        );
+
+      }
+
+
+      if(!selectedCategoryFile){
+
+        throw Error(
+          "Select a category image."
+        );
+
+      }
+
+
+      /*
+       Generate ID.
+      */
+
+      let enteredId =
+        $("#cId")
+          .value
+          .trim()
+          .toLowerCase();
+
+
+      const categoryId =
+        enteredId ||
+        generateCategoryId(
+          name
+        );
+
+
+      /*
+       Prevent accidental duplicate.
+      */
+
+      if(
+        categories.some(
+          category =>
+            category.id ===
+            categoryId
+        )
+      ){
+
+        throw Error(
+          `Category ID "${categoryId}" already exists.`
+        );
+
+      }
+
+
+      log(
+        "📁 Creating new category..."
+      );
+
+
+      progress(10);
+
+
+      const imagePath =
+        await uploadImage(
+
+          selectedCategoryFile,
+
+          "category"
+
+        );
+
+
+      progress(70);
+
+
+      const category = {
+
+        id:
+          categoryId,
+
+        name:
+          name,
+
+        image:
+          imagePath
+
+      };
+
+
+      /*
+       IMPORTANT:
+       Always ADD.
+       Never replace.
+      */
+
+      categories.push(
+        category
+      );
+
+
+      log(
+        `➕ New category ${categoryId} added.`,
+        "ok"
+      );
+
+
+      progress(78);
+
+
+      await publishData(
+        `Add category ${categoryId}`
+      );
+
+
+      populateCategories();
+
+      updateCounts();
+
+
+      clearCategory();
+
+
+      log(
+        "🎉 CATEGORY UPLOAD COMPLETE!",
+        "ok"
+      );
+
+
+    }catch(error){
+
+      log(
+        "❌ " +
+        error.message,
+        "err"
+      );
+
+
+      progress(0);
+
+    }finally{
+
+      uploading =
+        false;
+
+
+      button.disabled =
+        false;
+
+
+      $("#publishProduct")
+        .disabled =
+        false;
+
+    }
+
+  };
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+try{
+
+  loadSettings();
+
+  loadCurrentData();
+
+
+  log(
+    `✅ Admin ready.`,
+    "ok"
+  );
+
+
+  log(
+    `${categories.length} existing categories.`,
+    "info"
+  );
+
+
+  log(
+    `${products.length} existing products.`,
+    "info"
+  );
+
+
+  log(
+    "➕ Upload-only mode enabled. Existing data will never be edited.",
+    "ok"
+  );
+
+
+}catch(error){
+
+  log(
+    "❌ Initialization failed: " +
+    error.message,
+    "err"
+  );
+
+}
+
+</script>
+
 </body>
-</html>
+  </html>
