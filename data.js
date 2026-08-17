@@ -173,5 +173,22 @@ var PRODUCTS=[
     "details": {
       "Jeje": "Eiie"
     }
+  },
+  {
+    "id": "PRD-Y1HA1F",
+    "category": "mens-kurta",
+    "name": "Men's Stylish Kurta",
+    "price": 499,
+    "oldPrice": 999,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/image-1780127442026-1786954761354-mnxan.jpg"
+    ],
+    "description": "Wedding  wear",
+    "details": {
+      "Kurti": "Mk"
+    }
   }
 ];
