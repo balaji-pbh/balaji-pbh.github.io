@@ -227,6 +227,32 @@ a{
 
 
 /* =========================================================
+   SEARCH BOX
+   ========================================================= */
+
+.search-wrap{
+  max-width:550px;
+  margin:0 auto 25px;
+  padding:0 15px;
+}
+
+.search-wrap input{
+  width:100%;
+  padding:14px 18px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--paper);
+  font-size:14px;
+  outline:none;
+  font-family:inherit;
+}
+
+.search-wrap input:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(183,138,59,.15);
+}
+
+/* =========================================================
    SECTION HEADER
    ========================================================= */
 
@@ -717,6 +743,18 @@ a{
 </section>
 
 
+<!-- =======================================================
+     SEARCH BOX (Categories ke upar)
+     ======================================================= -->
+
+<div class="search-wrap">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search products..."
+  >
+</div>
+
 
 <!-- =======================================================
      CATEGORY SECTION
@@ -745,6 +783,39 @@ a{
 
   <div
     id="categories"
+    class="grid"
+  ></div>
+
+</section>
+
+
+<!-- =======================================================
+     TOP PRODUCTS (How to Shop ke upar)
+     ======================================================= -->
+
+<section class="section" style="padding-top:0;">
+
+  <div class="sectionHead">
+
+    <div class="sectionTitleWrap">
+
+      <span class="sectionKicker">
+        Trending
+      </span>
+
+      <h2>
+        Top Products
+      </h2>
+
+    </div>
+
+    <small>Best sellers</small>
+
+  </div>
+
+
+  <div
+    id="topProducts"
     class="grid"
   ></div>
 
