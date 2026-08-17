@@ -7,71 +7,118 @@
 <title>Balaji Garments | Admin</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <style>
-:root{--ink:#111827;--gold:#B78A3B;--gold2:#D4AF62;--cream:#FAF8F4;--paper:#fff;--muted:#6B7280;--line:#E8E3DA;--soft:#F4F0E8;--shadow:0 12px 30px rgba(17,24,39,.07)}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif}.top{background:rgba(250,248,244,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.head{max-width:1120px;margin:auto;min-height:62px;padding:8px 14px;display:flex;align-items:center;gap:10px}.mark{width:36px;height:36px;border-radius:11px;background:var(--gold);display:grid;place-items:center;color:#fff;font-weight:800}.title{font-weight:800;font-size:15px}.sub{font-size:9px;color:var(--muted)}.spacer{flex:1}.back{font-size:11px;color:var(--gold);text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:16px 14px 40px}.grid2{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:850px){.grid2{grid-template-columns:1fr 1fr}}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}.panel h2{font-size:14px;margin:0 0 3px}.hint{font-size:10px;color:var(--muted);margin:0 0 12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{margin:8px 0}.field label{display:block;font-size:10px;font-weight:700;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:11px;outline:0;background:#fff}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(183,138,59,.15)}.btn{border:0;border-radius:10px;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#fff}.secondary{background:#F4F0E8;color:var(--gold)}.danger{background:#FEF2F2;color:#DC2626}.mutedBtn{background:#F1F5F9;color:#334155}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.status{background:#111827;color:#DCE7FF;border-radius:14px;padding:11px;font:10px/1.6 ui-monospace,monospace;min-height:145px;max-height:310px;overflow:auto}.ok{color:#6EE7B7}.warn{color:#FCD34D}.err{color:#FCA5A5}.info{color:#93C5FD}.details{display:grid;gap:7px}.detailRow{display:grid;grid-template-columns:1fr 1fr 30px;gap:6px}.detailRow input{min-width:0}.remove{border:0;border-radius:9px;background:#FEF2F2;color:#DC2626;cursor:pointer}.fileBox{border:1px dashed #CBD5E1;border-radius:12px;padding:10px;background:#FAF8F4}.preview{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.preview img{width:100%;height:72px;object-fit:cover;border-radius:9px}.catList,.prodList{display:grid;gap:7px;margin-top:10px}.item{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:8px}.item img{width:40px;height:40px;border-radius:8px;object-fit:cover}.itemMain{min-width:0;flex:1}.itemMain b{font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.itemMain span{font-size:9px;color:var(--muted)}.notice{font-size:10px;padding:9px 10px;background:#F0FDFA;border:1px solid #CCFBF1;border-radius:10px;color:#0F766E;margin-top:9px}.hidden{display:none!important}.tabs{display:flex;gap:5px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px;font-size:10px;font-weight:800;cursor:pointer}.tab.active{background:#F4F0E8;border-color:var(--gold);color:var(--gold)}
+:root{--ink:#111827;--gold:#B78A3B;--gold2:#D4AF62;--cream:#FAF8F4;--paper:#fff;--muted:#6B7280;--line:#E8E3DA;--soft:#F4F0E8;--shadow:0 12px 30px rgba(17,24,39,.07)}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif}.top{background:rgba(250,248,244,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.head{max-width:1120px;margin:auto;min-height:62px;padding:8px 14px;display:flex;align-items:center;gap:10px}.mark{width:36px;height:36px;border-radius:11px;background:var(--gold);display:grid;place-items:center;color:#fff;font-weight:800}.title{font-weight:800;font-size:15px}.sub{font-size:9px;color:var(--muted)}.spacer{flex:1}.back{font-size:11px;color:var(--gold);text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:16px 14px 40px}.grid2{display:grid;grid-template-columns:1fr;gap:14px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}.panel h2{font-size:14px;margin:0 0 3px}.hint{font-size:10px;color:var(--muted);margin:0 0 12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{margin:8px 0}.field label{display:block;font-size:10px;font-weight:700;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:11px;outline:0;background:#fff}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(183,138,59,.15)}.btn{border:0;border-radius:10px;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#fff}.secondary{background:#F4F0E8;color:var(--gold)}.danger{background:#FEF2F2;color:#DC2626}.mutedBtn{background:#F1F5F9;color:#334155}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.status{background:#111827;color:#DCE7FF;border-radius:14px;padding:11px;font:10px/1.6 ui-monospace,monospace;min-height:145px;max-height:310px;overflow:auto}.ok{color:#6EE7B7}.warn{color:#FCD34D}.err{color:#FCA5A5}.info{color:#93C5FD}.details{display:grid;gap:7px}.detailRow{display:grid;grid-template-columns:1fr 1fr 30px;gap:6px}.detailRow input{min-width:0}.remove{border:0;border-radius:9px;background:#FEF2F2;color:#DC2626;cursor:pointer}.fileBox{border:1px dashed #CBD5E1;border-radius:12px;padding:10px;background:#FAF8F4}.preview{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.preview img{width:100%;height:72px;object-fit:cover;border-radius:9px}.notice{font-size:10px;padding:9px 10px;background:#F0FDFA;border:1px solid #CCFBF1;border-radius:10px;color:#0F766E;margin-top:9px}.hidden{display:none!important}.tabs{display:flex;gap:5px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px;font-size:10px;font-weight:800;cursor:pointer}.tab.active{background:#F4F0E8;border-color:var(--gold);color:var(--gold)}
 </style>
 </head>
 <body>
 <header class="top"><div class="head"><div class="mark">BG</div><div><div class="title">Balaji Garments Admin</div><div class="sub">Product & Category Manager</div></div><div class="spacer"></div><a class="back" href="index.html">View Store →</a></div></header>
 
 <main class="wrap">
+
 <!-- GitHub Settings -->
-<div class="panel" style="margin-bottom:14px"><h2>1. GitHub Connection</h2><p class="hint">Settings saved locally. Data published to data.js on GitHub.</p>
-<div class="row"><div class="field"><label>GitHub Username</label><input id="ghUser" placeholder="your-username"></div><div class="field"><label>Repository</label><input id="ghRepo" placeholder="your-repo"></div></div>
-<div class="row"><div class="field"><label>GitHub Token</label><input id="ghToken" type="password" placeholder="github_pat_..."></div><div class="field"><label>Website URL</label><input id="siteUrl" placeholder="https://username.github.io/repo/"></div></div>
-<div class="actions"><button class="btn secondary" id="saveSettings">Save Settings</button><button class="btn mutedBtn" id="loadRemote">Load data.js</button></div>
-<div class="notice">Use fine-grained GitHub token with repo access only.</div>
+<div class="panel" style="margin-bottom:14px">
+  <h2>1. GitHub Connection</h2>
+  <p class="hint">Settings saved locally. Data published to data.js on GitHub.</p>
+  <div class="row">
+    <div class="field"><label>GitHub Username</label><input id="ghUser" placeholder="your-username"></div>
+    <div class="field"><label>Repository</label><input id="ghRepo" placeholder="your-repo"></div>
+  </div>
+  <div class="row">
+    <div class="field"><label>GitHub Token</label><input id="ghToken" type="password" placeholder="github_pat_..."></div>
+    <div class="field"><label>Website URL</label><input id="siteUrl" placeholder="https://username.github.io/repo/"></div>
+  </div>
+  <div class="actions">
+    <button class="btn secondary" id="saveSettings">Save Settings</button>
+    <button class="btn mutedBtn" id="loadRemote">Load data.js</button>
+  </div>
+  <div class="notice">Use fine-grained GitHub token with repo access only.</div>
 </div>
 
-<div class="grid2">
-<!-- Left Panel -->
-<section class="panel"><div class="tabs"><button class="tab active" data-tab="product">Product</button><button class="tab" data-tab="category">Category</button></div>
+<!-- Product & Category Form -->
+<div class="panel" style="margin-bottom:14px">
+  <div class="tabs">
+    <button class="tab active" data-tab="product">Product</button>
+    <button class="tab" data-tab="category">Category</button>
+  </div>
 
-<!-- PRODUCT TAB -->
-<div id="productTab">
-<h2>2. Product Manager</h2><p class="hint">Add/edit product. Images saved in /images/products/ folder.</p>
-<input id="editingId" type="hidden">
-<div class="field"><label>Product Name *</label><input id="pName" placeholder="Stylish Blue Shirt"></div>
-<div class="row"><div class="field"><label>Price (₹)</label><input id="pPrice" type="number" placeholder="249"></div><div class="field"><label>Old Price</label><input id="pOld" type="number" placeholder="999"></div></div>
-<div class="row"><div class="field"><label>Discount %</label><input id="pOff" type="number" placeholder="75"></div><div class="field"><label>Category *</label><select id="pCategory"></select></div></div>
-<div class="field"><label>Description</label><textarea id="pDesc" placeholder="Write product details..."></textarea></div>
-<div class="field"><label>Product Images</label><div class="fileBox"><input id="pImages" type="file" accept="image/*" multiple><div id="preview" class="preview"></div></div></div>
-<div class="field"><label>Details</label><div id="detailRows" class="details"></div><button class="btn secondary" id="addDetail" type="button" style="margin-top:7px">+ Add Detail</button></div>
-<div class="actions"><button class="btn primary" id="publishProduct">Publish Product</button><button class="btn mutedBtn" id="clearProduct">Clear</button></div>
-</div>
+  <!-- PRODUCT TAB -->
+  <div id="productTab">
+    <h2>2. Product Manager</h2>
+    <p class="hint">Add/edit product. Images saved in /images/products/ folder.</p>
+    <input id="editingId" type="hidden">
+    <div class="field"><label>Product Name *</label><input id="pName" placeholder="Stylish Blue Shirt"></div>
+    <div class="row">
+      <div class="field"><label>Price (₹)</label><input id="pPrice" type="number" placeholder="249"></div>
+      <div class="field"><label>Old Price</label><input id="pOld" type="number" placeholder="999"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>Discount %</label><input id="pOff" type="number" placeholder="75"></div>
+      <div class="field"><label>Category *</label><select id="pCategory"></select></div>
+    </div>
+    <div class="field"><label>Description</label><textarea id="pDesc" placeholder="Write product details..."></textarea></div>
+    <div class="field">
+      <label>Product Images</label>
+      <div class="fileBox">
+        <input id="pImages" type="file" accept="image/*" multiple>
+        <div id="preview" class="preview"></div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Details</label>
+      <div id="detailRows" class="details"></div>
+      <button class="btn secondary" id="addDetail" type="button" style="margin-top:7px">+ Add Detail</button>
+    </div>
+    <div class="actions">
+      <button class="btn primary" id="publishProduct">Publish Product</button>
+      <button class="btn mutedBtn" id="clearProduct">Clear</button>
+    </div>
+  </div>
 
-<!-- CATEGORY TAB -->
-<div id="categoryTab" class="hidden">
-<h2>2B. Category Manager</h2><p class="hint">Categories published to data.js. Image saved in /images/category/.</p>
-<input id="editingCatId" type="hidden">
-<div class="field"><label>Category Name *</label><input id="cName" placeholder="Men's Shirts"></div>
-<div class="row"><div class="field"><label>Category ID</label><input id="cId" placeholder="mens-shirts"></div></div>
-<div class="field"><label>Category Image</label><div class="fileBox"><input id="cImageFile" type="file" accept="image/*"><div id="cPreview" class="preview" style="margin-top:6px"></div></div></div>
-<div class="actions"><button class="btn primary" id="publishCategory">Publish Category</button><button class="btn mutedBtn" id="clearCategory">Clear</button></div>
-</div>
-</section>
-
-<!-- Right Panel -->
-<section class="panel"><h2>3. Live Manager</h2><p class="hint">Select item to edit/delete. Changes published to GitHub.</p>
-<h3 style="font-size:11px;margin:14px 0 5px">Categories</h3><div id="catList" class="catList"></div>
-<h3 style="font-size:11px;margin:16px 0 5px">Products</h3><div id="prodList" class="prodList"></div>
-</section>
+  <!-- CATEGORY TAB -->
+  <div id="categoryTab" class="hidden">
+    <h2>2B. Category Manager</h2>
+    <p class="hint">Categories published to data.js. Image saved in /images/category/.</p>
+    <input id="editingCatId" type="hidden">
+    <div class="field"><label>Category Name *</label><input id="cName" placeholder="Men's Shirts"></div>
+    <div class="row">
+      <div class="field"><label>Category ID</label><input id="cId" placeholder="mens-shirts"></div>
+    </div>
+    <div class="field">
+      <label>Category Image</label>
+      <div class="fileBox">
+        <input id="cImageFile" type="file" accept="image/*">
+        <div id="cPreview" class="preview" style="margin-top:6px"></div>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn primary" id="publishCategory">Publish Category</button>
+      <button class="btn mutedBtn" id="clearCategory">Clear</button>
+    </div>
+  </div>
 </div>
 
 <!-- Publish Log -->
-<section class="panel publishBox"><h2>4. Publish Log</h2><p class="hint">Validation → Image upload → data.js → Pages → Sitemap</p><div id="status" class="status"><div class="info">Ready.</div></div></section>
+<section class="panel">
+  <h2>3. Publish Log</h2>
+  <p class="hint">Validation → Image upload → data.js</p>
+  <div id="status" class="status"><div class="info">Ready.</div></div>
+</section>
+
 </main>
 
 <script src="data.js"></script>
 <script>
 /* ============================================================
-   ADMIN SCRIPT - SHOPPING VERSION
+   ADMIN SCRIPT - SHOPPING VERSION (LIVE MANAGER REMOVED)
    ============================================================ */
 
 (() => {
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const KEY="balajiAdminV3";
-let cats=JSON.parse(JSON.stringify(window.CATEGORIES||[]));
-let prods=JSON.parse(JSON.stringify(window.PRODUCTS||[]));
+
+// ✅ Direct use - CATEGORIES aur PRODUCTS global scope mein available hain
+let cats = JSON.parse(JSON.stringify(CATEGORIES || []));
+let prods = JSON.parse(JSON.stringify(PRODUCTS || []));
 
 // ===== HELPERS =====
 const log=(m,t="info")=>{const d=document.createElement("div");d.className=t;d.textContent=`[${new Date().toLocaleTimeString()}] ${m}`;$("#status").appendChild(d);$("#status").scrollTop=$("#status").scrollHeight;};
@@ -82,28 +129,6 @@ const money=n=>"₹"+Number(n||0).toLocaleString("en-IN");
 function loadSettings(){const s=JSON.parse(localStorage.getItem(KEY)||"{}");$("#ghUser").value=s.user||"";$("#ghRepo").value=s.repo||"";$("#ghToken").value=s.token||"";$("#siteUrl").value=s.site||SHOP.websiteUrl||""}
 function save(){localStorage.setItem(KEY,JSON.stringify(settings()));log("Settings saved.");}
 loadSettings();
-
-// ===== UPLOAD IMAGE TO GITHUB =====
-async function uploadImageToGitHub(file, path) {
-  const s=settings();
-  if(!s.user||!s.repo||!s.token)throw Error("GitHub settings required.");
-  
-  const reader=new FileReader();
-  const base64=await new Promise((resolve,reject)=>{
-    reader.onload=()=>resolve(reader.result.split(",")[1]);
-    reader.onerror=reject;
-    reader.readAsDataURL(file);
-  });
-  
-  const url=`https://api.github.com/repos/${s.user}/${s.repo}/contents/${path}`;
-  const res=await fetch(url,{
-    method:"PUT",
-    headers:{Authorization:`Bearer ${s.token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
-    body:JSON.stringify({message:`Upload ${path}`,content:base64,branch:"main"})
-  });
-  if(!res.ok)throw Error("Upload failed: "+res.status);
-  return path;
-}
 
 // ===== IMAGE HANDLING =====
 let selectedImages=[];
@@ -141,19 +166,9 @@ $("#cImageFile").onchange=async e=>{
   log(`📷 Category image loaded.`);
 };
 
-// ===== RENDER LISTS =====
+// ===== POPULATE CATEGORY DROPDOWN =====
 function populateCats(){ 
   $("#pCategory").innerHTML=cats.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("")||`<option value="">No categories</option>`;
-}
-
-function renderLists(){
- $("#catList").innerHTML=cats.map(c=>`<div class="item"><img src="${c.image||''}"><div class="itemMain"><b>${esc(c.name)}</b><span>${c.id}</span></div><button class="btn secondary" data-edit-cat="${c.id}">Edit</button><button class="btn danger" data-del-cat="${c.id}">Delete</button></div>`).join("")||"<div class='hint'>No categories.</div>";
- $("#prodList").innerHTML=prods.map(p=>`<div class="item"><img src="${p.images?.[0]||''}"><div class="itemMain"><b>${esc(p.name)}</b><span>${p.id} • ${money(p.price)}</span></div><button class="btn secondary" data-edit-prod="${p.id}">Edit</button><button class="btn danger" data-del-prod="${p.id}">Delete</button></div>`).join("")||"<div class='hint'>No products.</div>";
- $$("[data-edit-cat]").forEach(b=>b.onclick=()=>editCat(b.dataset.editCat));
- $$("[data-del-cat]").forEach(b=>b.onclick=()=>deleteCat(b.dataset.delCat));
- $$("[data-edit-prod]").forEach(b=>b.onclick=()=>editProd(b.dataset.editProd));
- $$("[data-del-prod]").forEach(b=>b.onclick=()=>deleteProd(b.dataset.delProd));
- populateCats();
 }
 
 // ===== TABS =====
@@ -161,7 +176,7 @@ $$(".tab").forEach(b=>b.onclick=()=>{$$(".tab").forEach(x=>x.classList.remove("a
 
 // ===== SETTINGS =====
 $("#saveSettings").onclick=save;
-$("#loadRemote").onclick=async()=>{try{save();const raw=await getFile("data.js");if(!raw)throw Error("data.js not found");const parsed=parseData(raw.content);cats=parsed.categories;prods=parsed.products;renderLists();log("✅ Remote data.js loaded.","ok")}catch(e){log(e.message,"err")}};
+$("#loadRemote").onclick=async()=>{try{save();const raw=await getFile("data.js");if(!raw)throw Error("data.js not found");const parsed=parseData(raw.content);cats=parsed.categories;prods=parsed.products;populateCats();log("✅ Remote data.js loaded.","ok")}catch(e){log(e.message,"err")}};
 
 // ===== DETAIL ROWS =====
 $("#addDetail").onclick=()=>addDetailRow();
@@ -200,11 +215,7 @@ function readProduct(){
  };
 }
 
-$("#publishProduct").onclick=async()=>{try{save();const p=readProduct();log(`📦 Product ${p.id}...`);const i=prods.findIndex(x=>x.id===p.id);if(i>=0)prods[i]=p;else prods.push(p);await publishAll(`Product ${p.id} published`);resetProduct();renderLists();}catch(e){log("❌ "+e.message,"err")}};
-
-function editProd(id){const p=prods.find(x=>x.id===id);if(!p)return;$("#editingId").value=p.id;$("#pName").value=p.name;$("#pPrice").value=p.price;$("#pOld").value=p.oldPrice||"";$("#pOff").value=p.discount||"";$("#pCategory").value=p.category;$("#pDesc").value=p.description||"";$("#detailRows").innerHTML="";Object.entries(p.details||{}).forEach(([k,v])=>addDetailRow(k,v));$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="product"));$("#productTab").classList.remove("hidden");$("#categoryTab").classList.add("hidden");scrollTo(0,0);log(`✏️ Editing ${id}`,"info")}
-
-async function deleteProd(id){if(!confirm("Delete?"))return;prods=prods.filter(p=>p.id!==id);try{await publishAll(`Product ${id} deleted`);renderLists()}catch(e){log(e.message,"err")}}
+$("#publishProduct").onclick=async()=>{try{save();const p=readProduct();log(`📦 Product ${p.id}...`);const i=prods.findIndex(x=>x.id===p.id);if(i>=0)prods[i]=p;else prods.push(p);await publishAll(`Product ${p.id} published`);resetProduct();populateCats();}catch(e){log("❌ "+e.message,"err")}};
 
 // ===== CATEGORY CRUD =====
 function resetCat(){["editingCatId","cName","cId"].forEach(id=>$("#"+id).value="");$("#cImageFile").value="";$("#cPreview").innerHTML="";catImageData=null}
@@ -220,21 +231,16 @@ function readCat(){
  return {id,name,image};
 }
 
-$("#publishCategory").onclick=async()=>{try{save();const c=readCat();const oldId=$("#editingCatId").value;if(oldId&&oldId!==c.id)cats=cats.filter(x=>x.id!==oldId);const i=cats.findIndex(x=>x.id===c.id);if(i>=0)cats[i]=c;else cats.push(c);await publishAll(`Category ${c.id} published`);resetCat();renderLists()}catch(e){log("❌ "+e.message,"err")}};
-
-function editCat(id){const c=cats.find(x=>x.id===id);if(!c)return;$("#editingCatId").value=c.id;$("#cName").value=c.name;$("#cId").value=c.id;if(c.image){$("#cPreview").innerHTML=`<img src="${c.image}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">`;}$$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="category"));$("#productTab").classList.add("hidden");$("#categoryTab").classList.remove("hidden");scrollTo(0,0);log(`✏️ Editing category ${id}`,"info")}
-
-async function deleteCat(id){const has=prods.some(p=>p.category===id);if(has)return alert("Category has products. Delete them first.");if(!confirm("Delete?"))return;cats=cats.filter(c=>c.id!==id);try{await publishAll(`Category ${id} deleted`);renderLists()}catch(e){log(e.message,"err")}}
+$("#publishCategory").onclick=async()=>{try{save();const c=readCat();const oldId=$("#editingCatId").value;if(oldId&&oldId!==c.id)cats=cats.filter(x=>x.id!==oldId);const i=cats.findIndex(x=>x.id===c.id);if(i>=0)cats[i]=c;else cats.push(c);await publishAll(`Category ${c.id} published`);resetCat();populateCats();}catch(e){log("❌ "+e.message,"err")}};
 
 // ===== GITHUB API =====
 async function api(path,opts={}){const s=settings();if(!s.user||!s.repo||!s.token)throw Error("GitHub settings required.");const r=await fetch(`https://api.github.com${path}`,{...opts,headers:{Accept:"application/vnd.github+json",Authorization:`Bearer ${s.token}`,"X-GitHub-Api-Version":"2022-11-28","Content-Type":"application/json"}});const j=await r.json();if(!r.ok)throw Error(j.message||`API ${r.status}`);return j}
 async function getFile(path){return api(`/repos/${settings().user}/${settings().repo}/contents/${path}?ref=main`)}
 async function putFile(path,content,message,sha=null){const body={message,content:btoa(unescape(encodeURIComponent(content))),branch:"main"};if(sha)body.sha=sha;return api(`/repos/${settings().user}/${settings().repo}/contents/${path}`,{method:"PUT",body:JSON.stringify(body)})}
-async function publishText(path,text,message){let sha=null;try{sha=(await getFile(path)).sha}catch(e){}await putFile(path,text,message,sha)}
 function parseData(text){const fn=new Function(text+";return {categories:CATEGORIES,products:PRODUCTS};");const x=fn();return {categories:JSON.parse(JSON.stringify(x.categories||[])),products:JSON.parse(JSON.stringify(x.products||[]))};}
 
 // ===== DATA GENERATION =====
-function dataText(){return `/* AUTO-GENERATED */\nconst SHOP=${JSON.stringify({...SHOP,websiteUrl:settings().site||SHOP.websiteUrl},null,2)};\nconst CATEGORIES=${JSON.stringify(cats,null,2)};\nconst PRODUCTS=${JSON.stringify(prods,null,2)};\n`}
+function dataText(){return `/* AUTO-GENERATED */\nvar SHOP=${JSON.stringify({...SHOP,websiteUrl:settings().site||SHOP.websiteUrl},null,2)};\nvar CATEGORIES=${JSON.stringify(cats,null,2)};\nvar PRODUCTS=${JSON.stringify(prods,null,2)};\n`}
 
 // ===== PUBLISH ALL =====
 async function publishAll(reason){
@@ -248,7 +254,7 @@ async function publishAll(reason){
 }
 
 // ===== INIT =====
-renderLists();
+populateCats();
 log("✅ Admin ready. "+cats.length+" categories, "+prods.length+" products.","ok");
 })();
 </script>
