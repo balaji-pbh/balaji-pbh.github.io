@@ -130,18 +130,22 @@ var PRODUCTS=[
     }
   },
   {
-    "id": "PRD-K9X78A",
-    "name": "Shirts",
-    "category": "mens-shirt",
-    "price": 249,
-    "oldPrice": 999,
-    "discount": 75,
+    "id": "PRD-5F63EN",
+    "name": "Jsjsj",
+    "category": "womens-saree",
+    "price": 466,
+    "oldPrice": 3666,
+    "discount": 90,
     "rating": 4.5,
     "ratingCount": 0,
     "images": [
-      "images/products/1000089166-1786952067458.jpg"
+      "images/products/1000089166-1786952227704.jpg",
+      "images/products/1000089169-1786952229247.jpg"
     ],
-    "description": "Hsjsosisjsisosjsjwkwlalkaksksk",
-    "details": {}
+    "description": "Susisoowwolqkqk",
+    "details": {
+      "Ejej": "Ieie",
+      "Jeej": "Ueue"
+    }
   }
 ];
