@@ -84,6 +84,30 @@ body{
   font-weight:700;
 }
 
+/* ================= SEARCH BOX ================= */
+
+.search-wrap{
+  max-width:1120px;
+  margin:10px auto 0;
+  padding:0 16px;
+}
+
+.search-wrap input{
+  width:100%;
+  padding:14px 18px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--paper);
+  font-size:14px;
+  outline:none;
+  font-family:inherit;
+}
+
+.search-wrap input:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(183,138,59,.15);
+}
+
 /* ================= MAIN WRAPPER ================= */
 
 .wrap{
@@ -465,6 +489,16 @@ body{
 
   </div>
 </header>
+
+
+<!-- ===== SEARCH BOX ===== -->
+<div class="search-wrap">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search in this category..."
+  >
+</div>
 
 
 <main class="wrap">
