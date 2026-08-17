@@ -26,6 +26,11 @@ var CATEGORIES=[
     "id": "womens-saree",
     "name": "Women's Saree",
     "image": "images/category/womens-saree.jpg"
+  },
+  {
+    "id": "3iwu",
+    "name": "Jsjejw",
+    "image": "images/category/1000087235-1786952432267.png"
   }
 ];
 var PRODUCTS=[
