@@ -2,7 +2,7 @@
    SHOP DATA - BALAJI GARMENTS PBH
    ============================================================ */
 
-const SHOP = {
+var SHOP = {
   name: "BALAJI GARMENTS PBH",
   ownerWhatsApp: "919532328020",
   bannerImage: "banner.jpg",
@@ -10,7 +10,7 @@ const SHOP = {
   websiteUrl: "https://balaji-pbh.github.io/"
 };
 
-const CATEGORIES = [
+var CATEGORIES = [
   {
     id: "mens-shirt",
     name: "Men's Stylish Shirts",
@@ -33,7 +33,7 @@ const CATEGORIES = [
   }
 ];
 
-const PRODUCTS = [
+var PRODUCTS = [
   {
     id: "PRD-001",
     category: "mens-shirt",
