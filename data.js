@@ -117,5 +117,22 @@ var PRODUCTS=[
     "details": {
       "Premium Kurti Set": "👗 Single Piece – Kurti Only 🌸 Premium Floral Foil Print 💎 Elegant Neck Design 🌿 Soft & Comfortable Fabric 🎨 Vibrant & Attractive Colour 👌 Daily Wear & Casual/Festive Wear Brand: Balaji Garments & Saree Centre Design No.: 1722"
     }
+  },
+  {
+    "id": "PRD-H6T7Z3",
+    "category": "women-s-stylish-kurti-set",
+    "name": "Women's Wedding wear Kurti Set",
+    "price": 999,
+    "oldPrice": 1999,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260818-wa0002-1787036975987-ckfho.jpg"
+    ],
+    "description": "🌸 Premium Foil Printed Kurti\nखूबसूरत Floral Foil Print और elegant neck design वाली यह ladies kurti आपके everyday और festive look के लिए एक शानदार विकल्प है। Soft & comfortable fabric और आकर्षक design इसे stylish और आरामदायक बनाता है।",
+    "details": {
+      "Kurti Set+ plazo + dupatta": "👗 Kurti + plazo + dupatta 🌸 Premium Floral Foil Print 💎 Elegant Neck Design 🌿 Soft & Comfortable Fabric 🎨 Vibrant & Attractive Colour 👌 Daily Wear & Casual/Festive Wear Brand: Balaji Garments & Saree Centre Design No.: 1722 Colour: Maroon"
+    }
   }
 ];
