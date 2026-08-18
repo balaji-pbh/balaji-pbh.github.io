@@ -43,6 +43,11 @@ var CATEGORIES=[
     "id": "trendy-kid-s-wear-s-0-to-5-year-s",
     "name": "Trendy Kid's Wear's 0 to 5 year's",
     "image": "images/category/file-00000000614882089ddca6eaf931a0f0-1787033306537-q3r9y.png"
+  },
+  {
+    "id": "men-s-stylish-premium-yellow-kurta-sets",
+    "name": "Men's Stylish Premium Yellow Kurta sets 💛",
+    "image": "images/category/file-0000000025cc8211806b1ec34959c8f4-1787033564675-w6rx0.png"
   }
 ];
 
