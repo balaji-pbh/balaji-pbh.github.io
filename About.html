@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="About Balaji Garments PBH — Know our story, mission and values.">
+<title>About Us | Balaji Garments PBH</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --ink:#111827;
+  --ink2:#1F2937;
+  --gold:#B78A3B;
+  --gold2:#D4AF62;
+  --cream:#FAF8F4;
+  --paper:#FFFFFF;
+  --muted:#6B7280;
+  --line:#E8E3DA;
+  --soft:#F4F0E8;
+  --shadow:0 12px 35px rgba(17,24,39,.07);
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;
+}
+
+img{
+  max-width:100%;
+}
+
+button,
+a{
+  font-family:inherit;
+}
+
+.container{
+  width:100%;
+  max-width:1120px;
+  margin:auto;
+  padding:0 15px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.top{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(250,248,244,.94);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(232,227,218,.9);
+}
+
+.head{
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:40px;
+  height:40px;
+  flex:none;
+  border-radius:12px;
+  object-fit:cover;
+  background:#EEE9DF;
+  border:1px solid var(--line);
+}
+
+.brand{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:-.2px;
+}
+
+.headSpacer{
+  flex:1;
+}
+
+.back{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:600;
+  padding:9px 11px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:rgba(255,255,255,.6);
+}
+
+.back:active{
+  transform:scale(.97);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+  padding:30px 0 10px;
+}
+
+.heroIntro{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:10px;
+}
+
+.heroLeft{
+  min-width:0;
+}
+
+.welcome{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--gold);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1.2px;
+  margin-bottom:10px;
+}
+
+.welcome::before{
+  content:"";
+  width:19px;
+  height:1px;
+  background:var(--gold);
+}
+
+.hero h1{
+  margin:0;
+  max-width:680px;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:37px;
+  line-height:1.08;
+  font-weight:600;
+  letter-spacing:-1px;
+}
+
+.hero h1 span{
+  color:var(--gold);
+}
+
+.hero p{
+  max-width:560px;
+  margin:11px 0 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.6;
+}
+
+.heroBadge{
+  flex:none;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:9px 11px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:var(--paper);
+  color:var(--muted);
+  font-size:10px;
+  font-weight:600;
+}
+
+.heroBadge::before{
+  content:"";
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#48A868;
+}
+
+
+/* =========================================================
+   BRAND STRIP (Hero ke neeche)
+   ========================================================= */
+
+.brandStrip{
+  margin:5px 0 10px;
+  padding:18px;
+  border-radius:16px;
+  background:var(--ink);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.brandStripText{
+  min-width:0;
+}
+
+.brandStrip small{
+  display:block;
+  color:#C8B995;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:5px;
+}
+
+.brandStrip strong{
+  display:block;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:19px;
+  font-weight:600;
+}
+
+.brandStrip p{
+  margin:5px 0 0;
+  color:#CBD5E1;
+  font-size:10px;
+  line-height:1.4;
+}
+
+.brandMark{
+  width:44px;
+  height:44px;
+  flex:none;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(212,175,98,.55);
+  border-radius:50%;
+  color:var(--gold2);
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:17px;
+  font-weight:600;
+}
+
+
+/* =========================================================
+   ABOUT STORY (No Box)
+   ========================================================= */
+
+.aboutStory{
+  max-width:700px;
+  margin:20px auto 30px;
+  text-align:center;
+}
+
+.aboutStory h3{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:24px;
+  font-weight:600;
+  margin-bottom:14px;
+  color:var(--ink);
+}
+
+.aboutStory p{
+  font-size:14px;
+  line-height:2;
+  color:var(--muted);
+  margin:0;
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA (No Box)
+   ========================================================= */
+
+.socialWrap{
+  max-width:500px;
+  margin:0 auto 20px;
+}
+
+.socialHeader{
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.socialHeader .label{
+  font-size:11px;
+  color:var(--gold);
+  font-weight:700;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+
+.socialHeader h4{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:22px;
+  font-weight:600;
+  margin:4px 0 0;
+  color:var(--ink);
+}
+
+.socialHeader h4 span{
+  color:var(--gold);
+}
+
+.socialLinks{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-width:340px;
+  margin:auto;
+}
+
+.socialLink{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:12px 18px;
+  border-radius:12px;
+  text-decoration:none;
+  color:var(--ink);
+  background:var(--paper);
+  border:1px solid var(--line);
+  transition:0.3s;
+}
+
+.socialLink:hover{
+  border-color:var(--gold);
+  transform:translateX(4px);
+}
+
+.socialLink .icon{
+  font-size:22px;
+  width:36px;
+  text-align:center;
+}
+
+/* Social Icon Colors */
+.socialLink.facebook .icon{ color:#1877F2; }
+.socialLink.instagram .icon{ color:#E4405F; }
+.socialLink.twitter .icon{ color:#000000; }
+.socialLink.pinterest .icon{ color:#E60023; }
+.socialLink.linkedin .icon{ color:#0A66C2; }
+
+.socialLink .label{
+  font-size:14px;
+  font-weight:500;
+}
+
+.socialLink .arrow{
+  margin-left:auto;
+  font-size:14px;
+  color:var(--muted);
+  transition:0.3s;
+}
+
+.socialLink:hover .arrow{
+  color:var(--gold);
+  transform:translateX(4px);
+}
+
+
+/* =========================================================
+   GET IN TOUCH (Box - Social ke neeche, Footer ke upar)
+   ========================================================= */
+
+.getInTouch{
+  max-width:700px;
+  margin:10px auto 25px;
+}
+
+.getInTouch .card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:22px;
+  box-shadow:0 5px 18px rgba(17,24,39,.045);
+  text-align:left;
+}
+
+.getInTouch .card h3{
+  font-size:18px;
+  font-weight:700;
+  margin:0 0 14px;
+  color:var(--gold);
+  font-family:"Playfair Display",Georgia,serif;
+}
+
+.getInTouch .card p{
+  font-size:13px;
+  line-height:1.9;
+  color:#4B5563;
+  margin:6px 0;
+}
+
+.getInTouch .card p strong{
+  color:var(--ink);
+}
+
+
+.getInTouch .card a{
+  color:var(--gold);
+  text-decoration:none;
+}
+
+.getInTouch .card a:hover{
+  text-decoration:underline;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.foot{
+  padding:30px 0 40px;
+  text-align:center;
+  color:var(--muted);
+  font-size:10px;
+}
+
+.footBrand{
+  display:block;
+  margin-bottom:6px;
+  color:var(--ink);
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:16px;
+  font-weight:600;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(min-width:600px){
+
+  .container{
+    padding-left:22px;
+    padding-right:22px;
+  }
+
+  .hero{
+    padding-top:34px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media(min-width:850px){
+
+  .head{
+    min-height:68px;
+  }
+
+  .logo{
+    width:42px;
+    height:42px;
+    border-radius:13px;
+  }
+
+  .brand{
+    font-size:17px;
+  }
+
+  .hero{
+    padding-top:40px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .hero p{
+    font-size:13px;
+  }
+
+  .brandStrip{
+    padding:20px 22px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media(max-width:370px){
+
+  .hero{
+    padding-top:22px;
+  }
+
+  .heroIntro{
+    gap:8px;
+  }
+
+  .hero h1{
+    font-size:29px;
+  }
+
+  .hero p{
+    font-size:10.5px;
+  }
+
+  .heroBadge{
+    padding:8px 9px;
+    font-size:9px;
+  }
+
+  .aboutStory h3{
+    font-size:20px;
+  }
+
+  .aboutStory p{
+    font-size:13px;
+  }
+
+  .socialLinks{
+    max-width:100%;
+  }
+
+  .socialLink{
+    padding:10px 14px;
+  }
+
+  .socialLink .icon{
+    font-size:20px;
+    width:32px;
+  }
+
+  .socialLink .label{
+    font-size:13px;
+  }
+
+  .getInTouch .card{
+    padding:16px;
+  }
+
+  .getInTouch .card h3{
+    font-size:16px;
+  }
+
+  .getInTouch .card p{
+    font-size:12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =======================================================
+     HEADER
+     ======================================================= -->
+
+<header class="top">
+
+  <div class="container head">
+
+    <img
+      id="logo"
+      class="logo"
+      alt="Balaji Garments PBH logo"
+      src="logo.jpg"
+    >
+
+    <div
+      id="shopName"
+      class="brand"
+    >
+      BALAJI GARMENTS PBH
+    </div>
+
+    <div class="headSpacer"></div>
+
+    <a
+      class="back"
+      href="index.html"
+    >
+      ← Home
+    </a>
+
+  </div>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- =======================================================
+     HERO
+     ======================================================= -->
+
+<section class="hero">
+
+  <div class="heroIntro">
+
+    <div class="heroLeft">
+
+      <div class="welcome">
+        KNOW US
+      </div>
+
+      <h1>
+        Our <span>Story.</span>
+      </h1>
+
+      <p>
+        Discover who we are, what we stand for,
+        and why Balaji Garments PBH is your
+        trusted fashion destination.
+      </p>
+
+    </div>
+
+    <div class="heroBadge">
+      Since 2020
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     BRAND STRIP (Hero ke neeche)
+     ======================================================= -->
+
+<div class="brandStrip">
+
+  <div class="brandStripText">
+
+    <small>
+      BALAJI GARMENTS PBH
+    </small>
+
+    <strong>
+      Your style. Your choice.
+    </strong>
+
+    <p>
+      Browse the collection and connect directly with our store.
+    </p>
+
+  </div>
+
+  <div class="brandMark">
+    BG
+  </div>
+
+</div>
+
+
+<!-- =======================================================
+     ABOUT STORY (No Box)
+     ======================================================= -->
+
+<div class="aboutStory">
+
+  <h3>About Balaji Garments</h3>
+
+  <p>
+    Balaji Garments Chilbila Pratapgarh is your trusted destination for quality fashion.
+    We bring you the latest styles with premium fabrics at affordable prices.
+    Our collection is carefully curated to match your taste and comfort.
+    Shop with confidence and experience the best of tradition and modernity.
+  </p>
+
+</div>
+
+
+<!-- =======================================================
+     SOCIAL MEDIA (No Box)
+     ======================================================= -->
+
+<div class="socialWrap">
+
+  <div class="socialHeader">
+
+    <span class="label">Connect With Us</span>
+
+    <h4>Follow <span>Us</span></h4>
+
+  </div>
+
+  <div class="socialLinks">
+
+    <!-- Facebook -->
+    <a href="#" target="_blank" class="socialLink facebook">
+      <span class="icon"><i class="fab fa-facebook-f"></i></span>
+      <span class="label">Facebook</span>
+      <span class="arrow">→</span>
+    </a>
+
+    <!-- Instagram -->
+    <a href="#" target="_blank" class="socialLink instagram">
+      <span class="icon"><i class="fab fa-instagram"></i></span>
+      <span class="label">Instagram</span>
+      <span class="arrow">→</span>
+    </a>
+
+    <!-- Twitter / X -->
+    <a href="#" target="_blank" class="socialLink twitter">
+      <span class="icon"><i class="fab fa-x-twitter"></i></span>
+      <span class="label">Twitter / X</span>
+      <span class="arrow">→</span>
+    </a>
+
+    <!-- Pinterest -->
+    <a href="#" target="_blank" class="socialLink pinterest">
+      <span class="icon"><i class="fab fa-pinterest-p"></i></span>
+      <span class="label">Pinterest</span>
+      <span class="arrow">→</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="#" target="_blank" class="socialLink linkedin">
+      <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+      <span class="label">LinkedIn</span>
+      <span class="arrow">→</span>
+    </a>
+
+  </div>
+
+</div>
+
+
+<!-- =======================================================
+     GET IN TOUCH (BOX - Social ke neeche, Footer ke upar)
+     ======================================================= -->
+
+<div class="getInTouch">
+
+  <div class="card">
+
+    <h3>📞 Get in Touch</h3>
+
+    <p>
+      <strong>📍 Address:</strong> Balaji Garments, Pratapgarh, Uttar Pradesh
+    </p>
+
+    <p>
+      <strong>📱 WhatsApp:</strong>
+      <a href="https://wa.me/919532328020" target="_blank">
+        +91 95323 28020
+      </a>
+    </p>
+
+    <p>
+      <strong>🕐 Store Hours:</strong> Monday – Saturday, 10:00 AM – 8:00 PM
+    </p>
+
+  </div>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
+
+<footer class="foot">
+
+  <span class="footBrand">
+    BALAJI GARMENTS PBH
+  </span>
+
+  © <span id="year"></span>
+  • Alok Kumar Umarvaishya
+
+</footer>
+
+
+<!-- =======================================================
+     SCRIPT
+     ======================================================= -->
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
