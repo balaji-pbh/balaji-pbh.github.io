@@ -38,6 +38,11 @@ var CATEGORIES=[
     "id": "men-s-stylish-premium-formal-pant-trousers-pant",
     "name": "Men's Stylish Premium Formal Pant/ Trousers Pant",
     "image": "images/category/file-000000001c6c821190995069a83cc449-1787033184663-35ree.png"
+  },
+  {
+    "id": "trendy-kid-s-wear-s-0-to-5-year-s",
+    "name": "Trendy Kid's Wear's 0 to 5 year's",
+    "image": "images/category/file-00000000614882089ddca6eaf931a0f0-1787033306537-q3r9y.png"
   }
 ];
 
