@@ -33,5 +33,22 @@ var PRODUCTS=[
     "details": {
       "Women's Short kurti": "Premium everyday wear short kurti with soft fabric, stylish floral print, comfortable regular fit, and versatile design for office, college, and casual wear."
     }
+  },
+  {
+    "id": "PRD-KRLYMX",
+    "category": "swk",
+    "name": "Women's Lafar Print Short Kurti",
+    "price": 249,
+    "oldPrice": 500,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/file-0000000074e88208a4b8ea6a438cb2c2-1787030506344-0zyfi.png"
+    ],
+    "description": "Ladies Cotton Short Kurti – Floral Print | Size XL\nStylish aur comfortable cotton short kurti jo daily wear ke liye perfect hai. Soft breathable fabric, elegant floral print aur embroidered V-neck design ise office, college aur casual outings ke liye ek ideal choice banata hai.",
+    "details": {
+      "Short kurti": "✅ Premium Soft Cotton Fabric ✅ Elegant Floral Print ✅ Embroidered V-Neck Design ✅ Comfortable Regular Fit ✅ Size: XL ✅ Available Colours: Pink, Green & Sky Blue ✅ Best For: Daily Wear, Office, College & Casual Outings ✅ Easy to Wash & Skin-Friendly"
+    }
   }
 ];
