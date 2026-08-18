@@ -23,6 +23,11 @@ var CATEGORIES=[
     "id": "men-s-stylish-premium-shirt-s",
     "name": "Men's Stylish Premium Shirt's",
     "image": "images/category/1787031409763-1787031481435-bw338.png"
+  },
+  {
+    "id": "women-s-trending-banarasi-sarees",
+    "name": "Women's Trending Banarasi Sarees",
+    "image": "images/category/file-00000000b6708208a28e594cafeb816e-1787031764697-4ynen.png"
   }
 ];
 
