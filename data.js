@@ -151,5 +151,22 @@ var PRODUCTS=[
     "details": {
       "Kurti plazo dupatta Set": "👗Kurti + plazo dupatta set 🌸 Premium Floral Foil Print 💎 Elegant Neck Design 🌿 Soft & Comfortable Fabric 🎨 Vibrant & Attractive Colour 👌 Daily Wear & Casual/Festive Wear Brand: Balaji Garments & Saree Centre Design No.: 1724 Colour: Light Green"
     }
+  },
+  {
+    "id": "PRD-TW1ROU",
+    "category": "swk",
+    "name": "Stylish short kurti - Mustard Yellow 💛",
+    "price": 349,
+    "oldPrice": 699,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/file-00000000d28082118d34f923bf16c02a-1787054533372-909hl.png"
+    ],
+    "description": "Stylish Short Kurti – Mustard Yellow\nBeautiful floral print with elegant embroidered/mirror-work front panel\nAttractive decorative border on the bottom\nComfortable short-length design with round neckline\nPerfect for daily wear, casual outings & small functions\nSingle PC – Kurti only",
+    "details": {
+      "Stylish short kurti mustard Yellow": "Stylish, comfortable & elegant short kurti with beautiful floral print and detailed embroidery—perfect for daily wear, casual outings and festive occasions. Single PC."
+    }
   }
 ];
