@@ -53,6 +53,11 @@ var CATEGORIES=[
     "id": "men-s-jean-s",
     "name": "Men's Jean's",
     "image": "images/category/file-00000000fb748211a7230d36b5dcc922-1787033759972-0wdu1.png"
+  },
+  {
+    "id": "men-s-casual-t-shirt",
+    "name": "Men's Casual T shirt",
+    "image": "images/category/file-00000000705c8208a1fc269a25d37c83-1787033994862-qwbfp.png"
   }
 ];
 
