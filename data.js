@@ -58,6 +58,11 @@ var CATEGORIES=[
     "id": "men-s-casual-t-shirt",
     "name": "Men's Casual T shirt",
     "image": "images/category/file-00000000705c8208a1fc269a25d37c83-1787033994862-qwbfp.png"
+  },
+  {
+    "id": "women-s-girl-s-t-shirt",
+    "name": "Women's/ Girl's T shirt",
+    "image": "images/category/file-00000000730082119d9a156a8ba4758b-1787034105478-dllkc.png"
   }
 ];
 
