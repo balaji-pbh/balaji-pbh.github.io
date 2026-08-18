@@ -33,6 +33,11 @@ var CATEGORIES=[
     "id": "women-s-stylish-sarees",
     "name": "Women's stylish Sarees",
     "image": "images/category/file-000000000bb48211b07887950e1d0fb3-1787032646420-0s7z5.png"
+  },
+  {
+    "id": "trendy-kid-s-wear-s-for-0-to-5-year-s",
+    "name": "Trendy Kid's Wear's for 0 to 5 year's",
+    "image": "images/category/file-00000000614882089ddca6eaf931a0f0-1787033022178-5vbls.png"
   }
 ];
 
