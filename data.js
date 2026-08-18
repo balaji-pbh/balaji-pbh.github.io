@@ -8,6 +8,12 @@ var SHOP={
   "websiteUrl": "https://balaji-pbh.github.io/"
 };
 
-var CATEGORIES=[ ];
+var CATEGORIES=[
+  {
+    "id": "swk",
+    "name": "Women's stylish short kurti",
+    "image": "images/category/file-00000000bbe4821196f49639c16dcc8b-1787029868598-t3ybv.png"
+  }
+];
 
-var PRODUCTS=[ ];
+var PRODUCTS=[];
