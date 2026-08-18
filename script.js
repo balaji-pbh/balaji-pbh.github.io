@@ -54,18 +54,49 @@
   }
   
   // ===== TOP PRODUCTS =====
-  if ($("#topProducts")) {
-    const topProducts = PRODUCTS.slice(0, 4);
-    $("#topProducts").innerHTML = topProducts.map(p => `
-      <a class="category" href="${productUrl(p)}" style="text-decoration:none;color:inherit;">
-        <img loading="lazy" src="${p.images?.[0] || ''}" alt="${esc(p.name)}" style="height:120px;width:100%;object-fit:cover;background:#EEE9DF;">
-        <div class="categoryBody">
-          <div class="categoryName">${esc(p.name)}</div>
-          <div class="categoryMeta">${money(p.price)}</div>
+// ===== TOP PRODUCTS =====
+if ($("#topProducts")) {
+  const topProducts = PRODUCTS.slice(0, 4);
+
+  $("#topProducts").innerHTML = topProducts.map(p => `
+    <a class="card" href="${productUrl(p)}">
+
+      <button
+        class="share"
+        data-share="${esc(p.id)}"
+        type="button"
+        aria-label="Share product"
+      >↗</button>
+
+      <img
+        class="pic"
+        loading="lazy"
+        src="${p.images?.[0] || ''}"
+        alt="${esc(p.name)}"
+      >
+
+      <div class="body">
+
+        <div class="name">
+          ${esc(p.name)}
         </div>
-      </a>
-    `).join("");
-  }
+
+        <div class="price">
+          ${money(p.price)}
+          ${p.oldPrice ? `<span class="old">${money(p.oldPrice)}</span>` : ''}
+          ${p.discount ? `<span class="off">${p.discount}% OFF</span>` : ''}
+        </div>
+
+        <div class="rating">
+          ★ ${Number(p.rating || 0).toFixed(1)}
+          (${p.ratingCount || 0})
+        </div>
+
+      </div>
+
+    </a>
+  `).join("");
+}
   
   // ===== HOMEPAGE SEARCH =====
   if ($("#searchInput")) {
