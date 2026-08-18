@@ -28,6 +28,11 @@ var CATEGORIES=[
     "id": "women-s-trending-banarasi-sarees",
     "name": "Women's Trending Banarasi Sarees",
     "image": "images/category/file-00000000b6708208a28e594cafeb816e-1787031764697-4ynen.png"
+  },
+  {
+    "id": "women-s-stylish-sarees",
+    "name": "Women's stylish Sarees",
+    "image": "images/category/file-000000000bb48211b07887950e1d0fb3-1787032646420-0s7z5.png"
   }
 ];
 
