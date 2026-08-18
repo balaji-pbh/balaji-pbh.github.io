@@ -18,6 +18,11 @@ var CATEGORIES=[
     "id": "women-s-stylish-kurti-set",
     "name": "Women's Stylish Kurti Set",
     "image": "images/category/file-00000000a96c8211ab8ac7adf90ac229-1787030883724-ovipe.png"
+  },
+  {
+    "id": "men-s-stylish-premium-shirt-s",
+    "name": "Men's Stylish Premium Shirt's",
+    "image": "images/category/1787031409763-1787031481435-bw338.png"
   }
 ];
 
