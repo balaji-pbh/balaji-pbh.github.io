@@ -134,5 +134,22 @@ var PRODUCTS=[
     "details": {
       "Kurti Set+ plazo + dupatta": "👗 Kurti + plazo + dupatta 🌸 Premium Floral Foil Print 💎 Elegant Neck Design 🌿 Soft & Comfortable Fabric 🎨 Vibrant & Attractive Colour 👌 Daily Wear & Casual/Festive Wear Brand: Balaji Garments & Saree Centre Design No.: 1722 Colour: Maroon"
     }
+  },
+  {
+    "id": "PRD-UQZGIS",
+    "category": "women-s-stylish-kurti-set",
+    "name": "Trendy and Stylish Premium Kurti Set",
+    "price": 999,
+    "oldPrice": 1999,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260818-wa0001-1787037266890-px6lr.jpg"
+    ],
+    "description": "🌸 Premium Foil Printed Kurti\nखूबसूरत Floral Foil Print और elegant neck design वाली यह ladies kurti आपके everyday और festive look के लिए एक शानदार विकल्प है। Soft & comfortable fabric और आकर्षक design इसे stylish और आरामदायक बनाता है।",
+    "details": {
+      "Kurti plazo dupatta Set": "👗Kurti + plazo dupatta set 🌸 Premium Floral Foil Print 💎 Elegant Neck Design 🌿 Soft & Comfortable Fabric 🎨 Vibrant & Attractive Colour 👌 Daily Wear & Casual/Festive Wear Brand: Balaji Garments & Saree Centre Design No.: 1724 Colour: Light Green"
+    }
   }
 ];
