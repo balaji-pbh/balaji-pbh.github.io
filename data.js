@@ -48,6 +48,11 @@ var CATEGORIES=[
     "id": "men-s-stylish-premium-yellow-kurta-sets",
     "name": "Men's Stylish Premium Yellow Kurta sets 💛",
     "image": "images/category/file-0000000025cc8211806b1ec34959c8f4-1787033564675-w6rx0.png"
+  },
+  {
+    "id": "men-s-jean-s",
+    "name": "Men's Jean's",
+    "image": "images/category/file-00000000fb748211a7230d36b5dcc922-1787033759972-0wdu1.png"
   }
 ];
 
