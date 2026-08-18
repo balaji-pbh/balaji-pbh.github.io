@@ -13,6 +13,11 @@ var CATEGORIES=[
     "id": "swk",
     "name": "Women's stylish short kurti",
     "image": "images/category/file-00000000bbe4821196f49639c16dcc8b-1787029868598-t3ybv.png"
+  },
+  {
+    "id": "women-s-stylish-kurti-set",
+    "name": "Women's Stylish Kurti Set",
+    "image": "images/category/file-00000000a96c8211ab8ac7adf90ac229-1787030883724-ovipe.png"
   }
 ];
 
