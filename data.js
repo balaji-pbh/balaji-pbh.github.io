@@ -100,5 +100,22 @@ var PRODUCTS=[
     "details": {
       "Short kurti": "✅ Premium Soft Cotton Fabric ✅ Elegant Floral Print ✅ Embroidered V-Neck Design ✅ Comfortable Regular Fit ✅ Size: XL ✅ Available Colours: Pink, Green & Sky Blue ✅ Best For: Daily Wear, Office, College & Casual Outings ✅ Easy to Wash & Skin-Friendly"
     }
+  },
+  {
+    "id": "PRD-TMQZWS",
+    "category": "women-s-stylish-kurti-set",
+    "name": "Women's Trendy Wedding wear Kurti Set",
+    "price": 999,
+    "oldPrice": 1999,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260818-wa0004-1787036114896-d4aip.jpg"
+    ],
+    "description": "🌸 Premium Foil Printed Kurti\nखूबसूरत Floral Foil Print और elegant neck design वाली यह ladies kurti आपके everyday और festive look के लिए एक शानदार विकल्प है। Soft & comfortable fabric और आकर्षक design इसे stylish और आरामदायक बनाता है।",
+    "details": {
+      "Premium Kurti Set": "👗 Single Piece – Kurti Only 🌸 Premium Floral Foil Print 💎 Elegant Neck Design 🌿 Soft & Comfortable Fabric 🎨 Vibrant & Attractive Colour 👌 Daily Wear & Casual/Festive Wear Brand: Balaji Garments & Saree Centre Design No.: 1722"
+    }
   }
 ];
