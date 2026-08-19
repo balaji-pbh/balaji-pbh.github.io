@@ -219,5 +219,22 @@ var PRODUCTS=[
     "details": {
       "Banarasi Saree Purple colour": "Color: Purple / Magenta Design: Gold-toned all-over motifs Pallu: Rich & detailed Work: Jalar Siroski Cut: 6.00 Border: Traditional gold-toned border Look: Premium, Elegant & Traditional Occasion: Wedding, Festive, Party & Function Wear"
     }
+  },
+  {
+    "id": "PRD-DUKD86",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarasi silk saree purple colour",
+    "price": 799,
+    "oldPrice": 2399,
+    "discount": 75,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/file-000000007b708208b6d5999017508db4-1787122736210-rs5r7.png"
+    ],
+    "description": "Elegant deep purple saree featuring beautiful gold-toned motifs, a richly detailed woven pallu and an attractive traditional border. The luxurious purple-and-gold combination gives the saree a graceful and premium look, perfect for festive occasions, weddings, parties and special functions.",
+    "details": {
+      "Banarasi saree purple colour": "Color: Purple / Magenta Design: Gold-toned all-over motifs Pallu: Rich & detailed Work: Jalar Siroski Cut: 6.00 Border: Traditional gold-toned border Look: Premium, Elegant & Traditional Occasion: Wedding, Festive, Party & Function Wear"
+    }
   }
 ];
