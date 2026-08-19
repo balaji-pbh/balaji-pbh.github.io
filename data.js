@@ -559,5 +559,23 @@ var PRODUCTS=[
     "details": {
       "Premium Banarasi Silk Saree – Emerald Green with Golden Zari": "✨ Fabric: Premium Banarasi Silk 💚 Color: Emerald Green 🌟 Work: All-over Golden Zari Buti with Heavy Woven Border & Pallu 👗 Includes Matching Blouse Piece 🎉 Perfect for Weddings, Festivals, Parties & Traditional Functions 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
     }
+  },
+  {
+    "id": "PRD-CN2G64",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarsi silk saree",
+    "price": 699,
+    "oldPrice": 2399,
+    "discount": 71,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/file-0000000099c48211a81eed2d0590730e-1787145626968-pz856.png",
+      "images/products/img-20260819-wa0021-1787145634410-ah7bw.jpg"
+    ],
+    "description": "Premium Banarasi Silk Saree – Rani Pink with Rich Golden Zari\nAdd a touch of royal elegance to your wardrobe with this stunning Rani Pink Banarasi Silk Saree. Beautifully crafted with intricate golden zari floral motifs, delicate buti work, and a luxurious woven zari border, this saree is perfect for weddings, festive celebrations, parties, and traditional occasions.",
+    "details": {
+      "Premium Banarasi Silk Saree – Rani Pink with Rich Golden Zari": "✨ Fabric: Premium Banarasi Silk 💖 Color: Rani Pink 🌟 Work: Golden Zari Floral Motifs with Rich Woven Border 👗 Includes Matching Blouse Piece 🎉 Perfect for Weddings, Festivals, Receptions & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
+    }
   }
 ];
