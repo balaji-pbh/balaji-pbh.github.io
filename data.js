@@ -304,5 +304,22 @@ var PRODUCTS=[
     "details": {
       "Banarasi silk Premium Saree for bride": "Fabric: Banarasi Silk Blend Color: Royal Red Work: Rich Golden Zari Weaving Occasion: Wedding | Party | Festive Wear Blouse: Running Blouse Piece Included Product Code: A1502 Design No.: 1720-D Quality: Premium"
     }
+  },
+  {
+    "id": "PRD-A2RBM0",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarsi saree Bridal Look",
+    "price": 2099,
+    "oldPrice": 3099,
+    "discount": 25,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0008-1787141217929-r71g4.jpg"
+    ],
+    "description": "Royal Firoji Green Banarasi Silk Saree – पारंपरिक बनारसी बुनाई, आकर्षक गोल्डन ज़री डिज़ाइन और शानदार रिच पल्लू के साथ। शादी, त्योहार, पार्टी और विशेष अवसरों के लिए बेहतरीन विकल्प। मुलायम फैब्रिक, प्रीमियम फिनिश और क्लासिक लुक इसे हर महिला की पसंद बनाते हैं।",
+    "details": {
+      "Royal Look Bridal Banarasi silk saree": "Fabric: Banarasi Silk Blend Color: Firoji Green Work: Rich Golden Zari Weaving Occasion: Wedding | Party | Festive Wear Blouse: Running Blouse Piece Included Product Code: A1502 Design No.: 1720-D Quality: Premium"
+    }
   }
 ];
