@@ -236,5 +236,22 @@ var PRODUCTS=[
     "details": {
       "Banarasi saree purple colour": "Color: Purple / Magenta Design: Gold-toned all-over motifs Pallu: Rich & detailed Work: Jalar Siroski Cut: 6.00 Border: Traditional gold-toned border Look: Premium, Elegant & Traditional Occasion: Wedding, Festive, Party & Function Wear"
     }
+  },
+  {
+    "id": "PRD-HEI2FU",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarasi silk Bridal Look sareee",
+    "price": 1199,
+    "oldPrice": 2199,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0006-1787136033551-alsi7.jpg"
+    ],
+    "description": "Premium Zari Woven Festive Silk Saree\nApne festive aur wedding wardrobe ko is khoobsurat zari woven saree ke sath ek royal touch dein. Balaji Garments & Saree Center ki taraf se pesh ki gayi ye saree traditional craftsmanship aur premium elegance ka perfect blend hai. Isme heavy zari pallu aur puri saree par fine golden zari buttis ka work kiya gaya hai, jo isko behad aakarshak aur rich look deta hai.",
+    "details": {
+      "Bridal wear Wedding saree": "Fabric: Premium Art Silk / Soft Silk blend jisme ek shandar aur natural shine hai. Design & Work: Intricate heavy golden zari weaving. Pallu aur borders par traditional paisley (kairi) aur floral motifs hain, aur puri body par choti zari buttis buni gayi hain. Color: Vibrant Rani Pink / Magenta (festive season aur shadiyon ke liye perfect). Length (Cut): 6.30 Meters (Saree + Blouse). Blouse: Matching unstitched blouse piece sath mein included hai. Occasion: Weddings, festivals, pooja, reception, aur traditional parties ke liye best choice. Brand: Balaji Garments & Saree Center. Care Instructions: Zari work ki chamak aur fabric ki quality banaye rakhne ke liye sirf Dry Clean karwayen."
+    }
   }
 ];
