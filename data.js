@@ -457,5 +457,22 @@ var PRODUCTS=[
     "details": {
       "Sirkoshi banarasi silk saree": "✨ Fabric: Premium Premium Banarasi Silk Saree – Royal Purple with Rich Golden Zari Grace meets tradition in this elegant royal purple Banarasi silk saree. Designed with intricate golden zari buti work all over and a luxurious broad zari border, this saree is perfect for weddings, festive celebrations, parties, and special occasions. The premium fabric offers a rich drape, while the matching blouse piece completes the timeless ethnic look.Banarasi Silk 💜 Color: Royal Red🌟 Work: All-over Golden Zari Buti & Broad Zari Border 👗 Includes Matching Blouse Piece 🎉 Ideal for Weddings, Festivals & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
     }
+  },
+  {
+    "id": "PRD-SHG6VB",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarsi silk saree - Green",
+    "price": 999,
+    "oldPrice": 1999,
+    "discount": 0,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0014-1787144074190-z6q0s.jpg"
+    ],
+    "description": "Premium Banarasi Silk Saree – Royal Green with Rich Golden Zari\nGrace meets tradition in this elegant royal purple Banarasi silk saree. Designed with intricate golden zari buti work all over and a luxurious broad zari border, this saree is perfect for weddings, festive celebrations, parties, and special occasions. The premium fabric offers a rich drape, while the matching blouse piece completes the timeless ethnic look.",
+    "details": {
+      "Premium Green Banarasi silk saree": "✨ Fabric: Premium Banarasi Silk Color: Royal Green 💚 🌟 Work: All-over Golden Zari Buti & Broad Zari Border 👗 Includes Matching Blouse Piece 🎉 Ideal for Weddings, Festivals & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
+    }
   }
 ];
