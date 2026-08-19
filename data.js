@@ -287,5 +287,22 @@ var PRODUCTS=[
     "details": {
       "Women's Wedding wear Banarasi silk saree - yellow colour": "Fabric: Premium Art Silk / Soft Silk blend jisme ek shandar aur natural shine hai. Design & Work: Intricate heavy golden zari weaving. Pallu aur borders par traditional paisley (kairi) aur floral motifs hain, aur puri body par choti zari buttis buni gayi hain. Color: Vibrant Yellow/ Magenta (festive season aur shadiyon ke liye perfect). Length (Cut): 6.30 Meters (Saree + Blouse). Blouse: Matching unstitched blouse piece sath mein included hai. Occasion: Weddings, festivals, pooja, reception, aur traditional parties ke liye best choice. Brand: Balaji Garments & Saree Center. Care Instructions: Zari work ki chamak aur fabric ki quality banaye rakhne ke liye sirf Dry Clean karwayen."
     }
+  },
+  {
+    "id": "PRD-VJGRNP",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Royal Red Banarasi silk saree Bridal Look",
+    "price": 2199,
+    "oldPrice": 3199,
+    "discount": 25,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0007-1787141049139-9ixf0.jpg"
+    ],
+    "description": "Royal Red Banarasi Silk Saree – पारंपरिक बनारसी बुनाई, आकर्षक गोल्डन ज़री डिज़ाइन और शानदार रिच पल्लू के साथ। शादी, त्योहार, पार्टी और विशेष अवसरों के लिए बेहतरीन विकल्प। मुलायम फैब्रिक, प्रीमियम फिनिश और क्लासिक लुक इसे हर महिला की पसंद बनाते हैं।",
+    "details": {
+      "Banarasi silk Premium Saree for bride": "Fabric: Banarasi Silk Blend Color: Royal Red Work: Rich Golden Zari Weaving Occasion: Wedding | Party | Festive Wear Blouse: Running Blouse Piece Included Product Code: A1502 Design No.: 1720-D Quality: Premium"
+    }
   }
 ];
