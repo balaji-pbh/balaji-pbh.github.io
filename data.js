@@ -476,20 +476,20 @@ var PRODUCTS=[
     }
   },
   {
-    "id": "PRD-CTRCTL",
+    "id": "PRD-P4BWGO",
     "category": "women-s-trending-banarasi-sarees",
-    "name": "Banarsi silk saree premium",
-    "price": 1199,
-    "oldPrice": 3299,
-    "discount": 0,
+    "name": "Premium Banarasi Silk Saree – Aqua Blue with Rich Golden",
+    "price": 999,
+    "oldPrice": 2999,
+    "discount": 67,
     "rating": 4.5,
     "ratingCount": 0,
     "images": [
-      "images/products/img-20260819-wa0017-1787144233628-crh0i.jpg"
+      "images/products/img-20260819-wa0018-1787144536462-7ga46.jpg"
     ],
-    "description": "Premium Banarasi Silk Saree – Mustard Yellow & Rust Red\nTraditional elegance with a royal touch. This premium Banarasi silk saree features a stunning mustard yellow base paired with a rich rust red pallu and intricate golden zari weaving. The luxurious border and classic motifs make it a perfect choice for weddings, festive celebrations, family functions, and special occasions.",
+    "description": "Product Description\nPremium Banarasi Silk Saree – Aqua Blue with Rich Golden Zari\nAdd timeless elegance to your wardrobe with this premium Aqua Blue Banarasi Silk Saree. Beautifully crafted with all-over golden zari buti work, a luxurious woven pallu, and a rich zari border, this saree is perfect for weddings, festive occasions, traditional functions, and",
     "details": {
-      "Banarsi Sirkoshi silk": "✨ Fabric: Premium Banarasi Silk 💛 Color: Mustard Yellow with Rust Red Pallu 🌟 Work: Rich Golden Zari Buti & Heavy Woven Border 👗 Includes Matching Blouse Piece 🎉 Best for Weddings, Festivals & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
+      "Premium Banarasi Silk Saree – Aqua Blue with Rich Golden Zari": "✨ Fabric: Premium Banarasi Silk 💙 Color: Aqua Blue 🌟 Work: Golden Zari Buti with Heavy Woven Border & Pallu 👗 Comes with Matching Blouse Piece 🎉 Ideal for Weddings, Festivals, Parties & Special Occasions 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
     }
   }
 ];
