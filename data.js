@@ -406,5 +406,22 @@ var PRODUCTS=[
     "details": {
       "Banarasi silk sarees peacock based": "Fabric: Banarasi Silk Blend Color:  Red , Work: Rich Golden Zari Weaving & Buti Work Border: Heavy Woven Zari Border Occasion: Wedding | Party | Festive | Traditional Wear Blouse: Running Blouse Piece Included Quality: Premium Comfort: Soft & Lightweight"
     }
+  },
+  {
+    "id": "PRD-7DTL18",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarasi premium Silk saree",
+    "price": 749,
+    "oldPrice": 1999,
+    "discount": 60,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0010-1787143682325-qet44.jpg"
+    ],
+    "description": "Premium Banarasi Silk Saree – Royal Purple with Rich Golden Zari\nGrace meets tradition in this elegant royal purple Banarasi silk saree. Designed with intricate golden zari buti work all over and a luxurious broad zari border, this saree is perfect for weddings, festive celebrations, parties, and special occasions. The premium fabric offers a rich drape, while the matching blouse piece completes the timeless ethnic look.",
+    "details": {
+      "Banarasi silk Premium Saree": "✨ Fabric: Premium Banarasi Silk 💜 Color: Royal Purple 🌟 Work: All-over Golden Zari Buti & Broad Zari Border 👗 Includes Matching Blouse Piece 🎉 Ideal for Weddings, Festivals & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
+    }
   }
 ];
