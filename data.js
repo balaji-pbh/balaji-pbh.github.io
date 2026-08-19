@@ -372,5 +372,22 @@ var PRODUCTS=[
     "details": {
       "Banarsi silk saree Pink": "Fabric: Banarasi Silk Blend Color: pink rani pink Work: Rich Golden Zari Weaving & Buti Work Border: Heavy Woven Zari Border Occasion: Wedding | Party | Festive | Traditional Wear Blouse: Running Blouse Piece Included Quality: Premium Comfort: Soft & Lightweight"
     }
+  },
+  {
+    "id": "PRD-D4FREM",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarsi silk saree",
+    "price": 989,
+    "oldPrice": 1999,
+    "discount": 55,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0013-1787142822391-9qukt.jpg"
+    ],
+    "description": "Premium light firoji Banarasi Silk Saree – रॉयल टील ब्लू रंग में खूबसूरत गोल्डन ज़री वीविंग, आकर्षक बूटी वर्क और हैवी ट्रेडिशनल पल्लू के साथ। शादी, रिसेप्शन, त्योहार और पार्टी वियर के लिए एक शानदार पसंद। इसका क्लासिक बनारसी डिज़ाइन आपको देता है रिच और एलिगेंट लुक।",
+    "details": {
+      "Banarsi silk saree - light firoji": "Fabric: Banarasi Silk Blend Color:light firoji Work: Rich Golden Zari Weaving & Buti Work Border: Heavy Woven Zari Border Occasion: Wedding | Party | Festive | Traditional Wear Blouse: Running Blouse Piece Included Quality: Premium Comfort: Soft & Lightweight"
+    }
   }
 ];
