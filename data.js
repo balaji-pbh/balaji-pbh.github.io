@@ -185,5 +185,22 @@ var PRODUCTS=[
     "details": {
       "Banarasi Sarees for women's": "Design: Rich Pallu & Jalar Siroski Cut: 6.00 Look: Elegant & Traditional Occasion: Festive, Party & Function Wear Color: Blue with Light Blue Detailing Style: Premium Designer Saree"
     }
+  },
+  {
+    "id": "PRD-2CQBRY",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarasi Saree for Wedding , Treditional",
+    "price": 999,
+    "oldPrice": 1999,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/file-0000000097c4820895cdf5d640bf5e10-1787121928617-nfaxa.png"
+    ],
+    "description": "A graceful red saree featuring an elegant gold-toned woven design, beautiful traditional border and richly detailed pallu. Its classic combination of red and gold gives it a premium and festive appeal, making it suitable for weddings, festivals, parties and special occasions.",
+    "details": {
+      "Banarasi Saree": "Color: Red Design: Gold woven motifs with traditional border Pallu: Rich & beautifully detailed Work: Jalar Siroski Cut: 6.00 Look: Premium & Traditional Occasion: Wedding, Festive, Party & Function Wear Style: Elegant Designer Saree"
+    }
   }
 ];
