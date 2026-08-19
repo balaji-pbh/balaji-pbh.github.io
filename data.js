@@ -508,5 +508,22 @@ var PRODUCTS=[
     "details": {
       "Premium Banarasi Silk Saree – Royal Wine Purple with Golden Zari": "✨ Fabric: Premium Banarasi Silk 💜 Color: Royal Wine Purple 🌟 Work: All-over Golden Zari Buti with Heavy Woven Border & Pallu 👗 Includes Matching Blouse Piece 🎉 Perfect for Weddings, Festivals, Parties & Special Occasions 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
     }
+  },
+  {
+    "id": "PRD-6YK9V5",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Premium Traditional Saree – Teal Blue with Silver Zari Weaving",
+    "price": 699,
+    "oldPrice": 2399,
+    "discount": 71,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0011-1-1787144972546-cggrv.jpg"
+    ],
+    "description": "Premium Traditional Saree – Teal Blue with Silver Zari Weaving\nGrace every occasion with this elegant Teal Blue Traditional Saree, beautifully adorned with intricate silver zari buti work and a luxurious woven border & pallu. Crafted for comfort and style, it's the perfect choice for festivals, weddings, family functions, and special occasions.⭐ Elegant Traditional Design\n⭐ Premium Quality Fabric\n⭐ Soft, Comfortable & Lightweight\n⭐ Rich Silver Zari Finish\n⭐ Amazing Value at Just ₹699",
+    "details": {
+      "Premium Traditional Saree – Teal Blue with Silver Zari Weaving": "✨ Fabric: Premium Quality Traditional Saree 💙 Color: Teal Blue 🌟 Work: Silver Zari Buti with Heavy Woven Border & Pallu 👗 Includes Matching Blouse Piece 🎉 Ideal for Weddings, Festivals & Party Wear 📏 Saree Length: 6.30 Metres (With Blouse)"
+    }
   }
 ];
