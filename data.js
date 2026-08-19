@@ -474,5 +474,22 @@ var PRODUCTS=[
     "details": {
       "Premium Green Banarasi silk saree": "✨ Fabric: Premium Banarasi Silk Color: Royal Green 💚 🌟 Work: All-over Golden Zari Buti & Broad Zari Border 👗 Includes Matching Blouse Piece 🎉 Ideal for Weddings, Festivals & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
     }
+  },
+  {
+    "id": "PRD-CTRCTL",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Banarsi silk saree premium",
+    "price": 1199,
+    "oldPrice": 3299,
+    "discount": 0,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0017-1787144233628-crh0i.jpg"
+    ],
+    "description": "Premium Banarasi Silk Saree – Mustard Yellow & Rust Red\nTraditional elegance with a royal touch. This premium Banarasi silk saree features a stunning mustard yellow base paired with a rich rust red pallu and intricate golden zari weaving. The luxurious border and classic motifs make it a perfect choice for weddings, festive celebrations, family functions, and special occasions.",
+    "details": {
+      "Banarsi Sirkoshi silk": "✨ Fabric: Premium Banarasi Silk 💛 Color: Mustard Yellow with Rust Red Pallu 🌟 Work: Rich Golden Zari Buti & Heavy Woven Border 👗 Includes Matching Blouse Piece 🎉 Best for Weddings, Festivals & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
+    }
   }
 ];
