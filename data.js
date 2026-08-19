@@ -525,5 +525,22 @@ var PRODUCTS=[
     "details": {
       "Premium Traditional Saree – Teal Blue with Silver Zari Weaving": "✨ Fabric: Premium Quality Traditional Saree 💙 Color: Teal Blue 🌟 Work: Silver Zari Buti with Heavy Woven Border & Pallu 👗 Includes Matching Blouse Piece 🎉 Ideal for Weddings, Festivals & Party Wear 📏 Saree Length: 6.30 Metres (With Blouse)"
     }
+  },
+  {
+    "id": "PRD-5YKLXS",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Premium Handloom Silk Saree – Royal Orange with Rich Zari Weaving",
+    "price": 749,
+    "oldPrice": 2499,
+    "discount": 70,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0022-1787145148562-058mc.jpg"
+    ],
+    "description": "Premium Handloom Silk Saree – Royal Orange with Rich Zari Weaving\nBring timeless elegance to your wardrobe with this exquisite Royal Orange Handloom Silk Saree. Featuring intricate zari buti work, a luxurious woven pallu, and a rich zari border, this saree is designed to make every festive and wedding occasion truly special.",
+    "details": {
+      "Premium Handloom Silk Saree – Royal Orange with Rich Zari Weaving": "✨ Fabric: Premium Handloom Silk 🧡 Color: Royal Orange 🌟 Work: Elegant Zari Buti with Rich Woven Border & Pallu 👗 Includes Matching Blouse Piece 🎉 Perfect for Weddings, Festivals, Traditional Functions & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
+    }
   }
 ];
