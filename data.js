@@ -168,5 +168,22 @@ var PRODUCTS=[
     "details": {
       "Stylish short kurti mustard Yellow": "Stylish, comfortable & elegant short kurti with beautiful floral print and detailed embroidery—perfect for daily wear, casual outings and festive occasions. Single PC."
     }
+  },
+  {
+    "id": "PRD-NBLQZZ",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Rani Saheeba Saree",
+    "price": 799,
+    "oldPrice": 1599,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/file-00000000e0f88208970b883a5db871b2-1787118292289-n9z4c.png"
+    ],
+    "description": "Elegant blue saree featuring a rich pallu, attractive floral motifs and a beautiful traditional border. Designed with a premium look, this saree is perfect for festive occasions, functions and special gatherings.",
+    "details": {
+      "Banarasi Sarees for women's": "Design: Rich Pallu & Jalar Siroski Cut: 6.00 Look: Elegant & Traditional Occasion: Festive, Party & Function Wear Color: Blue with Light Blue Detailing Style: Premium Designer Saree"
+    }
   }
 ];
