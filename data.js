@@ -202,5 +202,22 @@ var PRODUCTS=[
     "details": {
       "Banarasi Saree": "Color: Red Design: Gold woven motifs with traditional border Pallu: Rich & beautifully detailed Work: Jalar Siroski Cut: 6.00 Look: Premium & Traditional Occasion: Wedding, Festive, Party & Function Wear Style: Elegant Designer Saree"
     }
+  },
+  {
+    "id": "PRD-TWWCDM",
+    "category": "swk",
+    "name": "Banarasi Saree - purple colour",
+    "price": 799,
+    "oldPrice": 2399,
+    "discount": 75,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/file-000000007b708208b6d5999017508db4-1787122481551-9yfcq.png"
+    ],
+    "description": "Elegant deep purple saree featuring beautiful gold-toned motifs, a richly detailed woven pallu and an attractive traditional border. The luxurious purple-and-gold combination gives the saree a graceful and premium look, perfect for festive occasions, weddings, parties and special functions.",
+    "details": {
+      "Banarasi Saree Purple colour": "Color: Purple / Magenta Design: Gold-toned all-over motifs Pallu: Rich & detailed Work: Jalar Siroski Cut: 6.00 Border: Traditional gold-toned border Look: Premium, Elegant & Traditional Occasion: Wedding, Festive, Party & Function Wear"
+    }
   }
 ];
