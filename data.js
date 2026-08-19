@@ -542,5 +542,22 @@ var PRODUCTS=[
     "details": {
       "Premium Handloom Silk Saree – Royal Orange with Rich Zari Weaving": "✨ Fabric: Premium Handloom Silk 🧡 Color: Royal Orange 🌟 Work: Elegant Zari Buti with Rich Woven Border & Pallu 👗 Includes Matching Blouse Piece 🎉 Perfect for Weddings, Festivals, Traditional Functions & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
     }
+  },
+  {
+    "id": "PRD-ASQR5L",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Premium Banarasi Silk Saree – Emerald Green with Golden Zari",
+    "price": 649,
+    "oldPrice": 2449,
+    "discount": 74,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0023-1787145309895-99vnm.jpg"
+    ],
+    "description": "Premium Banarasi Silk Saree – Emerald Green with Golden Zari\nCelebrate timeless elegance with this stunning Emerald Green Banarasi Silk Saree. Adorned with intricate golden zari buti work, a luxurious broad zari border, and a beautifully woven pallu, this saree is an ideal choice for weddings, festivals, parties, and traditional occasions.",
+    "details": {
+      "Premium Banarasi Silk Saree – Emerald Green with Golden Zari": "✨ Fabric: Premium Banarasi Silk 💚 Color: Emerald Green 🌟 Work: All-over Golden Zari Buti with Heavy Woven Border & Pallu 👗 Includes Matching Blouse Piece 🎉 Perfect for Weddings, Festivals, Parties & Traditional Functions 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
+    }
   }
 ];
