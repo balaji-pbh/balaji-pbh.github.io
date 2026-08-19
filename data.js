@@ -270,5 +270,22 @@ var PRODUCTS=[
     "details": {
       "Banarasi silk saree Bridal Look": "Fabric: Premium Art Silk / Soft Silk blend jisme ek shandar aur natural shine hai. Design & Work: Intricate heavy golden zari weaving. Pallu aur borders par traditional paisley (kairi) aur floral motifs hain, aur puri body par choti zari buttis buni gayi hain. Color: Vibrant  Royal red/Red  / Magenta (festive season aur shadiyon ke liye perfect). Length (Cut): 6.30 Meters (Saree + Blouse). Blouse: Matching unstitched blouse piece sath mein included hai. Occasion: Weddings, festivals, pooja, reception, aur traditional parties ke liye best choice. Brand: Balaji Garments & Saree Center. Care Instructions: Zari work ki chamak aur fabric ki quality banaye rakhne ke liye sirf Dry Clean karwayen."
     }
+  },
+  {
+    "id": "PRD-23HD2J",
+    "category": "women-s-trending-banarasi-sarees",
+    "name": "Bridal wear Wedding saree-",
+    "price": 1299,
+    "oldPrice": 2599,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260819-wa0005-1787136269158-ul40t.jpg"
+    ],
+    "description": "Premium Zari Woven Festive Silk Saree\nApne festive aur wedding wardrobe ko is khoobsurat zari woven saree ke sath ek royal touch dein. Balaji Garments & Saree Center ki taraf se pesh ki gayi ye saree traditional craftsmanship aur premium elegance ka perfect blend hai. Isme heavy zari pallu aur puri saree par fine golden zari buttis ka work kiya gaya hai, jo isko behad aakarshak aur rich look deta hai.",
+    "details": {
+      "Women's Wedding wear Banarasi silk saree - yellow colour": "Fabric: Premium Art Silk / Soft Silk blend jisme ek shandar aur natural shine hai. Design & Work: Intricate heavy golden zari weaving. Pallu aur borders par traditional paisley (kairi) aur floral motifs hain, aur puri body par choti zari buttis buni gayi hain. Color: Vibrant Yellow/ Magenta (festive season aur shadiyon ke liye perfect). Length (Cut): 6.30 Meters (Saree + Blouse). Blouse: Matching unstitched blouse piece sath mein included hai. Occasion: Weddings, festivals, pooja, reception, aur traditional parties ke liye best choice. Brand: Balaji Garments & Saree Center. Care Instructions: Zari work ki chamak aur fabric ki quality banaye rakhne ke liye sirf Dry Clean karwayen."
+    }
   }
 ];
