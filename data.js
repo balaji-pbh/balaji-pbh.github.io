@@ -577,5 +577,25 @@ var PRODUCTS=[
     "details": {
       "Premium Banarasi Silk Saree – Rani Pink with Rich Golden Zari": "✨ Fabric: Premium Banarasi Silk 💖 Color: Rani Pink 🌟 Work: Golden Zari Floral Motifs with Rich Woven Border 👗 Includes Matching Blouse Piece 🎉 Perfect for Weddings, Festivals, Receptions & Party Wear 📏 Saree Length: 5.5 m + 0.8 m Blouse Piece (Approx.)"
     }
+  },
+  {
+    "id": "PRD-3XG5H8",
+    "category": "women-s-stylish-kurti-set",
+    "name": "Kurti Set - 4 couler",
+    "price": 899,
+    "oldPrice": 2499,
+    "discount": 64,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260820-wa0009-1787227658511-q0y6e.jpg",
+      "images/products/img-20260820-wa0008-1787227661715-yfevv.jpg",
+      "images/products/img-20260820-wa0007-1787227663823-1lqum.jpg",
+      "images/products/img-20260820-wa0006-1787227665760-5yntc.jpg"
+    ],
+    "description": "Elegant Lavender Kurti Pant with Printed Dupatta Set\nGrace aur elegance ka perfect combination! Yeh premium lavender color kurti set beautiful embroidery neckline aur soft printed dupatta ke saath aata hai. Daily wear, office, festive gatherings aur family functions ke liye ek stylish aur comfortable choice.",
+    "details": {
+      "Kurti Set": "💜 Premium Quality Fabric 🌸 Elegant Embroidered Neck Design 🧣 Soft & Stylish Printed Dupatta 👖 Matching Straight Pant Included 😍 Comfortable Fit & Trendy Look 🎉 Perfect for Casual, Office & Festive Wear"
+    }
   }
 ];
