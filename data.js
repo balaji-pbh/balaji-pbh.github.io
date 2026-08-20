@@ -597,5 +597,23 @@ var PRODUCTS=[
     "details": {
       "Kurti Set": "💜 Premium Quality Fabric 🌸 Elegant Embroidered Neck Design 🧣 Soft & Stylish Printed Dupatta 👖 Matching Straight Pant Included 😍 Comfortable Fit & Trendy Look 🎉 Perfect for Casual, Office & Festive Wear"
     }
+  },
+  {
+    "id": "PRD-Z2SUZP",
+    "category": "women-s-stylish-kurti-set",
+    "name": "Kurti Set",
+    "price": 1199,
+    "oldPrice": 2399,
+    "discount": 50,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/1787228446560-1787228764280-38kki.png",
+      "images/products/1787228353080-1787228786050-gk3tq.png"
+    ],
+    "description": "Product Details: Premium print fabric par beautiful sequence aur kadhai work, stylish collar/V-neck design ke saath.\nStyle Pair: Blue jeans, flared denim, ya trousers ke saath best aesthetic look deta hai.\nFabric & Fit: Comfortable, breathable fabric perfect for daily wear & festive occasions.\nSizes Available: S, M, L, XL, XXL",
+    "details": {
+      "Wedding wear Kurti Set": "Product Details: Vibrant floral prints aur neck line par intricate kadhai/embroidery detailings. Occasion: Casual outings, festive wear, aur college/office daily wear ke liye perfect combination. Fabric & Fit: Lightweight fabric, soft skin feel, aur flattering regular fit. Sizes Available: S, M, L, XL, XXL"
+    }
   }
 ];
