@@ -615,5 +615,22 @@ var PRODUCTS=[
     "details": {
       "Wedding wear Kurti Set": "Product Details: Vibrant floral prints aur neck line par intricate kadhai/embroidery detailings. Occasion: Casual outings, festive wear, aur college/office daily wear ke liye perfect combination. Fabric & Fit: Lightweight fabric, soft skin feel, aur flattering regular fit. Sizes Available: S, M, L, XL, XXL"
     }
+  },
+  {
+    "id": "PRD-E9W6EK",
+    "category": "swk",
+    "name": "Kurti Set",
+    "price": 1149,
+    "oldPrice": 2399,
+    "discount": 45,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/1787228255170-1787229474841-dvpxq.png"
+    ],
+    "description": "Product Details: Vibrant floral prints aur neck line par intricate kadhai/embroidery detailings.\nOccasion: Casual outings, festive wear, aur college/office daily wear ke liye perfect combination.\nFabric & Fit: Lightweight fabric, soft skin feel, aur flattering regular fit.\nSizes Available: S, M, L, XL, XXL",
+    "details": {
+      "Kurti Set": "Product Details: Premium print fabric par beautiful sequence aur kadhai work, stylish collar/V-neck design ke saath. Style Pair: Blue jeans, flared denim, ya trousers ke saath best aesthetic look deta hai. Fabric & Fit: Comfortable, breathable fabric perfect for daily wear & festive occasions. Sizes Available: S, M, L, XL, XXL"
+    }
   }
 ];
