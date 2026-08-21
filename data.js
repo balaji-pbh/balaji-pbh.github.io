@@ -632,5 +632,22 @@ var PRODUCTS=[
     "details": {
       "Kurti Set": "Product Details: Premium print fabric par beautiful sequence aur kadhai work, stylish collar/V-neck design ke saath. Style Pair: Blue jeans, flared denim, ya trousers ke saath best aesthetic look deta hai. Fabric & Fit: Comfortable, breathable fabric perfect for daily wear & festive occasions. Sizes Available: S, M, L, XL, XXL"
     }
+  },
+  {
+    "id": "PRD-CU8TS7",
+    "category": "swk",
+    "name": "Downshold t shirt",
+    "price": 449,
+    "oldPrice": 649,
+    "discount": 31,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260821-wa0002-1787292721250-tb24e.jpg"
+    ],
+    "description": "Stylish Women’s Printed T-Shirt crafted in soft Super Tencel fabric. Featuring a comfortable round neck, half sleeves and trendy eagle graphic detailing on the front and back. Its modern look makes it perfect for casual outings, everyday wear and pairing with jeans or trousers.",
+    "details": {
+      "Dowushold t shirt for girls": "Fabric: Super Tencel Color: Sage Green Pattern: Printed Neck: Round Neck Sleeves: Half Sleeves Fit: Comfortable Casual Fit"
+    }
   }
 ];
