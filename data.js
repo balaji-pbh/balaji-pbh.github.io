@@ -768,5 +768,22 @@ var PRODUCTS=[
     "details": {
       "Kurti plazo dupatta Set": "✨ Premium Fabric Kurti Set 💎 Elegant Sequence Kadhai Work 👗 Kurti + Pant + Printed Dupatta (3-Piece Set) 🌸 Stylish Floral Printed Dupatta 🌿 Soft, Lightweight & Breathable Fabric 👚 Comfortable Full Sleeves 💖 Perfect for Festive, Party, Office & Casual Wear 🧺 Easy to Wash & Skin Friendly 📏 Available Sizes: M, L, XL 💯 Premium Quality & Trendy Design"
     }
+  },
+  {
+    "id": "PRD-89EF7Q",
+    "category": "women-s-stylish-kurti-set",
+    "name": "Kurti Set",
+    "price": 1099,
+    "oldPrice": 1999,
+    "discount": 45,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/1787228194512-1787294466971-corwi.png"
+    ],
+    "description": "क्लासिक डिज़ाइन और प्रीमियम फिनिश के साथ यह खूबसूरत कुर्ती सेट हर खास मौके के लिए एक बेहतरीन पसंद है। आकर्षक सीक्वेंस कढ़ाई, मैचिंग पैंट और फ्लोरल प्रिंटेड दुपट्टा इसे स्टाइलिश और एलिगेंट लुक देता है। सॉफ्ट और आरामदायक फैब्रिक पूरे दिन बेहतरीन कम्फर्ट प्रदान करता है।",
+    "details": {
+      "Kurti plazo dupatta Set": "✨ Premium Fabric Kurti Set 💎 Elegant Sequence Kadhai Work 👗 3-Piece Set (Kurti + Pant + Printed Dupatta) 🌸 Designer Floral Printed Dupatta 🌿 Soft, Lightweight & Skin-Friendly Fabric 👚 Stylish 3/4 Sleeves 💖 Perfect for Festive Wear, Party, Office & Family Functions 🧺 Easy to Wash & Long-Lasting Fabric"
+    }
   }
 ];
