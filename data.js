@@ -683,5 +683,22 @@ var PRODUCTS=[
     "details": {
       "Downshold t shirt green": "Fabric: Super Tencel Color: Dark Green Pattern: Printed Neck: Round Neck Sleeves: Half Sleeves Fit: Comfortable Casual Fit"
     }
+  },
+  {
+    "id": "PRD-UBZA84",
+    "category": "swk",
+    "name": "SHORT KURTI - Floral print",
+    "price": 249,
+    "oldPrice": 349,
+    "discount": 29,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/1787228050312-1787293176178-w7t4l.png"
+    ],
+    "description": "अपनी रोज़मर्रा की स्टाइल को दें एक एलिगेंट लुक। यह प्रीमियम प्रिंटेड शॉर्ट कुर्ती खूबसूरत सीक्वेंस कढ़ाई के साथ आती है, जो इसे कैज़ुअल और पार्टी दोनों मौकों के लिए बेहतरीन बनाती है। सॉफ्ट और आरामदायक फैब्रिक पूरे दिन पहनने में आराम देता है।",
+    "details": {
+      "Short kurti printed": "✨ Premium Printed Fabric ✨ Elegant Sequence Kadhai Work ✨ Soft & Comfortable Fabric ✨ Stylish V-Neck Design ✨ 3/4 Sleeves ✨ Perfect for Daily Wear, Office & Casual Outings"
+    }
   }
 ];
