@@ -666,5 +666,22 @@ var PRODUCTS=[
     "details": {
       "Downshold t shirt": "Fabric: Super Tencel Color: Sage Green Pattern: Printed Neck: Round Neck Sleeves: Half Sleeves Fit: Comfortable Casual Fit"
     }
+  },
+  {
+    "id": "PRD-GYN7R2",
+    "category": "women-s-girl-s-t-shirt",
+    "name": "Downshold t shirt green",
+    "price": 499,
+    "oldPrice": 649,
+    "discount": 24,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260821-wa0000-1787293002433-1g7zc.jpg"
+    ],
+    "description": "Stylish Women’s Printed T-Shirt crafted in soft Super Tencel fabric. Featuring a comfortable round neck, half sleeves and trendy eagle graphic detailing on the front and back. Its modern look makes it perfect for casual outings, everyday wear and pairing with jeans or trousers.",
+    "details": {
+      "Downshold t shirt green": "Fabric: Super Tencel Color: Dark Green Pattern: Printed Neck: Round Neck Sleeves: Half Sleeves Fit: Comfortable Casual Fit"
+    }
   }
 ];
