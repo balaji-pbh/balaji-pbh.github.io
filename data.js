@@ -717,5 +717,22 @@ var PRODUCTS=[
     "details": {
       "Short kurti floral print v neck": "🌸 Premium Floral Printed Fabric ✨ Elegant V-Neck Design 👗 Soft & Comfortable Fabric 🌿 Lightweight & Breathable 💖 Perfect for Daily Wear, Office & Casual Outings 👚 Stylish 3/4 Sleeves 🧺 Easy to Wash & Skin Friendly"
     }
+  },
+  {
+    "id": "PRD-NMYAE7",
+    "category": "swk",
+    "name": "Short kurti Print Fabric Sequence Kadhai Short Kurti",
+    "price": 249,
+    "oldPrice": 349,
+    "discount": 29,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/1787227996799-1787293511351-1cgan.png"
+    ],
+    "description": "Print Fabric Sequence Kadhai Short Kurti\nअपने एथनिक लुक को दें एक स्टाइलिश टच। यह प्रीमियम प्रिंटेड शॉर्ट कुर्ती आकर्षक सीक्वेंस कढ़ाई और ट्रेंडी डिज़ाइन के साथ आती है। सॉफ्ट और ब्रीदेबल फैब्रिक इसे पूरे दिन पहनने के लिए आरामदायक बनाता है। डेली वियर, ऑफिस, कॉलेज और कैज़ुअल आउटिंग के लिए एक बेहतरीन विकल्प।",
+    "details": {
+      "Print Fabric Sequence Kadhai Short Kurti": "✨ Premium Printed Fabric 💎 Elegant Sequence Kadhai Work 👗 Stylish V-Neck Design 🌿 Soft, Lightweight & Comfortable Fabric 👚 3/4 Sleeves 💖 Perfect for Daily Wear, Office & Casual Wear 🧺 Easy to Wash & Skin Friendly"
+    }
   }
 ];
