@@ -853,5 +853,20 @@ var PRODUCTS=[
     "details": {
       "Men's Stylish Trousers": "✔️ Premium Cotton Stretch Fabric ✔️ Slim Fit Pattern ✔️ Soft & Breathable ✔️ Comfortable All-Day Wear ✔️ Durable Stitching ✔️ Stylish light brown golden Color ✔️ Ideal for Casual & Formal Wear ✔️ Available Sizes: 28–38 (Subject to Stock)"
     }
+  },
+  {
+    "id": "PRD-3MS9NK",
+    "category": "men-s-jean-s",
+    "name": "Premium WHITE JEANS",
+    "price": 649,
+    "oldPrice": 999,
+    "discount": 35,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260822-wa0020-1787399387363-w1njd.jpg"
+    ],
+    "description": "✔️ Durable & Flexible Fabric\n✔️ Fade-Resistant Finish\n✔️ Ideal for Casual, Party & Daily Wear\n✔️ Available Sizes: 28–38 (Subject to Stock)",
+    "details": {}
   }
 ];
