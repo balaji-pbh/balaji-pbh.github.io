@@ -885,5 +885,22 @@ var PRODUCTS=[
     "details": {
       "Black jeans": "✔️ Premium Stretch Denim Fabric ✔️ Slim Fit Design ✔️ Soft & Breathable ✔️ Elegant Solid Black Color ✔️ Durable Stitching✔️ 5-Pocket Classic Style ✔️ Flexible & Comfortable Fit ✔️ Fade-Resistant Fabric ✔️ Perfect for Casual, Party & Daily Wear ✔️ Available Sizes: 28–38 (Subject to Stock)"
     }
+  },
+  {
+    "id": "PRD-JQB9KX",
+    "category": "men-s-stylish-premium-shirt-s",
+    "name": "Premium White SHIRT",
+    "price": 519,
+    "oldPrice": 949,
+    "discount": 30,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260822-wa0019-1787400007666-alsqy.jpg"
+    ],
+    "description": "white formal shirt. Crafted from soft, breathable cotton-blend fabric, it offers a perfect fit, all-day comfort, and a crisp, elegant look. Ideal for office wear, business meetings, parties, weddings, and everyday styling.",
+    "details": {
+      "Premium White SHIRT": "✔️ Premium Cotton Blend Fabric ✔️ Soft & Breathable Material ✔️ Slim Fit Design ✔️ Elegant Solid White Color ✔️ Full Sleeve Shirt ✔️ Wrinkle-Resistant & Easy Care ✔️ Lightweight & Comfortable ✔️ Perfect for Formal & Casual Wear ✔️ Available Sizes: M, L, XL, XXL (Subject to Stock)"
+    }
   }
 ];
