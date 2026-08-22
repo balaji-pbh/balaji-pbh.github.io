@@ -902,5 +902,22 @@ var PRODUCTS=[
     "details": {
       "Premium White SHIRT": "✔️ Premium Cotton Blend Fabric ✔️ Soft & Breathable Material ✔️ Slim Fit Design ✔️ Elegant Solid White Color ✔️ Full Sleeve Shirt ✔️ Wrinkle-Resistant & Easy Care ✔️ Lightweight & Comfortable ✔️ Perfect for Formal & Casual Wear ✔️ Available Sizes: M, L, XL, XXL (Subject to Stock)"
     }
+  },
+  {
+    "id": "PRD-8F0USJ",
+    "category": "men-s-stylish-premium-shirt-s",
+    "name": "Black Shirt premium",
+    "price": 519,
+    "oldPrice": 949,
+    "discount": 45,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260822-wa0018-1787400391174-kf82i.jpg"
+    ],
+    "description": "अपने लुक को दें क्लासी और प्रीमियम टच इस शानदार Men's Black Cotton Shirt के साथ। 100% प्रीमियम कॉटन फैब्रिक से बनी यह शर्ट पूरे दिन आरामदायक महसूस होती है। इसका रेगुलर फिट, सॉफ्ट फैब्रिक, कलर-फास्ट ब्लैक फिनिश और रिंकल-रेज़िस्टेंट क्वालिटी इसे ऑफिस, पार्टी, कॉलेज और कैज़ुअल वियर—हर मौके के लिए बेहतरीन बनाती है।",
+    "details": {
+      "Premium Black Shirt": "✔️ 100% Premium Cotton Fabric ✔️ Full Sleeve Regular Fit ✔️ Soft & Breathable Fabric ✔️ Wrinkle Resistant ✔️ Color Fast Deep Black ✔️ Machine Wash Friendly ✔️ Premium Stitching & Finish ✔️ Suitable for Office, Party & Casual Wear"
+    }
   }
 ];
