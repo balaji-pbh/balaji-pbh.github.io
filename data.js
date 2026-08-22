@@ -785,5 +785,22 @@ var PRODUCTS=[
     "details": {
       "Kurti plazo dupatta Set": "✨ Premium Fabric Kurti Set 💎 Elegant Sequence Kadhai Work 👗 3-Piece Set (Kurti + Pant + Printed Dupatta) 🌸 Designer Floral Printed Dupatta 🌿 Soft, Lightweight & Skin-Friendly Fabric 👚 Stylish 3/4 Sleeves 💖 Perfect for Festive Wear, Party, Office & Family Functions 🧺 Easy to Wash & Long-Lasting Fabric"
     }
+  },
+  {
+    "id": "PRD-PRHTPX",
+    "category": "men-s-stylish-premium-formal-pant-trousers-pant",
+    "name": "Men's Stylish Premium Trousers",
+    "price": 449,
+    "oldPrice": 699,
+    "discount": 36,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260822-wa0016-1787398720092-fqy4m.jpg"
+    ],
+    "description": "Description: Upgrade your wardrobe with this premium men's slim-fit cotton trouser. Crafted from soft, stretchable fabric for maximum comfort, it's perfect for office wear, casual outings, and everyday use. The elegant olive green color pairs easily with shirts and T-shirts",
+    "details": {
+      "Men's Stylish Premium Trousers": "✔️ Premium Cotton Stretch Fabric ✔️ Slim Fit Pattern ✔️ Soft & Breathable ✔️ Comfortable All-Day Wear ✔️ Durable Stitching ✔️ Stylish Olive Green Color ✔️ Ideal for Casual & Formal Wear ✔️ Available Sizes: 28–38 (Subject to Stock)"
+    }
   }
 ];
