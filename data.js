@@ -868,5 +868,22 @@ var PRODUCTS=[
     ],
     "description": "✔️ Durable & Flexible Fabric\n✔️ Fade-Resistant Finish\n✔️ Ideal for Casual, Party & Daily Wear\n✔️ Available Sizes: 28–38 (Subject to Stock)",
     "details": {}
+  },
+  {
+    "id": "PRD-50MOWN",
+    "category": "men-s-jean-s",
+    "name": "Premium Black Jeans",
+    "price": 749,
+    "oldPrice": 1050,
+    "discount": 29,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260822-wa0021-1787399594566-b74lg.jpg"
+    ],
+    "description": "Upgrade your wardrobe with these premium black jeans for men. Crafted from high-quality stretch denim fabric, these jeans offer a modern slim fit, superior comfort, and long-lasting durability. Perfect for office wear, casual outings, parties, and everyday style.",
+    "details": {
+      "Black jeans": "✔️ Premium Stretch Denim Fabric ✔️ Slim Fit Design ✔️ Soft & Breathable ✔️ Elegant Solid Black Color ✔️ Durable Stitching✔️ 5-Pocket Classic Style ✔️ Flexible & Comfortable Fit ✔️ Fade-Resistant Fabric ✔️ Perfect for Casual, Party & Daily Wear ✔️ Available Sizes: 28–38 (Subject to Stock)"
+    }
   }
 ];
