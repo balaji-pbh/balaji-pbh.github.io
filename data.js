@@ -802,5 +802,22 @@ var PRODUCTS=[
     "details": {
       "Men's Stylish Premium Trousers": "✔️ Premium Cotton Stretch Fabric ✔️ Slim Fit Pattern ✔️ Soft & Breathable ✔️ Comfortable All-Day Wear ✔️ Durable Stitching ✔️ Stylish Olive Green Color ✔️ Ideal for Casual & Formal Wear ✔️ Available Sizes: 28–38 (Subject to Stock)"
     }
+  },
+  {
+    "id": "PRD-UMA2YU",
+    "category": "men-s-stylish-premium-formal-pant-trousers-pant",
+    "name": "Men's Stylish Premium Trousers",
+    "price": 449,
+    "oldPrice": 699,
+    "discount": 36,
+    "rating": 4.5,
+    "ratingCount": 0,
+    "images": [
+      "images/products/img-20260822-wa0017-1787398831812-uh7hi.jpg"
+    ],
+    "description": "Description: Upgrade your wardrobe with this premium men's slim-fit cotton trouser. Crafted from soft, stretchable fabric for maximum comfort, it's perfect for office wear, casual outings, and everyday use. The elegandark brown color pairs easily with shirts and T-shirts",
+    "details": {
+      "Men's Stylish Trousers": "✔️ Premium Cotton Stretch Fabric ✔️ Slim Fit Pattern ✔️ Soft & Breathable ✔️ Comfortable All-Day Wear ✔️ Durable Stitching ✔️ Stylish Dark brown Color ✔️ Ideal for Casual & Formal Wear ✔️ Available Sizes: 28–38 (Subject to Stock)"
+    }
   }
 ];
